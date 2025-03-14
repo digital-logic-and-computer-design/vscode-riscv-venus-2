@@ -295,6 +295,11 @@
 								"description": "Automatically stop after launch.",
 								"default": true
 							},
+							"dumpHex": {
+								"type": "boolean",
+								"description": "Dump the assembly code in hex format. (Defualt at `{filename}.hex`",
+								"default": false
+							},
 							"stopAtBreakpoints": {
 								"type": "boolean",
 								"description": "If execution should stop at breakpoints. If this is false, execution runs until the program execution finishes.",
@@ -307,6 +312,7 @@
 								"items": {
 									"type": "string",
 									"enum": [
+										"Assembly",
 										"Robot",
 										"LED Matrix",
 										"Seven Segment Board",
@@ -394,6 +400,7 @@
 							"stopOnEntry": true,
 							"stopAtBreakpoints": true,
 							"openViews": [
+								"Assembly",
 								"Robot",
 								"LED Matrix",
 								"Seven Segment Board",

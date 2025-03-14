@@ -53,7 +53,7 @@
         },
         {
             "type": "npm",
-            "script": "compileAll",
+            "script": "webpack",
             "group": "build",
             "isBackground": false,
             "presentation": {

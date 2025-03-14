@@ -156,7 +156,15 @@ export class VenusRuntime extends EventEmitter {
 		}
 	}
 
-
+	public getInstructionsDump() {
+		let instructions = simulator.driver.getInstructions();
+		let dump = "";
+		for (let i = 0; i < instructions.length; i++) {
+			// dump to hex str with prefix and caps
+			dump += `0x${instructions[i].mcode.toString(16).toUpperCase().padStart(8, '0')}\n`;
+		}
+		return dump;
+	}
 
 	private getAssemblyLines(){
 		this.pcToAssemblyLine.clear();

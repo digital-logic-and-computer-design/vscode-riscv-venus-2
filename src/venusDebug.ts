@@ -24,6 +24,7 @@ import { MemoryUI } from './memoryui/memoryUI';
 import { venusTerminal } from './terminal/venusTerminal';
 import { JsonObjectExpression } from 'typescript';
 import { Subject } from 'await-notify';
+import * as fs from 'fs';
 
 const riscvAsmScheme = 'venus_asm';
 
@@ -85,6 +86,8 @@ interface LaunchRequestArguments extends DebugProtocol.LaunchRequestArguments {
 	openViews?: string[];
 	/** The ledMatrix Size as an Json Object in the format {"x": 10, "y": 10} */
 	ledMatrixSize?;
+	/** Output code in hex format */
+	dumpHex?: boolean;
 }
 
 export class VenusDebugSession extends LoggingDebugSession {
@@ -260,6 +263,19 @@ export class VenusDebugSession extends LoggingDebugSession {
 		args.openViews?.forEach(view => {
 			this.openView(view);
 		});
+
+		if (args.dumpHex) {
+			let content = this._runtime.getInstructionsDump();
+			// write to file
+			let filePath = args.program + ".hex";
+			fs.writeFileSync
+			(
+				filePath,
+				content,
+				{ flag: 'w' }
+			);
+			venusTerminal.appendText(`Dumped code to ${filePath}\n`);
+		}
 
 		// start the program in the runtime
 		this._runtime.start(args.stopOnEntry ? args.stopOnEntry : false);
