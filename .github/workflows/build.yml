@@ -22,7 +22,3 @@ jobs:
     - name: Package extension
       run: npm run package    
     - run: mv riscv-venus-*.vsix riscv-venus.vsix
-    - uses: actions/upload-artifact@v2
-      with:
-        name: vsix-package
-        path: riscv-venus.vsix
