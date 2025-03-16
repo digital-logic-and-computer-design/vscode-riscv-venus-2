@@ -2,7 +2,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Extension with Rebuild",
+			"name": "Extension with Rebuild only Webpack",
 			"type": "extensionHost",
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
@@ -13,6 +13,19 @@
 				"${workspaceFolder}/dist/**/*.js"
 			],
 			"preLaunchTask": "npm: webpack",
+		},
+		{
+			"name": "Extension with Rebuild",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			],
+			"outFiles": [
+				"${workspaceFolder}/dist/**/*.js"
+			],
+			"preLaunchTask": "npm: compileAll",
 		},
 		{
 			"name": "Extension no Rebuild",

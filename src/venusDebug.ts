@@ -886,6 +886,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 		simSettings.allowAccessBtnStackHeap = workspace.getConfiguration('riscv-venus').get('allowAccessBtnStackHeap');
 		simSettings.maxSteps = workspace.getConfiguration('riscv-venus').get('maxSteps');
 		simSettings.onlyShowUsedRegs = workspace.getConfiguration('riscv-venus').get('onlyShowUsedRegs');
+		simSettings.enableCallingConvention = workspace.getConfiguration('riscv-venus').get('enableCallingConvention');
 
 		return simSettings;
 	}

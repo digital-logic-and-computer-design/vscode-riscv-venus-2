@@ -32,6 +32,7 @@ export class VenusSettings {
     setRegesOnInit: boolean | undefined;
     maxSteps: number | undefined;
     allowAccessBtnStackHeap: boolean | undefined;
+	enableCallingConvention: boolean | undefined;
 	onlyShowUsedRegs: boolean | undefined;
 }
 /**
@@ -125,6 +126,7 @@ export class VenusRuntime extends EventEmitter {
 			}
 
 			this.getAssemblyLines();
+			simulator.driver.enableCallingConvention(settings.enableCallingConvention?.toString() || 'false');
 		} catch (e: unknown) {
 			VenusRenderer.getInstance().showErrorWithPopup(e);
 			this.sendEvent('end');
@@ -149,6 +151,10 @@ export class VenusRuntime extends EventEmitter {
 		}
 		if (settings.allowAccessBtnStackHeap !== undefined) {
 			simulator.driver.simSettings.allowAccessBtnStackHeap = settings.allowAccessBtnStackHeap;
+		}
+		if (settings.enableCallingConvention !== undefined) {
+			// simulator.driver.simSettings.enableCallingConvention = settings.enableCallingConvention;
+			simulator.driver.enableCallingConvention(settings.enableCallingConvention.toString());
 		}
 
 		if (settings.onlyShowUsedRegs !== undefined) {

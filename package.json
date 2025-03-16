@@ -1,12 +1,12 @@
 {
-	"name": "riscv-venus",
-	"displayName": "RISC-V Venus Simulator",
-	"version": "1.9.1",
-	"publisher": "hm",
-	"description": "RISC-V Venus Simulator embedded in VS Code",
+	"name": "riscv-venus-cs110",
+	"displayName": "RISC-V Venus Simulator for CS110",
+	"version": "1.9.2",
+	"publisher": "ZAMBAR, hm",
+	"description": "RISC-V Venus Simulator embedded in VS Code, modified from https://github.com/hm-riscv/vscode-riscv-venus.",
 	"author": {
-		"name": "Munich University of Applied Sciences",
-		"email": "stefan.wallentowitz@hm.edu"
+		"name": "ZAMBAR",
+		"email": "zambar@shanghaitech.edu.cn"
 	},
 	"license": "MIT",
 	"keywords": [
@@ -22,12 +22,12 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/hm-riscv/vscode-riscv-venus"
+		"url": "https://github.com/HeZeBang/vscode-riscv-venus"
 	},
 	"bugs": {
-		"url": "https://github.com/hm-riscv/vscode-riscv-venus/issues"
+		"url": "https://github.com/HeZeBang/vscode-riscv-venus/issues"
 	},
-	"preview": false,
+	"preview": true,
 	"scripts": {
 		"watch": "webpack --watch --devtool nosources-source-map --mode development",
 		"watchVenus": "grunt watchvenus",
@@ -126,6 +126,11 @@
 					"type": "boolean",
 					"default": false,
 					"description": "Allow access between stack and heap?"
+				},
+				"riscv-venus.enableCallingConvention": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable Calling Convention Checker?"
 				},
 				"riscv-venus.maxSteps": {
 					"type": "integer",
