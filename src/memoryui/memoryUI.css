@@ -1,3 +1,25 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button, input[type="button"] {
+    background: unset;
+    color: white;
+    border: none;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover, input[type="button"]:hover {
+    background: #ffffff33;
+}
+
+button:active, input[type="button"]:active {
+    background: #ffffffaa;
+}
+
 table {
   width: 100%;
 }

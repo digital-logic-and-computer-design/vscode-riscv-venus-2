@@ -99,8 +99,16 @@ function renderMemoryRow(rowIdx, rowAddr, bytes) {
 			const tdByte = row.childNodes[i + 1];
 			tdByte.textContent = byte;
 			tdByte.contentEditable = "true";
+			tdByte.addEventListener("input", (e) => {
+				isChanged = true;
+				tdByte.style.backgroundColor = "rgba(255, 165, 0, 0.5)";
+			});
 			tdByte.addEventListener("blur", () => {
-				window.driver.updateMemoryByte(tdAddress.textContent, i, tdByte.textContent)
+				if (isChanged) {
+					window.driver.updateMemoryByte(tdAddress.textContent, i, tdByte.textContent);
+					isChanged = false;
+					tdByte.style.backgroundColor = "unset";
+				}
 			});
 		}
 	} else {
