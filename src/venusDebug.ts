@@ -543,7 +543,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 		let reply: string | null = null;
 		let regId: number | null = null;
 
-		if (args.context === 'hover') {	
+		if (args.context === 'hover' || args.context === 'watch') {	
 			if (args.expression.startsWith('f')) { // float registers
 				if (!isNaN(parseInt(args.expression.replace("f", "")))) {
 					let formatFunction = this.getFloatFormatFunction();
