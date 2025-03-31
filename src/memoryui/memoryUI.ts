@@ -160,6 +160,11 @@ export class MemoryUI {
 						this._uiState.displayBytesPerRow = bytesPerRow;
 						this.update();
 						return;
+					case 'updateMemoryByte':
+						const {addrvalue, byteIdx, newValue} = message;
+						simulator.driver.updateMemoryLocation(addrvalue, byteIdx, newValue);
+						this.update();
+						return;
 				}
 			},
 			null,

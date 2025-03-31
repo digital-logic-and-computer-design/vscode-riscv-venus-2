@@ -35,6 +35,7 @@ window.driver = {
 	moveMemoryDown: () => vscode.postMessage({command: 'moveMemoryDown'}),
 	updateRegMemDisplay: (displayType) => vscode.postMessage({command: 'updateDisplayType', displayType}),
 	updateBytesPerRowDisplay: (bytesPerRow) => vscode.postMessage({command: 'updateBytesPerRow', bytesPerRow}),
+	updateMemoryByte: (addrvalue, i, newValue) => vscode.postMessage({command: 'updateMemoryByte', addrvalue, byteIdx: i, newValue}),
 };
 
 
@@ -97,6 +98,10 @@ function renderMemoryRow(rowIdx, rowAddr, bytes) {
 			const byte = bytes[i];
 			const tdByte = row.childNodes[i + 1];
 			tdByte.textContent = byte;
+			tdByte.contentEditable = "true";
+			tdByte.addEventListener("blur", () => {
+				window.driver.updateMemoryByte(tdAddress.textContent, i, tdByte.textContent)
+			});
 		}
 	} else {
 		tdAddress.textContent = "----------";
