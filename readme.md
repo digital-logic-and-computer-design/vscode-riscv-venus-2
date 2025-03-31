@@ -7,6 +7,15 @@ with the standard debugging capabilities of VS Code.
 
 To use it as educational tool, further views are added as described below.
 
+## Improvements
+
+This extension is modified from `hm.riscv-venus` and added some feature for our course `CS110` in ShanghaiTech.
+
+- **Dump to Hex**: added `dumpHex` options while debugging, which allows you to have a dump of translated assembly code.
+- **Calling Convention Check**: goto settings page and enable CC Check, then the console will output CC Violation Warnings.
+- **Step Back & Reverse Continue**: allows you to step backward and reverse continue until the last breakpoint.
+- **Modifiable Memory Tab**: allows you to change memory content while running.
+
 ## Installation
 
 You can easily install the extension via the marketplace by searching for
@@ -16,7 +25,7 @@ You can easily install the extension via the marketplace by searching for
 
 Alternatively, you can install it via VS Code Quick Open (`CTRL+P`):
 
-    ext install hm.riscv-venus
+    ext install ZAMBAR.riscv-venus-cs110
 
 ## Getting Started
 
@@ -57,6 +66,7 @@ There is also Support for the VSCode-Inherent [launch.json](https://go.microsoft
             "program": "${file}",
             "stopOnEntry": true,
             "stopAtBreakpoints": true,
+            "dumpHex": false,
             "openViews": [
                 "Robot",
                 "LED Matrix",
@@ -83,6 +93,8 @@ You can view the memory contents by opening the memory view with `CTRL+P` and
 You can select which segment to view and scroll through the memory words (as in
 the online Venus version).
 
+Now you can also click the memory you want to modify and enter anything you want!
+
 ### Accessing registers
 
 You can change the registers by clicking on their value, update the value and
@@ -94,6 +106,8 @@ To change to format of the registers, click on "Venus Options" or press `CTRL+P`
 and enter "Venus: Set Variable Format".
 
 ![Register Format](docs/registerformat.gif "Register Format")
+
+Also, you can use "Watch" tab and enter your register to watch.
 
 ## LED Matrix
 
