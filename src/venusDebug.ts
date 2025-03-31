@@ -192,7 +192,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 		response.body.supportsEvaluateForHovers = true;
 
 		// make VS Code to show a 'step back' button
-		response.body.supportsStepBack = false;
+		response.body.supportsStepBack = true;
 
 		// make VS Code to support data breakpoints
 		response.body.supportsDataBreakpoints = true;
@@ -509,8 +509,9 @@ export class VenusDebugSession extends LoggingDebugSession {
 		Also unclear if we actually need this feature.
 	*/
 	protected reverseContinueRequest(response: DebugProtocol.ReverseContinueResponse, args: DebugProtocol.ReverseContinueArguments) : void {
-		console.warn("ReverseContinue is not supported yet (=> Continue)");
-		this._runtime.run();
+		console.warn("ReverseContinue is not supported yet (=> StepBack)");
+		// this._runtime.step(true);
+		this._runtime.run(true);
 		this.sendResponse(response);
  	}
 
@@ -529,6 +530,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 		Also unclear if we actually need this feature.
 	*/
 	protected stepBackRequest(response: DebugProtocol.StepBackResponse, args: DebugProtocol.StepBackArguments): void {
+		console.debug("Step back request.")
 		this._runtime.step(true);
 		this.sendResponse(response);
 	}

@@ -58,6 +58,7 @@ enum EscapeCondidtion {
 	continue,
 	stepOver,
 	stepOut,
+	reverse
 }
 
 /**
@@ -395,6 +396,7 @@ export class VenusRuntime extends EventEmitter {
 	public step(reverse = false) {
 		if (reverse) {
 			simulator.driver.undo();
+			this.updateStack();
 		} else {
 			simulator.driver.step();
 			this.updateStack();
@@ -422,8 +424,12 @@ export class VenusRuntime extends EventEmitter {
 	}
 
 	/** Run until end or breakpoint */
-	public run() {
-        this.initiateRun(EscapeCondidtion.continue);
+	public run(reverse?: boolean) {
+		if (reverse) {
+			this.initiateRun(EscapeCondidtion.reverse);
+		} else {
+      	  	this.initiateRun(EscapeCondidtion.continue);
+		}
     }
 
 	/**
@@ -453,6 +459,10 @@ export class VenusRuntime extends EventEmitter {
 					case EscapeCondidtion.continue:
 						this.runStep(); // walk past breakpoint
                 		simulator.driver.timer = setTimeout(this.runStart.bind(this), VenusRuntime._timeoutTime, EscapeCondidtion.continue);
+						break;
+					case EscapeCondidtion.reverse:
+						this.runUndo(); // walk past breakpoint
+						simulator.driver.timer = setTimeout(this.runStart.bind(this), VenusRuntime._timeoutTime, EscapeCondidtion.reverse);
 						break;
 					case EscapeCondidtion.stepOver:
 						let desiredStackDepth = this._functionStack.length; // Need to set desired stack depth before stepping. Stack size can change when stepping
@@ -489,6 +499,13 @@ export class VenusRuntime extends EventEmitter {
 							return;
 						}
 						break;
+					case EscapeCondidtion.reverse:
+						if (this.getPC() == 0 || (simulator.driver.sim.atBreakpoint() && this._stopAtBreakpoint)) {
+							simulator.driver.exitcodecheck();
+							this.runEnd();
+							return;
+						}
+						break;
 					case EscapeCondidtion.stepOver:
 						if (simulator.driver.isFinished() || (this._functionStack.length <= wantedStackDepth!)) {
 							simulator.driver.exitcodecheck();
@@ -506,7 +523,11 @@ export class VenusRuntime extends EventEmitter {
                 }
 
                 simulator.driver.handleNotExitOver();
-                this.runStep();
+				if (escapeCondition == EscapeCondidtion.reverse) {
+					this.runUndo();
+				} else {
+                	this.runStep();
+				}
                 cycles++;
             }
 
@@ -536,6 +557,11 @@ export class VenusRuntime extends EventEmitter {
 	/** A wrapper for the simulator step function. Everything that should be updated when stepping is additionally called here. */
 	private runStep() {
 		simulator.driver.sim.step();
+		this.updateStack();
+	}
+
+	private runUndo() {
+		simulator.driver.undo();
 		this.updateStack();
 	}
 
