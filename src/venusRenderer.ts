@@ -51,7 +51,7 @@ export class VenusRenderer {
 	printWarning(warning: String) {
 		console.warn(warning);
 		venusTerminal.show();
-		venusTerminal.appendLine(warning.toString());
+		venusTerminal.appendText(`\x1b[33m${warning.toString()}\x1b[0m`);
 		vscode.debug.activeDebugConsole.appendLine(warning.toString());
 
 	}
@@ -59,7 +59,7 @@ export class VenusRenderer {
 	printError(e: any) {
 		console.error(e.toString());
 		venusTerminal.show();
-		venusTerminal.appendLine(e.toString());
+		venusTerminal.appendText(`\x1b[31m${e.toString()}\x1b[0m`);
 		vscode.debug.activeDebugConsole.appendLine(e.toString());
 	}
 

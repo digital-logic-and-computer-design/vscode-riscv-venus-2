@@ -234,8 +234,8 @@ export class VenusDebugSession extends LoggingDebugSession {
 	protected async launchRequest(response: DebugProtocol.LaunchResponse, args: LaunchRequestArguments) {
 
 		venusTerminal.appendText('\n');
-		venusTerminal.appendText(`-------------------------------------------------------------------------------------------\n`);
-		venusTerminal.appendText(`Starting program ${args.program}\n`);
+		venusTerminal.appendText(`\x1b[7m-------------------------------------------------------------------------------------------\x1b[0m\n`);
+		venusTerminal.appendText(`\x1b[34mStarting program \x1b[1m${args.program}\x1b[0m\n`);
 		venusTerminal.appendText('\n');
 
 		// make sure to 'Stop' the buffered logging if 'trace' is not set
@@ -274,7 +274,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 				content,
 				{ flag: 'w' }
 			);
-			venusTerminal.appendText(`Dumped code to ${filePath}\n`);
+			venusTerminal.appendText(`\x1b[34mDumped code to ${filePath}\x1b[0m\n`);
 		}
 
 		// start the program in the runtime
@@ -690,8 +690,8 @@ export class VenusDebugSession extends LoggingDebugSession {
 		AssemblyView.getInstance().close();		
 		
 		venusTerminal.appendText('\n');
-		venusTerminal.appendText(`Stop program execution!\n`);
-		venusTerminal.appendText(`-------------------------------------------------------------------------------------------\n`);		
+		venusTerminal.appendText(`\x1b[34mStop program execution!\x1b[0m\n`);
+		venusTerminal.appendText(`\x1b[7m-------------------------------------------------------------------------------------------\x1b[0m\n`);		
 		venusTerminal.appendText('\n');		
 		
 		this.sendResponse(response);

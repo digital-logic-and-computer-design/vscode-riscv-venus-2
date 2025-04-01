@@ -151,7 +151,8 @@ export class venusTerminal {
 		if (venusTerminal.terminal == null) {
 			venusTerminal.terminal = vscode.window.createTerminal({ name: `Venus Terminal`, pty: venusTerminal.pty });
 		}
-		venusTerminal.terminal?.show();
+		// venusTerminal.terminal?.show();
+		// Do not show while opening the terminal
 	}
 
 	/**
