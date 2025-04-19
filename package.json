@@ -1,7 +1,7 @@
 {
 	"name": "riscv-venus-cs110",
 	"displayName": "RISC-V Venus Simulator for CS110",
-	"version": "1.9.4",
+	"version": "1.9.5",
 	"publisher": "ZAMBAR",
 	"description": "RISC-V Venus Simulator embedded in VS Code, modified from https://github.com/hm-riscv/vscode-riscv-venus.",
 	"author": {

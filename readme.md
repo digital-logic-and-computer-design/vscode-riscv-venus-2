@@ -15,6 +15,7 @@ This extension is modified from `hm.riscv-venus` and added some feature for our 
 - **Calling Convention Check**: goto settings page and enable CC Check, then the console will output CC Violation Warnings.
 - **Step Back & Reverse Continue**: allows you to step backward and reverse continue until the last breakpoint.
 - **Modifiable Memory Tab**: allows you to change memory content while running.
+- **FIX: Problem running `.s` file on Windows**: fixed wrong recognition of drive/folder, now it can works on Windows.
 
 ## Installation
 
