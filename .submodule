@@ -1,0 +1,3 @@
+[submodule "src/runtime/venus"]
+    path = src/runtime/venus
+    url = https://github.com/HeZeBang/venus.git
