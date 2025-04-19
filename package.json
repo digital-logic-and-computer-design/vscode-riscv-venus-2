@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"@vscode/debugadapter": "1.63.0",
+		"@vscode/debugprotocol": "^1.68.0",
 		"await-notify": "1.0.1",
 		"bufferutil": "^4.0.3",
 		"js-sorted-set": "^0.7.0",

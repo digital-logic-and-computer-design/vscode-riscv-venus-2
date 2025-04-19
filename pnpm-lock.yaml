@@ -11,6 +11,9 @@ importers:
       '@vscode/debugadapter':
         specifier: 1.63.0
         version: 1.63.0
+      '@vscode/debugprotocol':
+        specifier: ^1.68.0
+        version: 1.68.0
       await-notify:
         specifier: 1.0.1
         version: 1.0.1
@@ -317,6 +320,9 @@ packages:
 
   '@vscode/debugprotocol@1.63.0':
     resolution: {integrity: sha512-7gewwv69pA7gcJUhtJsru5YN7E1AwwnlBrF5mJY4R/NGInOUqOYOWHlqQwG+4AXn0nXWbcn26MHgaGI9Q26SqA==}
+
+  '@vscode/debugprotocol@1.68.0':
+    resolution: {integrity: sha512-2J27dysaXmvnfuhFGhfeuxfHRXunqNPxtBoR3koiTOA9rdxWNDTa1zIFLCFMSHJ9MPTPKFcBeblsyaCJCIlQxg==}
 
   '@vscode/test-electron@1.6.2':
     resolution: {integrity: sha512-W01ajJEMx6223Y7J5yaajGjVs1QfW3YGkkOJHVKfAMEqNB1ZHN9wCcViehv5ZwVSSJnjhu6lYEYgwBdHtCxqhQ==}
@@ -3108,6 +3114,8 @@ snapshots:
       '@vscode/debugprotocol': 1.63.0
 
   '@vscode/debugprotocol@1.63.0': {}
+
+  '@vscode/debugprotocol@1.68.0': {}
 
   '@vscode/test-electron@1.6.2':
     dependencies:
