@@ -17,6 +17,7 @@ export class VenusMenuProvider implements vscode.TreeDataProvider<VenusMenuItem>
 				items.push(new VenusMenuItem("Memory", "Memory", 0, {title: 'Memory', command: 'riscv-venus.openMemory'} as vscode.Command))
 				items.push(new VenusMenuItem("Seven Segment Board", "Seven Segment Board", 0, {title: 'Seven Segment Board', command: 'riscv-venus.openSevenSegBoardUI'} as vscode.Command))
 				items.push(new VenusMenuItem("Robot UI", "Robot UI", 0, {title: 'Robot UI', command: 'riscv-venus.openRobotUI'} as vscode.Command))
+				items.push(new VenusMenuItem("Led and Key Board", "Led and Key Board", 0, {title: 'Led and Key Board', command: 'riscv-venus.openLedAndKeyBoardUI'} as vscode.Command))
 				return Promise.resolve(items)
 			}
 			return Promise.resolve([]);

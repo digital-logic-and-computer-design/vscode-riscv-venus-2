@@ -14,6 +14,7 @@ import fs from 'fs'
 import { VenusLedMatrixUI, UIState, LedMatrix } from './ledmatrix/venusLedMatrixUI';
 import { VenusRobotUI } from './robot/venusRobotUI';
 import { VenusSevenSegBoardUI } from './sevensegboard/venusSevenSegBoardUI';
+import { VenusLedAndKeyBoardUI } from './ledandkeyboard/venusLedAndKeyBoardUI';
 import { MemoryUI } from './memoryui/memoryUI';
 import { venusTerminal } from './terminal/venusTerminal';
 import { VenusMenuProvider } from './menu/venusMenu';
@@ -30,6 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 	VenusLedMatrixUI.createNewInstance(context.extensionUri, new UIState(new LedMatrix(10, 10)));
 	VenusRobotUI.createNewInstance(context.extensionUri);
 	VenusSevenSegBoardUI.createNewInstance(context.extensionUri);
+	VenusLedAndKeyBoardUI.createNewInstance(context.extensionUri);
 	MemoryUI.createNewInstance(context.extensionUri);
 	venusTerminal.create();
 
@@ -58,6 +60,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(vscode.commands.registerCommand('riscv-venus.openSevenSegBoardUI', async config => {
 		VenusSevenSegBoardUI.getInstance().show();
+	}));
+
+	context.subscriptions.push(vscode.commands.registerCommand('riscv-venus.openLedAndKeyBoardUI', async config => {
+		VenusLedAndKeyBoardUI.getInstance().show();
 	}));
 
 	context.subscriptions.push(vscode.commands.registerCommand('riscv-venus.openAssembly', async config => {

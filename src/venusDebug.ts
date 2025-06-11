@@ -20,6 +20,7 @@ import { VenusRenderer } from './venusRenderer';
 import { VenusLedMatrixUI, Color, LedMatrix, UIState } from './ledmatrix/venusLedMatrixUI';
 import { VenusRobotUI } from './robot/venusRobotUI';
 import { VenusSevenSegBoardUI } from './sevensegboard/venusSevenSegBoardUI';
+import { VenusLedAndKeyBoardUI } from './ledandkeyboard/venusLedAndKeyBoardUI';
 import { MemoryUI } from './memoryui/memoryUI';
 import { venusTerminal } from './terminal/venusTerminal';
 import { JsonObjectExpression } from 'typescript';
@@ -721,6 +722,8 @@ export class VenusDebugSession extends LoggingDebugSession {
 			{VenusRobotUI.getInstance().show(ViewColumn.Two);}
 		else if (view === "Seven Segment Board")
 			{VenusSevenSegBoardUI.getInstance().show(ViewColumn.Two);}
+		else if (view === "Led and Key Board")
+			{VenusLedAndKeyBoardUI.getInstance().show(ViewColumn.Two);}
 		else if (view === "Assembly")
 			{AssemblyView.getInstance().show(ViewColumn.Two);}
 		else if (view === "Memory")
@@ -864,8 +867,10 @@ export class VenusDebugSession extends LoggingDebugSession {
 						"a1": charCode | 0x00000000,};
 			}
 			result["handlerFound"] = true
-		}
-		else {
+		} else if (jsonObj.id >= 0x150 && jsonObj.id <= 0x153) {
+			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
+			result["handlerFound"] = true
+		} else {
 			result["handlerFound"] = false
 		}
 

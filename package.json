@@ -322,7 +322,8 @@
 										"Robot",
 										"LED Matrix",
 										"Seven Segment Board",
-										"Memory"
+										"Memory", 
+										"Led and Key Board"
 									]
 								},
 								"uniqueItems": true
@@ -350,7 +351,8 @@
 							"Robot",
 							"LED Matrix",
 							"Seven Segment Board",
-							"Memory"
+							"Memory",
+							"Led and Key Board"
 						],
 						"ledMatrixSize": {
 							"x": 10,
@@ -410,7 +412,8 @@
 								"Robot",
 								"LED Matrix",
 								"Seven Segment Board",
-								"Memory"
+								"Memory", 
+								"Led and Key Board"
 							],
 							"ledMatrixSize": {
 								"x": 10,
