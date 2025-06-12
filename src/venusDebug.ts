@@ -867,7 +867,8 @@ export class VenusDebugSession extends LoggingDebugSession {
 						"a1": charCode | 0x00000000,};
 			}
 			result["handlerFound"] = true
-		} else if (jsonObj.id >= 0x150 && jsonObj.id <= 0x153) {
+		} else if (jsonObj.id >= 0x150 && jsonObj.id <= 0x156) {
+			// 150 = set LED, 151 = get LED, 152 = set disp03, 153 = get disp03, 154 = set disp47, 155 = get disp47, 156 = get keys/buttons
 			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
 			result["handlerFound"] = true
 		} else {

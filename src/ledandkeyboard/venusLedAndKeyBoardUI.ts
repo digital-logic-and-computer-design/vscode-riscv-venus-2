@@ -1,8 +1,8 @@
-import * as vscode from 'vscode'
-import fs from 'fs'
+import * as vscode from 'vscode';
+import fs from 'fs';
 
 /**
- * Manages cat coding webview panels
+ * Manages LED & Key webview panels
  */
 export class VenusLedAndKeyBoardUI {
 	/**
@@ -19,10 +19,10 @@ export class VenusLedAndKeyBoardUI {
 
 	public static getInstance(): VenusLedAndKeyBoardUI {
 		if (VenusLedAndKeyBoardUI.instance) {
-			return VenusLedAndKeyBoardUI.instance
+			return VenusLedAndKeyBoardUI.instance;
 		} else {
-			VenusLedAndKeyBoardUI.instance = new VenusLedAndKeyBoardUI(undefined, VenusLedAndKeyBoardUI._uiState)
-			return VenusLedAndKeyBoardUI.instance
+			VenusLedAndKeyBoardUI.instance = new VenusLedAndKeyBoardUI(undefined, VenusLedAndKeyBoardUI._uiState);
+			return VenusLedAndKeyBoardUI.instance;
 		}
 	}
 
@@ -31,8 +31,8 @@ export class VenusLedAndKeyBoardUI {
 		if (VenusLedAndKeyBoardUI.instance) {
 			VenusLedAndKeyBoardUI.instance.dispose();
 		}
-		VenusLedAndKeyBoardUI.instance = new VenusLedAndKeyBoardUI(extensionUri, uiState)
-		return VenusLedAndKeyBoardUI.instance
+		VenusLedAndKeyBoardUI.instance = new VenusLedAndKeyBoardUI(extensionUri, uiState);
+		return VenusLedAndKeyBoardUI.instance;
 	}
 
 	private constructor(extensionUri?: vscode.Uri, uiState?: UIState) {
@@ -61,7 +61,7 @@ export class VenusLedAndKeyBoardUI {
 	}
 
 	public show(column? : vscode.ViewColumn) {
-		VenusLedAndKeyBoardUI._uiState.reset()
+		VenusLedAndKeyBoardUI._uiState.reset();
 		// If we already have a panel, show it.
 		if (VenusLedAndKeyBoardUI.instance?._panel) {
 			VenusLedAndKeyBoardUI.instance._panel.reveal();
@@ -115,8 +115,12 @@ export class VenusLedAndKeyBoardUI {
 						vscode.window.showErrorMessage(message.text);
 						return;
 					case 'button_pressed':
-						VenusLedAndKeyBoardUI._uiState.setButtonPressed(message.which)
-						this._update()
+						VenusLedAndKeyBoardUI._uiState.setButtonPressed(message.which);
+						this._update();
+						return;
+					case 'button_released':
+						VenusLedAndKeyBoardUI._uiState.setButtonReleased(message.which);
+						this._update();
 						return;
 				}
 			},
@@ -126,7 +130,7 @@ export class VenusLedAndKeyBoardUI {
 	}
 
 	private _update() {
-		this._panel.webview.postMessage({command: "loadState", uiState: VenusLedAndKeyBoardUI._uiState})
+		this._panel.webview.postMessage({command: "loadState", uiState: VenusLedAndKeyBoardUI._uiState});
 	}
 
 	private _getHtmlForWebview(webview: vscode.Webview, ) {
@@ -150,67 +154,50 @@ export class VenusLedAndKeyBoardUI {
 	}
 
 	public ecall(id: number, params: any) : object {
-		var result = {}
-		if (id == 0x120) {
-			VenusLedAndKeyBoardUI._uiState.setSegments(params.a1, params.a2)
-		} else if (id == 0x121) {
-			VenusLedAndKeyBoardUI._uiState.setLed(params.a1)
-		} else if (id == 0x122) {
-			var pressed : number = 0
-			if (VenusLedAndKeyBoardUI._uiState.getAndResetButtonPressed(0))
-				pressed |= 1
-			if (VenusLedAndKeyBoardUI._uiState.getAndResetButtonPressed(1))
-				pressed |= 2
-			result = { "a0": pressed }
+		// 150 = set LED, 151 = get LED, 152 = set disp03, 153 = get disp03, 154 = set disp47, 155 = get disp47, 156 = get keys/buttons
+		var result = {};
+		if (id == 0x150) {
+			VenusLedAndKeyBoardUI._uiState.led_value = params.a1;
+		} else if (id == 0x151) {
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.led_value };
+		} else if (id == 0x152) {
+			VenusLedAndKeyBoardUI._uiState.disp03_value = params.a1;
+		} else if (id == 0x153) {
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp03_value };
+		} else if (id == 0x154) {
+			VenusLedAndKeyBoardUI._uiState.disp47_value = params.a1;
+		} else if (id == 0x155) {
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp47_value };
+		} else if (id == 0x156) {
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.button_value };
 		}
-
-		this._update()
-		return result
+		this._update();
+		return result;
 	}
 }
 
 export class UIState {
-	private led : boolean[]
-	private sevenSegment0 : boolean[]
-	private sevenSegment1 : boolean[]
-	private buttonPressed : boolean[]
+	public led_value : number;
+	public button_value : number;
+	public disp03_value : number;
+	public disp47_value : number;
 
 	constructor(){
 		this.reset();
 	}
 
-	setLed(values: number) {
-		this.led[0] = (values & 0x1) == 0x1
-		this.led[1] = (values & 0x2) == 0x2
-	}
-
-	setSegments(values: number, mask: number) {
-		for (let i = 0; i < 8; i++) {
-			let seg0 = (values >> i) & 0x1
-			let seg0_mask = (mask >> i) & 0x1
-			let seg1 = (values >> (i+8)) & 0x1
-			let seg1_mask = (mask >> (i+8)) & 0x1
-
-			this.sevenSegment0[i] = ((seg0 & seg0_mask) == 1)
-			this.sevenSegment1[i] = ((seg1 & seg1_mask) == 1)
-		}
+	setButtonReleased(value: number) {
+		this.button_value &= ~(1 << value);
 	}
 
 	setButtonPressed(value: number) {
-		this.buttonPressed[value] = true;
-	}
-
-	getAndResetButtonPressed(value: number) : boolean {
-		var pressed : boolean = this.buttonPressed[value]
-		this.buttonPressed[value] = false
-		return pressed
+		this.button_value |= (1 << value);
 	}
 
 	reset() {
-		this.led = Array<boolean>(2).fill(false)
-		this.sevenSegment0 = Array<boolean>(8).fill(false)
-		this.sevenSegment1 = Array<boolean>(8).fill(false)
-		this.buttonPressed = Array<boolean>(2).fill(false)
+		this.led_value = 0;
+		this.disp03_value = 0;
+		this.disp47_value = 0;
+		this.button_value = 0;
 	}
-
 }

@@ -1,83 +1,98 @@
 class LedAndKeyBoard {
+
 	/**
 	 *
 	 * @param {element} svg The svg
 	 */
 	constructor() {
-		this.led_0_on = document.getElementById("led_0_on");
-		this.led_0_off = document.getElementById("led_0_off");
-		this.led_1_on = document.getElementById("led_1_on");
-		this.led_1_off = document.getElementById("led_1_off");
+	    this.LED_ON_COLOR = "#FF0000";
+	    this.LED_ON_OPACITY = "1";
+	    this.LED_OFF_COLOR = "#FF0000";
+	    this.LED_OFF_OPACITY = "0.35";
+	    this.BUTTON_ON_COLOR = "#DDDDDD";
+	    this.BUTTON_OFF_COLOR = "#735348";
+	    this.BUTTON_ON_OPACITY = "1";
+	    this.BUTTON_OFF_OPACITY = "1";
 
-		this.button_0 = document.getElementById('button_0');
-		this.button_1 = document.getElementById('button_1');
-		this.button_0.setAttribute('onclick',"vscode.postMessage({command: 'button_pressed', which: 0})");
-		this.button_1.setAttribute('onclick',"vscode.postMessage({command: 'button_pressed', which: 1})");
+		// Get UI Elements 
+		this.leds = Array(8);
+		for(let i = 0; i < 8; i++) {
+			this.leds[i] = document.getElementById("led" + i);
+		}
 
-		this.segment = Array(2);
-		this.segment[0] = Array(8);
-		this.segment[0][0] = document.getElementById('sevenseg_0_a');
-		this.segment[0][1] = document.getElementById('sevenseg_0_b');
-		this.segment[0][2] = document.getElementById('sevenseg_0_c');
-		this.segment[0][3] = document.getElementById('sevenseg_0_d');
-		this.segment[0][4] = document.getElementById('sevenseg_0_e');
-		this.segment[0][5] = document.getElementById('sevenseg_0_f');
-		this.segment[0][6] = document.getElementById('sevenseg_0_g');
-		this.segment[0][7] = document.getElementById('sevenseg_0_dp');
-		this.segment[1] = Array(8);
-		this.segment[1][0] = document.getElementById('sevenseg_1_a');
-		this.segment[1][1] = document.getElementById('sevenseg_1_b');
-		this.segment[1][2] = document.getElementById('sevenseg_1_c');
-		this.segment[1][3] = document.getElementById('sevenseg_1_d');
-		this.segment[1][4] = document.getElementById('sevenseg_1_e');
-		this.segment[1][5] = document.getElementById('sevenseg_1_f');
-		this.segment[1][6] = document.getElementById('sevenseg_1_g');
-		this.segment[1][7] = document.getElementById('sevenseg_1_dp');
+		this.segments = Array(64);
+		for(let disp=0;disp < 8; disp++) {
+			for(let seg=0;seg < 8; seg++) {
+				this.segments[disp * 8 + seg] = document.getElementById("disp" + disp + seg);
+			}
+		}
+
+		this.buttons = Array(8);
+		for(let i = 0; i < 8; i++) {
+			this.buttons[i] = document.getElementById("button" + i);
+			this.buttons[i].setAttribute("onmousedown", "vscode.postMessage({command: 'button_pressed', which: " + i + "})");
+			// Set an event handler that will trigger when the mouse is released or moves away
+			this.buttons[i].setAttribute("onmouseup", "vscode.postMessage({command: 'button_released', which: " + i + "})");
+			this.buttons[i].setAttribute("onmouseleave", "vscode.postMessage({command: 'button_released', which: " + i + "})");
+		}
 	}
 
 	drawFromState(uiState) {
-		this.button_0.setAttribute("style", uiState.buttonPressed[0] ? "fill:#909090" : "fill:#484848")
-		this.button_1.setAttribute("style", uiState.buttonPressed[1] ? "fill:#909090" : "fill:#484848")
+		// Convert UIState into object 
+		for(let i = 0; i < 8; i++) {
+			let fill = this.LED_OFF_COLOR;
+			let opacity = this.LED_OFF_OPACITY;
+			if(uiState.led_value & (1 << i)) {
+				fill = this.LED_ON_COLOR;
+				opacity = this.LED_ON_OPACITY;
+			} 
+			this.leds[i].setAttribute("fill", fill);
+			this.leds[i].setAttribute("fill-opacity", opacity);
+		}
 
-		this.led_0_on.setAttribute("style", uiState.led[0] ? "" : "display:none");
-		this.led_0_off.setAttribute("style", uiState.led[0] ? "display:none" : "");
-		this.led_1_on.setAttribute("style", uiState.led[1] ? "" : "display:none");
-		this.led_1_off.setAttribute("style", uiState.led[1] ? "display:none" : "");
+		for(let disp=0;disp < 8; disp++) {
+			for(let seg=0;seg < 8; seg++) {
+				let fill = this.LED_OFF_COLOR;
+				let opacity = this.LED_OFF_OPACITY;
+				let bit = 0;
+				if(disp<4) {
+					bit = uiState.disp03_value & (1 << (disp * 8 + seg));
+				} else {
+					bit = uiState.disp47_value & (1 << ((disp - 4) * 8 + seg));
+				}
+				if(bit) {
+					fill = this.LED_ON_COLOR;
+					opacity = this.LED_ON_OPACITY;
+				}
+				this.segments[disp * 8 + seg].setAttribute("fill", fill);
+				this.segments[disp * 8 + seg].setAttribute("fill-opacity", opacity);
+			}
+		}
 
-		this.segment[0][0].setAttribute("style", uiState.sevenSegment0[0] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][1].setAttribute("style", uiState.sevenSegment0[1] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][2].setAttribute("style", uiState.sevenSegment0[2] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][3].setAttribute("style", uiState.sevenSegment0[3] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][4].setAttribute("style", uiState.sevenSegment0[4] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][5].setAttribute("style", uiState.sevenSegment0[5] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][6].setAttribute("style", uiState.sevenSegment0[6] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[0][7].setAttribute("style", uiState.sevenSegment0[7] ? "fill:#58d45a" : "fill:#e2f6e2")
-
-		this.segment[1][0].setAttribute("style", uiState.sevenSegment1[0] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][1].setAttribute("style", uiState.sevenSegment1[1] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][2].setAttribute("style", uiState.sevenSegment1[2] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][3].setAttribute("style", uiState.sevenSegment1[3] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][4].setAttribute("style", uiState.sevenSegment1[4] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][5].setAttribute("style", uiState.sevenSegment1[5] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][6].setAttribute("style", uiState.sevenSegment1[6] ? "fill:#58d45a" : "fill:#e2f6e2")
-		this.segment[1][7].setAttribute("style", uiState.sevenSegment1[7] ? "fill:#58d45a" : "fill:#e2f6e2")
+		for(let i = 0; i < 8; i++) {
+			let fill = this.BUTTON_OFF_COLOR;
+			let opacity = this.BUTTON_OFF_OPACITY;
+			if(uiState.button_value & (1 << i)) {
+				fill = this.BUTTON_ON_COLOR;
+				opacity = this.BUTTON_ON_OPACITY;
+			}
+			this.buttons[i].setAttribute("fill", fill);
+			this.buttons[i].setAttribute("fill-opacity", opacity);
+		}
 	}
 }
 
 const vscode = acquireVsCodeApi();
-var sevensegboard = new LedAndKeyBoard();
+var board = new LedAndKeyBoard();
 
 // Handle the message inside the webview
 window.addEventListener('message', event => {
-
 	const message = event.data; // The JSON data our extension sent
 
 	switch (message.command) {
 		case 'loadState':
 			let state = message.uiState;
-			sevensegboard.drawFromState(state);
-			break;
-		case 'setLedRow':
+			board.drawFromState(state);
 			break;
 	}
 });
