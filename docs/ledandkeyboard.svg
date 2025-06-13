@@ -1,0 +1,5275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   enable-background="new 0 0 194.4 151.2"
+   xml:space="preserve"
+   id="Ebene_1"
+   width="2.7in"
+   gorn="0"
+   x="0px"
+   y="0px"
+   version="1.1"
+   height="2.1in"
+   viewBox="0 0 194.4 151.2"
+   sodipodi:docname="TM1638_Led_and_Key_labelled.svg"
+   inkscape:version="1.4-beta (62f545ba, 2024-04-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs669" /><sodipodi:namedview
+   id="namedview669"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:document-units="in"
+   inkscape:zoom="2.9592181"
+   inkscape:cx="121.99168"
+   inkscape:cy="85.326594"
+   inkscape:window-width="2000"
+   inkscape:window-height="1020"
+   inkscape:window-x="105"
+   inkscape:window-y="139"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="g216" />
+    <desc
+   id="desc1">
+        <referenceFile>TM1638_Led_and_Key.svg</referenceFile>
+    </desc>
+    <path
+   fill="#147390"
+   d="M180.065,0.197H14.336C6.418,0.197,0,6.638,0,14.582v122.436c0,7.943,6.418,14.385,14.336,14.385h165.729c7.916,0,14.335-6.441,14.335-14.385V14.583C194.4,6.638,187.981,0.197,180.065,0.197z M182.69,118.148l-0.337-0.007l-0.017,0.007l-0.605-0.016l-0.551-2.144l-0.551,2.146l-0.226-0.012l-0.005,0.012l-0.824,0.013l-1.49-5.806h-1.219v5.793h-0.956v-5.793h-1.473v-0.957h1.473h0.956h1.42l0.537-0.013l1.277,4.978l0.494-1.923l0.57-0.24l0.602,0.239l0.446,1.738l1.231-4.792l0.926,0.237L182.69,118.148z"
+   id="path1" />
+    <circle
+   cy="12.836"
+   fill="#DADADA"
+   cx="14.336"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="2"
+   r="4.252"
+   id="circle1" />
+    <circle
+   cy="12.836"
+   fill="#DADADA"
+   cx="180.465"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="2"
+   r="4.252"
+   id="circle2" />
+    <circle
+   cy="136.815"
+   fill="#DADADA"
+   cx="14.336"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="2"
+   r="4.252"
+   id="circle3" />
+    <circle
+   cy="136.68"
+   fill="#DADADA"
+   cx="180.433"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="2"
+   r="4.252"
+   id="circle4" />
+    <title
+   id="title4">layer 25</title>
+    <g
+   id="g7">
+        <title
+   id="title5">element:A1</title>
+        <g
+   id="g6">
+            <title
+   id="title6">package:FIDUCIA-MOUNT</title>
+        </g>
+    </g>
+    <g
+   id="g9">
+        <title
+   id="title7">element:A2</title>
+        <g
+   id="g8">
+            <title
+   id="title8">package:FIDUCIA-MOUNT</title>
+        </g>
+    </g>
+    <g
+   id="g11">
+        <title
+   id="title9">element:A3</title>
+        <g
+   id="g10">
+            <title
+   id="title10">package:FIDUCIA-MOUNT</title>
+        </g>
+    </g>
+    <g
+   id="g13">
+        <title
+   id="title11">element:C1</title>
+        <g
+   id="g12">
+            <title
+   id="title12">package:0603-CAP</title>
+        </g>
+    </g>
+    <g
+   id="g15">
+        <title
+   id="title13">element:C2</title>
+        <g
+   id="g14">
+            <title
+   id="title14">package:EIA3216</title>
+        </g>
+    </g>
+    <g
+   id="g17">
+        <title
+   id="title15">element:C3</title>
+        <g
+   id="g16">
+            <title
+   id="title16">package:EIA3216</title>
+        </g>
+    </g>
+    <g
+   id="g19">
+        <title
+   id="title17">element:C4</title>
+        <g
+   id="g18">
+            <title
+   id="title18">package:0603-CAP</title>
+        </g>
+    </g>
+    <g
+   id="g21">
+        <title
+   id="title19">element:IC1</title>
+        <g
+   id="g20">
+            <title
+   id="title20">package:SC70-5</title>
+        </g>
+    </g>
+    <g
+   id="g23">
+        <title
+   id="title21">element:IC2</title>
+        <g
+   id="g22">
+            <title
+   id="title22">package:SOT223</title>
+        </g>
+    </g>
+    <g
+   id="g25">
+        <title
+   id="title23">element:IC3</title>
+        <g
+   id="g24">
+            <title
+   id="title24">package:SC70-5</title>
+        </g>
+    </g>
+    <g
+   id="g27">
+        <title
+   id="title25">element:IC4</title>
+        <g
+   id="g26">
+            <title
+   id="title26">package:SC70-5</title>
+        </g>
+    </g>
+    <g
+   id="g29">
+        <title
+   id="title27">element:IC5</title>
+        <g
+   id="g28">
+            <title
+   id="title28">package:SC70-5</title>
+        </g>
+    </g>
+    <g
+   id="g31">
+        <title
+   id="title29">element:IC6</title>
+        <g
+   id="g30">
+            <title
+   id="title30">package:MSOP08</title>
+        </g>
+    </g>
+    <g
+   id="g33">
+        <title
+   id="title31">element:J1</title>
+        <g
+   id="g32">
+            <title
+   id="title32">package:1X08</title>
+        </g>
+    </g>
+    <g
+   id="g35">
+        <title
+   id="title33">element:J2</title>
+        <g
+   id="g34">
+            <title
+   id="title34">package:1X08</title>
+        </g>
+    </g>
+    <g
+   id="g37">
+        <title
+   id="title35">element:J3</title>
+        <g
+   id="g36">
+            <title
+   id="title36">package:1X06</title>
+        </g>
+    </g>
+    <g
+   id="g39">
+        <title
+   id="title37">element:J6</title>
+        <g
+   id="g38">
+            <title
+   id="title38">package:1X08</title>
+        </g>
+    </g>
+    <g
+   id="g41">
+        <title
+   id="title39">element:J7</title>
+        <g
+   id="g40">
+            <title
+   id="title40">package:1X08</title>
+        </g>
+    </g>
+    <g
+   id="g43">
+        <title
+   id="title41">element:JP1</title>
+        <g
+   id="g42">
+            <title
+   id="title42">package:1X10</title>
+        </g>
+    </g>
+    <g
+   id="g45">
+        <title
+   id="title43">element:JP2</title>
+        <g
+   id="g44">
+            <title
+   id="title44">package:1X10</title>
+        </g>
+    </g>
+    <g
+   id="g47">
+        <title
+   id="title45">element:POWER1</title>
+        <g
+   id="g46">
+            <title
+   id="title46">package:1X06</title>
+        </g>
+    </g>
+    <g
+   id="g53">
+        <title
+   id="title47">element:PWR</title>
+        <g
+   id="g51">
+            <title
+   id="title48">text:PWR</title>
+            <g
+   transform="matrix(1 0 0 1 14.3376 122.0942)"
+   id="g50">
+                <g
+   id="g49">
+                    <g
+   id="g48">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text48">DIO</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g52">
+            <title
+   id="title51">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g55">
+        <title
+   id="title53">element:RESET1</title>
+        <g
+   id="g54">
+            <title
+   id="title54">package:TS42</title>
+        </g>
+    </g>
+    <g
+   id="g57">
+        <title
+   id="title55">element:RN1</title>
+        <g
+   id="g56">
+            <title
+   id="title56">package:CAY16</title>
+        </g>
+    </g>
+    <g
+   id="g63">
+        <title
+   id="title57">element:RSSI</title>
+        <g
+   id="g61">
+            <title
+   id="title58">text:RSSI</title>
+            <g
+   transform="matrix(1 0 0 1 14.3376 115.1646)"
+   id="g60">
+                <g
+   id="g59">
+                    <g
+   id="g58">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text58">CLK</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g62">
+            <title
+   id="title61">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g69">
+        <title
+   id="title63">element:RX</title>
+        <g
+   id="g67">
+            <title
+   id="title64">text:RX</title>
+            <g
+   transform="matrix(1 0 0 1 14.3376 108.5024)"
+   id="g66">
+                <g
+   id="g65">
+                    <g
+   id="g64">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text64">STB</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g68">
+            <title
+   id="title67">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g75">
+        <title
+   id="title69">element:TX</title>
+        <g
+   id="g73">
+            <title
+   id="title70">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 14.3376 101.0317)"
+   id="g72">
+                <g
+   id="g71">
+                    <g
+   id="g70">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text70">GND</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g74">
+            <title
+   id="title73">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g77">
+        <title
+   id="title75">element:X1</title>
+        <g
+   id="g76">
+            <title
+   id="title76">package:SDCARD-15TW-8821</title>
+        </g>
+    </g>
+    <g
+   id="g79">
+        <title
+   id="title77">element:XB1</title>
+        <g
+   id="g78">
+            <title
+   id="title78">package:XBEE-PRO</title>
+        </g>
+    </g>
+    <circle
+   cy="91.762"
+   fill="none"
+   cx="8.228"
+   stroke="#9A916C"
+   stroke-width="0.72"
+   r="1.8"
+   id="circle79" />
+    <circle
+   cy="98.963"
+   fill="none"
+   cx="8.228"
+   id="connector5pin"
+   stroke="#9A916C"
+   gorn="0.37"
+   stroke-width="0.72"
+   r="1.8" />
+    <circle
+   cy="106.164"
+   fill="none"
+   cx="8.228"
+   id="connector6pin"
+   stroke="#9A916C"
+   gorn="0.38"
+   stroke-width="0.72"
+   r="1.8" />
+    <circle
+   cy="113.363"
+   fill="none"
+   cx="8.228"
+   id="connector7pin"
+   stroke="#9A916C"
+   gorn="0.39"
+   stroke-width="0.72"
+   r="1.8" />
+    <circle
+   cy="120.563"
+   fill="none"
+   cx="8.228"
+   id="connector8pin"
+   stroke="#9A916C"
+   gorn="0.40"
+   stroke-width="0.72"
+   r="1.8" />
+    <rect
+   fill="#404040"
+   width="7.199"
+   x="4.649"
+   y="88.028"
+   height="36.143"
+   id="rect79" />
+    <rect
+   width="2.783"
+   id="connector0pin"
+   gorn="0.42"
+   x="6.856"
+   y="90.379"
+   height="2.781" />
+    <polygon
+   fill="#2A2A29"
+   points="10.663,89.352 9.639,90.377 9.639,93.161 10.663,94.184 "
+   id="polygon79" />
+    <polygon
+   fill="#474747"
+   points="10.663,94.184 9.635,93.161 6.854,93.161 5.831,94.184 "
+   id="polygon80" />
+    <polygon
+   fill="#595959"
+   points="5.831,94.184 6.854,93.159 6.854,90.377 5.831,89.352 "
+   id="polygon81" />
+    <polygon
+   fill="#373737"
+   points="5.831,89.35 6.856,90.377 9.639,90.377 10.663,89.35 "
+   id="polygon82" />
+    <rect
+   width="2.783"
+   id="connector1pin"
+   gorn="0.47"
+   x="6.856"
+   y="97.579"
+   height="2.781" />
+    <polygon
+   fill="#2A2A29"
+   points="10.663,96.553 9.639,97.577 9.639,100.36 10.663,101.385 "
+   id="polygon83" />
+    <polygon
+   fill="#474747"
+   points="10.663,101.385 9.635,100.36 6.854,100.36 5.831,101.385 "
+   id="polygon84" />
+    <polygon
+   fill="#595959"
+   points="5.831,101.385 6.854,100.36 6.854,97.577 5.831,96.553 "
+   id="polygon85" />
+    <polygon
+   fill="#373737"
+   points="5.831,96.551 6.856,97.577 9.639,97.577 10.663,96.551 "
+   id="polygon86" />
+    <rect
+   width="2.783"
+   id="connector2pin"
+   gorn="0.52"
+   x="6.856"
+   y="104.78"
+   height="2.781" />
+    <polygon
+   fill="#2A2A29"
+   points="10.663,103.754 9.639,104.778 9.639,107.561 10.663,108.586 "
+   id="polygon87" />
+    <polygon
+   fill="#474747"
+   points="10.663,108.586 9.635,107.561 6.854,107.561 5.831,108.586 "
+   id="polygon88" />
+    <polygon
+   fill="#595959"
+   points="5.831,108.584 6.854,107.559 6.854,104.778 5.831,103.754 "
+   id="polygon89" />
+    <polygon
+   fill="#373737"
+   points="5.831,103.75 6.856,104.778 9.639,104.778 10.663,103.75 "
+   id="polygon90" />
+    <rect
+   width="2.783"
+   id="connector3pin"
+   gorn="0.57"
+   x="6.856"
+   y="111.979"
+   height="2.781" />
+    <polygon
+   fill="#2A2A29"
+   points="10.663,110.956 9.639,111.977 9.639,114.761 10.663,115.788 "
+   id="polygon91" />
+    <polygon
+   fill="#474747"
+   points="10.663,115.788 9.635,114.761 6.854,114.761 5.831,115.788 "
+   id="polygon92" />
+    <polygon
+   fill="#595959"
+   points="5.831,115.786 6.854,114.76 6.854,111.977 5.831,110.956 "
+   id="polygon93" />
+    <polygon
+   fill="#373737"
+   points="5.831,110.954 6.856,111.977 9.639,111.977 10.663,110.954 "
+   id="polygon94" />
+    <rect
+   width="2.783"
+   id="connector4pin"
+   gorn="0.62"
+   x="6.856"
+   y="119.179"
+   height="2.78" />
+    <polygon
+   fill="#2A2A29"
+   points="10.663,118.153 9.639,119.177 9.639,121.961 10.663,122.985 "
+   id="polygon95" />
+    <polygon
+   fill="#474747"
+   points="10.663,122.985 9.635,121.961 6.854,121.961 5.831,122.985 "
+   id="polygon96" />
+    <polygon
+   fill="#595959"
+   points="5.831,122.985 6.854,121.959 6.854,119.177 5.831,118.153 "
+   id="polygon97" />
+    <polygon
+   fill="#373737"
+   points="5.831,118.151 6.856,119.177 9.639,119.177 10.663,118.151 "
+   id="polygon98" />
+    <g
+   id="g104">
+        <title
+   id="title98">element:TX</title>
+        <g
+   id="g102">
+            <title
+   id="title99">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 14.3376 93.0464)"
+   id="g101">
+                <g
+   id="g100">
+                    <g
+   id="g99">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text99">VCC</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g103">
+            <title
+   id="title102">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g216">
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g118">
+            <g
+   id="g117">
+                <g
+   id="g116">
+                    <g
+   id="b3f-10xx"
+   gorn="0.68.0.0.0.0">
+                        <g
+   id="g115">
+                            <path
+   fill="#999999"
+   d="M24.4,23.042c0,0.748-0.611,1.358-1.36,1.358H9.091c-0.747,0-1.36-0.61-1.36-1.358V9.09c0.002-0.748,0.613-1.358,1.36-1.358H23.04c0.749,0,1.358,0.61,1.358,1.358L24.4,23.042L24.4,23.042z"
+   id="path104" />
+                            <circle
+   cy="10.16"
+   cx="10.16"
+   r="1.444"
+   id="circle104" />
+                            <circle
+   cy="10.185"
+   cx="22.014"
+   r="1.445"
+   id="circle105" />
+                            <circle
+   cy="22.037"
+   cx="21.99"
+   r="1.443"
+   id="circle106" />
+                            <circle
+   cy="22.011"
+   cx="10.136"
+   r="1.443"
+   id="circle107" />
+                            <circle
+   cy="16.066"
+   fill="#3F3F3F"
+   cx="16.067"
+   r="4.86"
+   id="circle108" />
+                            <linearGradient
+   y2="5333.106"
+   x2="975.1989"
+   id="SVGID_1_"
+   y1="5333.106"
+   x1="961.6891"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop108" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop109" />
+                            </linearGradient>
+                            <circle
+   cy="16.066"
+   fill="url(#SVGID_1_)"
+   cx="16.067"
+   r="4.86"
+   id="circle109" />
+                            <circle
+   cy="16.643"
+   enable-background="new    "
+   cx="16.151"
+   r="4.277"
+   opacity="0.6"
+   id="circle110" />
+                            <circle
+   cy="16.094999"
+   fill="#735348"
+   cx="16.073999"
+   r="4.1680002"
+   id="button7"
+   style="display:inline"
+   inkscape:label="button7" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M9.975,10.085c0.021-0.063,0.08-0.121,0.146-0.136l-0.14-0.907C9.93,9.049,9.875,9.044,9.819,9.062V9.053C9.483,9.158,9.232,9.411,9.103,9.73L9.975,10.085z"
+   opacity="0.5"
+   id="path111" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M21.826,10.11c0.026-0.068,0.082-0.122,0.155-0.136l-0.14-0.91c-0.063,0.012-0.111,0.002-0.167,0.021L21.67,9.079c-0.334,0.104-0.587,0.354-0.716,0.676L21.826,10.11z"
+   opacity="0.5"
+   id="path112" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M21.802,21.96c0.021-0.063,0.071-0.121,0.146-0.136l-0.139-0.909c-0.06,0.012-0.11,0.002-0.167,0.021l-0.002-0.01c-0.334,0.102-0.589,0.354-0.716,0.678L21.802,21.96z"
+   opacity="0.5"
+   id="path113" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M9.95,21.937c0.025-0.067,0.079-0.12,0.155-0.136L9.96,20.892c-0.055,0.013-0.104,0.001-0.159,0.019l-0.009-0.006c-0.336,0.102-0.588,0.354-0.718,0.674L9.95,21.937z"
+   opacity="0.5"
+   id="path114" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M17.563,12.21c-0.323-0.127-0.66-0.217-1.021-0.259c-0.895-0.1-1.753,0.099-2.479,0.505l-0.09,0.237c0.813-0.438,1.77-0.642,2.762-0.53c0.305,0.035,0.604,0.104,0.886,0.192L17.563,12.21z"
+   opacity="0.6"
+   id="path115" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g132">
+            <g
+   id="g131">
+                <g
+   id="g130">
+                    <g
+   id="b3f-10xx_1_"
+   gorn="0.68.1.0.0.0">
+                        <g
+   id="g129">
+                            <path
+   fill="#999999"
+   d="M43.148,23.042c0,0.748-0.611,1.358-1.36,1.358H27.839c-0.748,0-1.36-0.61-1.36-1.358V9.09c0.001-0.748,0.612-1.358,1.36-1.358h13.946c0.749,0,1.358,0.61,1.358,1.358L43.148,23.042L43.148,23.042z"
+   id="path118" />
+                            <circle
+   cy="10.16"
+   cx="28.907"
+   r="1.444"
+   id="circle118" />
+                            <circle
+   cy="10.185"
+   cx="40.762"
+   r="1.445"
+   id="circle119" />
+                            <circle
+   cy="22.037"
+   cx="40.738"
+   r="1.443"
+   id="circle120" />
+                            <circle
+   cy="22.011"
+   cx="28.883"
+   r="1.443"
+   id="circle121" />
+                            <circle
+   cy="16.066"
+   fill="#3F3F3F"
+   cx="34.814"
+   r="4.86"
+   id="circle122" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1001.2545"
+   id="SVGID_2_"
+   y1="5333.106"
+   x1="987.7448"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop122" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop123" />
+                            </linearGradient>
+                            <circle
+   cy="16.066"
+   fill="url(#SVGID_2_)"
+   cx="34.814"
+   r="4.86"
+   id="circle123" />
+                            <circle
+   cy="16.643"
+   enable-background="new    "
+   cx="34.899"
+   r="4.277"
+   opacity="0.6"
+   id="circle124" />
+                            <circle
+   cy="16.094999"
+   fill="#735348"
+   cx="34.820999"
+   r="4.1680002"
+   id="button6"
+   style="display:inline"
+   inkscape:label="button6" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M28.723,10.085c0.021-0.063,0.08-0.121,0.146-0.136l-0.14-0.907c-0.058,0.008-0.113,0.002-0.168,0.021v-0.01C28.23,9.158,27.979,9.411,27.85,9.73L28.723,10.085z"
+   opacity="0.5"
+   id="path125" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M40.574,10.11c0.026-0.068,0.081-0.122,0.155-0.136l-0.14-0.91c-0.063,0.012-0.111,0.002-0.166,0.021l-0.011-0.006C40.082,9.183,39.83,9.433,39.7,9.754L40.574,10.11z"
+   opacity="0.5"
+   id="path126" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M40.55,21.96c0.021-0.063,0.07-0.121,0.146-0.136l-0.138-0.909c-0.061,0.012-0.111,0.002-0.168,0.021l-0.002-0.01c-0.334,0.102-0.589,0.354-0.716,0.678L40.55,21.96z"
+   opacity="0.5"
+   id="path127" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M28.697,21.937c0.026-0.067,0.08-0.12,0.155-0.136l-0.146-0.909c-0.056,0.013-0.104,0.001-0.167,0.019l-0.001-0.006c-0.336,0.102-0.589,0.354-0.718,0.674L28.697,21.937z"
+   opacity="0.5"
+   id="path128" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M36.311,12.21c-0.323-0.127-0.661-0.217-1.021-0.259c-0.895-0.1-1.753,0.099-2.479,0.505l-0.091,0.237c0.813-0.438,1.77-0.642,2.763-0.53c0.304,0.035,0.604,0.104,0.886,0.192L36.311,12.21z"
+   opacity="0.6"
+   id="path129" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g146">
+            <g
+   id="g145">
+                <g
+   id="g144">
+                    <g
+   id="b3f-10xx_2_"
+   gorn="0.68.2.0.0.0">
+                        <g
+   id="g143">
+                            <path
+   fill="#999999"
+   d="M80.642,23.042c0,0.748-0.611,1.358-1.36,1.358H65.333c-0.748,0-1.354-0.61-1.354-1.358V9.09c0.002-0.748,0.605-1.358,1.354-1.358h13.953c0.75,0,1.358,0.61,1.358,1.358L80.642,23.042L80.642,23.042z"
+   id="path132" />
+                            <circle
+   cy="10.16"
+   cx="66.401"
+   r="1.444"
+   id="circle132" />
+                            <circle
+   cy="10.185"
+   cx="78.256"
+   r="1.445"
+   id="circle133" />
+                            <circle
+   cy="22.037"
+   cx="78.232"
+   r="1.443"
+   id="circle134" />
+                            <circle
+   cy="22.011"
+   cx="66.377"
+   r="1.443"
+   id="circle135" />
+                            <circle
+   cy="16.066"
+   fill="#3F3F3F"
+   cx="72.308"
+   r="4.86"
+   id="circle136" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1053.3649"
+   id="SVGID_3_"
+   y1="5333.106"
+   x1="1039.8561"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop136" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop137" />
+                            </linearGradient>
+                            <circle
+   cy="16.066"
+   fill="url(#SVGID_3_)"
+   cx="72.308"
+   r="4.86"
+   id="circle137" />
+                            <circle
+   cy="16.643"
+   enable-background="new    "
+   cx="72.393"
+   r="4.277"
+   opacity="0.6"
+   id="circle138" />
+                            <circle
+   cy="16.094999"
+   fill="#735348"
+   cx="72.315002"
+   r="4.1680002"
+   id="button4"
+   style="display:inline"
+   inkscape:label="button4" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M66.216,10.085c0.021-0.063,0.073-0.121,0.146-0.136l-0.14-0.907c-0.063,0.008-0.113,0.002-0.168,0.021v-0.01C65.72,9.157,65.469,9.407,65.34,9.73L66.216,10.085z"
+   opacity="0.5"
+   id="path139" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M78.068,10.11c0.026-0.068,0.081-0.122,0.155-0.136l-0.146-0.91c-0.057,0.012-0.104,0.002-0.166,0.021L77.91,9.079c-0.334,0.104-0.587,0.354-0.717,0.676L78.068,10.11z"
+   opacity="0.5"
+   id="path140" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M78.044,21.96c0.026-0.063,0.078-0.121,0.153-0.136l-0.139-0.909c-0.063,0.012-0.111,0.002-0.168,0.021l-0.002-0.01c-0.334,0.102-0.589,0.354-0.716,0.678L78.044,21.96z"
+   opacity="0.5"
+   id="path141" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M66.191,21.937c0.026-0.067,0.08-0.12,0.155-0.136L66.2,20.892c-0.056,0.013-0.104,0.001-0.166,0.019l-0.002-0.006c-0.336,0.102-0.589,0.354-0.718,0.674L66.191,21.937z"
+   opacity="0.5"
+   id="path142" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M73.804,12.21c-0.323-0.127-0.661-0.217-1.021-0.259c-0.895-0.1-1.753,0.099-2.479,0.505l-0.097,0.237c0.819-0.438,1.771-0.642,2.769-0.53c0.305,0.035,0.604,0.104,0.886,0.192L73.804,12.21z"
+   opacity="0.6"
+   id="path143" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g160">
+            <g
+   id="g159">
+                <g
+   id="g158">
+                    <g
+   id="b3f-10xx_3_"
+   gorn="0.68.3.0.0.0">
+                        <g
+   id="g157">
+                            <path
+   fill="#999999"
+   d="M61.895,23.042c0,0.748-0.611,1.358-1.36,1.358H46.586c-0.74,0-1.354-0.61-1.354-1.358V9.09c0.002-0.748,0.613-1.357,1.354-1.357h13.953c0.749,0,1.358,0.609,1.358,1.357L61.895,23.042L61.895,23.042z"
+   id="path146" />
+                            <circle
+   cy="10.161"
+   cx="47.654"
+   r="1.444"
+   id="circle146" />
+                            <circle
+   cy="10.186"
+   cx="59.509"
+   r="1.445"
+   id="circle147" />
+                            <circle
+   cy="22.038"
+   cx="59.485"
+   r="1.443"
+   id="circle148" />
+                            <circle
+   cy="22.012"
+   cx="47.63"
+   r="1.443"
+   id="circle149" />
+                            <circle
+   cy="16.067"
+   fill="#3F3F3F"
+   cx="53.561"
+   r="4.861"
+   id="circle150" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1027.3121"
+   id="SVGID_4_"
+   y1="5333.106"
+   x1="1013.7985"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop150" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop151" />
+                            </linearGradient>
+                            <circle
+   cy="16.067"
+   fill="url(#SVGID_4_)"
+   cx="53.561"
+   r="4.861"
+   id="circle151" />
+                            <circle
+   cy="16.644"
+   enable-background="new    "
+   cx="53.646"
+   r="4.277"
+   opacity="0.6"
+   id="circle152" />
+                            <circle
+   cy="16.096001"
+   fill="#735348"
+   cx="53.568001"
+   r="4.1680002"
+   id="button5"
+   style="display:inline"
+   inkscape:label="button5" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M47.47,10.085c0.021-0.063,0.079-0.121,0.146-0.135l-0.14-0.908c-0.059,0.01-0.112,0.002-0.168,0.021V9.055c-0.337,0.104-0.588,0.355-0.718,0.676L47.47,10.085z"
+   opacity="0.5"
+   id="path153" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M59.32,10.111c0.026-0.069,0.082-0.122,0.155-0.136l-0.146-0.91c-0.057,0.012-0.104,0.002-0.166,0.02L59.16,9.079c-0.334,0.104-0.587,0.354-0.716,0.676L59.32,10.111z"
+   opacity="0.5"
+   id="path154" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M59.297,21.961c0.021-0.067,0.071-0.123,0.146-0.143l-0.138-0.904c-0.063,0.012-0.111,0.002-0.168,0.021l-0.002-0.009c-0.334,0.101-0.589,0.354-0.718,0.677L59.297,21.961z"
+   opacity="0.5"
+   id="path155" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M47.444,21.938c0.026-0.068,0.079-0.12,0.155-0.135l-0.146-0.91c-0.055,0.013-0.104,0.001-0.166,0.02l-0.002-0.007c-0.336,0.103-0.588,0.354-0.718,0.675L47.444,21.938z"
+   opacity="0.5"
+   id="path156" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M55.058,12.211c-0.323-0.127-0.661-0.217-1.021-0.266c-0.895-0.102-1.753,0.104-2.479,0.51l-0.097,0.232c0.819-0.438,1.771-0.646,2.769-0.525c0.305,0.03,0.604,0.104,0.886,0.188L55.058,12.211z"
+   opacity="0.6"
+   id="path157" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g174">
+            <g
+   id="g173">
+                <g
+   id="g172">
+                    <g
+   id="b3f-10xx_4_"
+   gorn="0.68.4.0.0.0">
+                        <g
+   id="g171">
+                            <path
+   fill="#999999"
+   d="M99.389,23.042c0,0.748-0.611,1.358-1.36,1.358H84.08c-0.747,0-1.354-0.61-1.354-1.358V9.09c0.002-0.748,0.606-1.357,1.354-1.357h13.953c0.749,0,1.358,0.609,1.358,1.357L99.389,23.042L99.389,23.042z"
+   id="path160" />
+                            <circle
+   cy="10.161"
+   cx="85.148"
+   r="1.444"
+   id="circle160" />
+                            <circle
+   cy="10.186"
+   cx="97.004"
+   r="1.445"
+   id="circle161" />
+                            <circle
+   cy="22.038"
+   cx="96.979"
+   r="1.443"
+   id="circle162" />
+                            <circle
+   cy="22.012"
+   cx="85.124"
+   r="1.443"
+   id="circle163" />
+                            <circle
+   cy="16.067"
+   fill="#3F3F3F"
+   cx="91.054"
+   r="4.861"
+   id="circle164" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1079.4205"
+   id="SVGID_5_"
+   y1="5333.106"
+   x1="1065.9088"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop164" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop165" />
+                            </linearGradient>
+                            <circle
+   cy="16.067"
+   fill="url(#SVGID_5_)"
+   cx="91.054"
+   r="4.861"
+   id="circle165" />
+                            <circle
+   cy="16.644"
+   enable-background="new    "
+   cx="91.139"
+   r="4.277"
+   opacity="0.6"
+   id="circle166" />
+                            <circle
+   cy="16.096001"
+   fill="#735348"
+   cx="91.061996"
+   r="4.1680002"
+   id="button3"
+   style="display:inline"
+   inkscape:label="button3" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M84.964,10.085c0.021-0.063,0.072-0.121,0.146-0.135L84.97,9.042c-0.063,0.01-0.112,0.002-0.168,0.021V9.055c-0.337,0.104-0.59,0.355-0.723,0.676L84.964,10.085z"
+   opacity="0.5"
+   id="path167" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M96.815,10.111c0.025-0.069,0.081-0.122,0.155-0.136l-0.146-0.91c-0.058,0.012-0.104,0.002-0.166,0.02V9.079c-0.334,0.104-0.587,0.354-0.717,0.676L96.815,10.111z"
+   opacity="0.5"
+   id="path168" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M96.791,21.961c0.026-0.067,0.078-0.123,0.153-0.143l-0.139-0.904c-0.063,0.012-0.11,0.002-0.168,0.021l-0.001-0.009c-0.334,0.101-0.597,0.354-0.725,0.677L96.791,21.961z"
+   opacity="0.5"
+   id="path169" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M84.938,21.938c0.021-0.068,0.078-0.12,0.154-0.135l-0.146-0.91c-0.055,0.013-0.104,0.001-0.166,0.02l-0.001-0.007c-0.336,0.103-0.589,0.354-0.718,0.675L84.938,21.938z"
+   opacity="0.5"
+   id="path170" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M92.551,12.211c-0.323-0.127-0.661-0.217-1.021-0.266c-0.895-0.102-1.753,0.104-2.485,0.51l-0.091,0.232c0.819-0.438,1.771-0.646,2.77-0.525c0.305,0.03,0.604,0.104,0.886,0.188L92.551,12.211z"
+   opacity="0.6"
+   id="path171" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g188">
+            <g
+   id="g187">
+                <g
+   id="g186">
+                    <g
+   id="b3f-10xx_5_"
+   gorn="0.68.5.0.0.0">
+                        <g
+   id="g185">
+                            <path
+   fill="#999999"
+   d="M118.135,23.042c0,0.748-0.61,1.358-1.36,1.358h-13.948c-0.747,0-1.354-0.61-1.354-1.358V9.09c0.002-0.748,0.606-1.357,1.354-1.357h13.952c0.749,0,1.358,0.609,1.358,1.357L118.135,23.042L118.135,23.042z"
+   id="path174" />
+                            <circle
+   cy="10.161"
+   cx="103.895"
+   r="1.444"
+   id="circle174" />
+                            <circle
+   cy="10.186"
+   cx="115.75"
+   r="1.445"
+   id="circle175" />
+                            <circle
+   cy="22.038"
+   cx="115.725"
+   r="1.443"
+   id="circle176" />
+                            <circle
+   cy="22.012"
+   cx="103.872"
+   r="1.443"
+   id="circle177" />
+                            <circle
+   cy="16.067"
+   fill="#3F3F3F"
+   cx="109.802"
+   r="4.861"
+   id="circle178" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1105.4781"
+   id="SVGID_6_"
+   y1="5333.106"
+   x1="1091.9664"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop178" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop179" />
+                            </linearGradient>
+                            <circle
+   cy="16.067"
+   fill="url(#SVGID_6_)"
+   cx="109.802"
+   r="4.861"
+   id="circle179" />
+                            <circle
+   cy="16.644"
+   enable-background="new    "
+   cx="109.887"
+   r="4.277"
+   opacity="0.6"
+   id="circle180" />
+                            <circle
+   cy="16.096001"
+   fill="#735348"
+   cx="109.809"
+   r="4.1680002"
+   id="button2"
+   style="display:inline"
+   inkscape:label="button2" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M103.711,10.085c0.026-0.063,0.079-0.121,0.153-0.135l-0.141-0.908c-0.063,0.01-0.112,0.002-0.168,0.021V9.055c-0.337,0.104-0.588,0.355-0.725,0.676L103.711,10.085z"
+   opacity="0.5"
+   id="path181" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M115.561,10.111c0.021-0.069,0.081-0.122,0.155-0.136l-0.146-0.91c-0.057,0.012-0.104,0.002-0.166,0.02L115.4,9.079c-0.334,0.104-0.586,0.354-0.716,0.676L115.561,10.111z"
+   opacity="0.5"
+   id="path182" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M115.538,21.961c0.025-0.067,0.077-0.123,0.152-0.143l-0.138-0.904c-0.063,0.012-0.111,0.002-0.168,0.021l-0.002-0.009c-0.334,0.101-0.596,0.354-0.723,0.677L115.538,21.961z"
+   opacity="0.5"
+   id="path183" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M103.685,21.938c0.021-0.068,0.079-0.12,0.154-0.135l-0.146-0.91c-0.056,0.013-0.11,0.001-0.166,0.02l-0.002-0.007c-0.336,0.103-0.589,0.354-0.718,0.675L103.685,21.938z"
+   opacity="0.5"
+   id="path184" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M111.298,12.211c-0.322-0.127-0.66-0.217-1.021-0.266c-0.895-0.102-1.753,0.104-2.485,0.51l-0.091,0.232c0.819-0.438,1.771-0.646,2.77-0.525c0.305,0.03,0.604,0.104,0.886,0.188L111.298,12.211z"
+   opacity="0.6"
+   id="path185" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g201">
+            <g
+   id="g200">
+                <g
+   id="g199">
+                    <g
+   id="b3f-10xx_6_"
+   gorn="0.68.6.0.0.0">
+                        <g
+   id="g198">
+                            <path
+   fill="#999999"
+   d="M136.883,23.042c0,0.748-0.61,1.358-1.359,1.358h-13.95c-0.747,0-1.354-0.61-1.354-1.358V9.09c0.002-0.748,0.605-1.357,1.354-1.357h13.953c0.75,0,1.358,0.609,1.358,1.357L136.883,23.042L136.883,23.042z"
+   id="path188" />
+                            <circle
+   cy="10.161"
+   cx="122.642"
+   r="1.444"
+   id="circle188" />
+                            <circle
+   cy="10.186"
+   cx="134.498"
+   r="1.445"
+   id="circle189" />
+                            <path
+   d="M134.474,20.594c0.797,0,1.438,0.646,1.438,1.443c0,0.797-0.646,1.438-1.438,1.438c-0.8,0-1.446-0.646-1.446-1.438C133.028,21.24,133.674,20.594,134.474,20.594z"
+   id="path189" />
+                            <circle
+   cy="22.012"
+   cx="122.619"
+   r="1.443"
+   id="circle190" />
+                            <circle
+   cy="16.067"
+   fill="#3F3F3F"
+   cx="128.549"
+   r="4.861"
+   id="circle191" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1131.5338"
+   id="SVGID_7_"
+   y1="5333.106"
+   x1="1118.0221"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop191" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop192" />
+                            </linearGradient>
+                            <circle
+   cy="16.067"
+   fill="url(#SVGID_7_)"
+   cx="128.549"
+   r="4.861"
+   id="circle192" />
+                            <circle
+   cy="16.644"
+   enable-background="new    "
+   cx="128.634"
+   r="4.277"
+   opacity="0.6"
+   id="circle193" />
+                            <circle
+   cy="16.096001"
+   fill="#735348"
+   cx="128.55701"
+   r="4.1680002"
+   id="button1"
+   style="display:inline"
+   inkscape:label="button1" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M122.459,10.085c0.025-0.063,0.079-0.121,0.152-0.135l-0.14-0.908c-0.063,0.01-0.113,0.002-0.168,0.021V9.055c-0.338,0.104-0.589,0.355-0.725,0.676L122.459,10.085z"
+   opacity="0.5"
+   id="path194" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M134.309,10.111c0.021-0.069,0.081-0.122,0.155-0.136l-0.146-0.91c-0.057,0.012-0.11,0.002-0.166,0.02l-0.003-0.006c-0.334,0.104-0.587,0.354-0.717,0.676L134.309,10.111z"
+   opacity="0.5"
+   id="path195" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M134.286,21.961c0.025-0.067,0.077-0.123,0.153-0.143l-0.139-0.904c-0.063,0.012-0.11,0.002-0.168,0.021l-0.009-0.009c-0.334,0.101-0.59,0.354-0.717,0.677L134.286,21.961z"
+   opacity="0.5"
+   id="path196" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M122.432,21.938c0.021-0.068,0.079-0.12,0.148-0.135l-0.143-0.91c-0.055,0.013-0.11,0.001-0.166,0.02l-0.002-0.007c-0.336,0.103-0.588,0.354-0.718,0.675L122.432,21.938z"
+   opacity="0.5"
+   id="path197" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M130.046,12.211c-0.315-0.127-0.653-0.217-1.02-0.266c-0.896-0.102-1.754,0.104-2.486,0.51l-0.09,0.232c0.819-0.438,1.771-0.646,2.762-0.525c0.312,0.03,0.604,0.104,0.893,0.188L130.046,12.211z"
+   opacity="0.6"
+   id="path198" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   transform="matrix(1, 0, 0, 1, 15.5177, 120.748)"
+   id="g215">
+            <g
+   id="g214">
+                <g
+   id="g213">
+                    <g
+   id="b3f-10xx_7_"
+   gorn="0.68.7.0.0.0">
+                        <g
+   id="g212">
+                            <path
+   fill="#999999"
+   d="M155.63,23.042c0,0.748-0.611,1.358-1.36,1.358h-13.949c-0.748,0-1.36-0.61-1.36-1.358V9.09c0.002-0.748,0.612-1.357,1.36-1.357h13.953c0.749,0,1.358,0.609,1.358,1.357L155.63,23.042L155.63,23.042z"
+   id="path201" />
+                            <circle
+   cy="10.161"
+   cx="141.389"
+   r="1.444"
+   id="circle201" />
+                            <circle
+   cy="10.186"
+   cx="153.244"
+   r="1.445"
+   id="circle202" />
+                            <circle
+   cy="22.038"
+   cx="153.22"
+   r="1.443"
+   id="circle203" />
+                            <circle
+   cy="22.012"
+   cx="141.365"
+   r="1.443"
+   id="circle204" />
+                            <circle
+   cy="16.067"
+   fill="#3F3F3F"
+   cx="147.296"
+   r="4.861"
+   id="circle205" />
+                            <linearGradient
+   y2="5333.106"
+   x2="1157.5895"
+   id="SVGID_8_"
+   y1="5333.106"
+   x1="1144.0778"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.7195 0 0 0.7195 -680.7277 -3821.1025)">
+                                <stop
+   style="stop-color:#333333"
+   offset="0"
+   id="stop205" />
+                                <stop
+   style="stop-color:#3C3C3C"
+   offset="1"
+   id="stop206" />
+                            </linearGradient>
+                            <circle
+   cy="16.066999"
+   fill="url(#SVGID_8_)"
+   cx="147.29601"
+   r="4.8610001"
+   id="circle206"
+   style="display:inline" />
+                            <circle
+   cy="16.643999"
+   enable-background="new    "
+   cx="147.38"
+   r="4.277"
+   opacity="0.6"
+   id="circle207"
+   style="display:inline" />
+                            <circle
+   cy="16.096001"
+   fill="#735348"
+   cx="147.30299"
+   id="button0"
+   style="display:inline"
+   inkscape:label="button0"
+   r="4.1680002" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M141.205,10.085c0.025-0.063,0.079-0.121,0.153-0.135l-0.141-0.908c-0.063,0.01-0.112,0.002-0.168,0.021V9.055c-0.345,0.104-0.596,0.355-0.725,0.676L141.205,10.085z"
+   opacity="0.5"
+   id="path208" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M153.056,10.111c0.021-0.069,0.081-0.122,0.147-0.136l-0.14-0.91c-0.058,0.012-0.111,0.002-0.166,0.02V9.079c-0.334,0.104-0.587,0.354-0.717,0.676L153.056,10.111z"
+   opacity="0.5"
+   id="path209" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M153.032,21.961c0.026-0.067,0.077-0.123,0.153-0.143l-0.146-0.904c-0.057,0.012-0.104,0.002-0.168,0.021l-0.002-0.009c-0.334,0.101-0.589,0.354-0.717,0.677L153.032,21.961z"
+   opacity="0.5"
+   id="path210" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M141.178,21.938c0.021-0.068,0.08-0.12,0.148-0.135l-0.142-0.91c-0.058,0.013-0.111,0.001-0.166,0.02l-0.002-0.007c-0.336,0.103-0.589,0.354-0.718,0.675L141.178,21.938z"
+   opacity="0.5"
+   id="path211" />
+                            <path
+   enable-background="new    "
+   fill="#FFFFFF"
+   d="M148.793,12.211c-0.316-0.127-0.654-0.217-1.021-0.266c-0.896-0.102-1.753,0.104-2.485,0.51l-0.091,0.232c0.819-0.438,1.771-0.646,2.763-0.525c0.312,0.03,0.604,0.104,0.893,0.188L148.793,12.211z"
+   opacity="0.6"
+   id="path212" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g
+   id="g219">
+        <circle
+   cy="12.756"
+   fill="#E30613"
+   cx="28.347"
+   r="5.875"
+   id="led7"
+   inkscape:label="led7" />
+        <g
+   id="g218">
+            <g
+   id="g217">
+                <path
+   fill="#EDEDED"
+   d="M24.628,13.341c0-2.335,1.896-4.228,4.229-4.228c0.994,0,1.896,0.357,2.617,0.931c-0.734-1.251-2.079-2.1-3.641-2.1c-2.335,0-4.228,1.893-4.228,4.228c0,1.341,0.636,2.522,1.607,3.296C24.853,14.841,24.628,14.12,24.628,13.341z"
+   id="path216" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g222">
+        <circle
+   cy="12.756"
+   fill="#E30613"
+   cx="47.341"
+   r="5.875"
+   id="led6"
+   inkscape:label="led6" />
+        <g
+   id="g221">
+            <g
+   id="g220">
+                <path
+   fill="#EDEDED"
+   d="M43.622,13.341c0-2.335,1.896-4.228,4.229-4.228c0.987,0,1.895,0.357,2.61,0.931c-0.729-1.251-2.071-2.1-3.633-2.1c-2.336,0-4.229,1.893-4.229,4.228c0,1.341,0.637,2.522,1.604,3.297C43.847,14.841,43.622,14.12,43.622,13.341z"
+   id="path219" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g225">
+        <circle
+   cy="12.755"
+   fill="#E30613"
+   cx="66.33"
+   r="5.875"
+   id="led5"
+   inkscape:label="led5" />
+        <g
+   id="g224">
+            <g
+   id="g223">
+                <path
+   fill="#EDEDED"
+   d="M62.612,13.34c0-2.335,1.892-4.228,4.227-4.228c0.994,0,1.896,0.357,2.617,0.93c-0.729-1.25-2.078-2.1-3.632-2.1c-2.336,0-4.229,1.893-4.229,4.228c0,1.341,0.637,2.522,1.604,3.297C62.837,14.841,62.612,14.12,62.612,13.34z"
+   id="path222" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g228">
+        <circle
+   cy="12.755"
+   fill="#E30613"
+   cx="85.323"
+   r="5.875"
+   id="led4"
+   inkscape:label="led4" />
+        <g
+   id="g227">
+            <g
+   id="g226">
+                <path
+   fill="#EDEDED"
+   d="M81.604,13.34c0-2.335,1.892-4.228,4.227-4.228c0.994,0,1.896,0.357,2.617,0.93c-0.734-1.25-2.078-2.1-3.632-2.1c-2.336,0-4.229,1.893-4.229,4.228c0,1.341,0.644,2.522,1.611,3.297C81.829,14.841,81.604,14.12,81.604,13.34z"
+   id="path225" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g231">
+        <circle
+   cy="12.755"
+   fill="#E30613"
+   cx="107.289"
+   r="5.875"
+   id="led3"
+   inkscape:label="led3" />
+        <g
+   id="g230">
+            <g
+   id="g229">
+                <path
+   fill="#EDEDED"
+   d="M103.57,13.34c0-2.335,1.892-4.228,4.227-4.228c0.994,0,1.896,0.357,2.617,0.93c-0.731-1.25-2.078-2.1-3.633-2.1c-2.336,0-4.229,1.893-4.229,4.228c0,1.341,0.644,2.522,1.611,3.297C103.796,14.841,103.57,14.12,103.57,13.34z"
+   id="path228" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g234">
+        <circle
+   cy="12.756"
+   fill="#E30613"
+   cx="126.28"
+   r="5.875"
+   id="led2"
+   inkscape:label="led2" />
+        <g
+   id="g233">
+            <g
+   id="g232">
+                <path
+   fill="#EDEDED"
+   d="M122.56,13.341c0-2.335,1.896-4.228,4.229-4.228c0.994,0,1.896,0.357,2.617,0.931c-0.734-1.251-2.078-2.1-3.633-2.1c-2.337,0-4.229,1.893-4.229,4.228c0,1.341,0.64,2.522,1.611,3.297C122.787,14.841,122.56,14.12,122.56,13.341z"
+   id="path231" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g237">
+        <circle
+   cy="12.756"
+   fill="#E30613"
+   cx="145.272"
+   r="5.875"
+   id="led1"
+   inkscape:label="led1" />
+        <g
+   id="g236">
+            <g
+   id="g235">
+                <path
+   fill="#EDEDED"
+   d="M141.553,13.341c0-2.335,1.896-4.228,4.229-4.228c0.994,0,1.896,0.357,2.617,0.931c-0.734-1.251-2.078-2.1-3.637-2.1c-2.339,0-4.229,1.893-4.229,4.228c0,1.341,0.637,2.522,1.611,3.297C141.779,14.841,141.553,14.12,141.553,13.341z"
+   id="path234" />
+            </g>
+        </g>
+    </g>
+    <g
+   id="g240">
+        <circle
+   cy="12.756"
+   fill="#e30613"
+   cx="164.26401"
+   r="5.875"
+   id="led0"
+   style="display:inline"
+   inkscape:label="led0" />
+        <g
+   id="g239">
+            <g
+   id="g238">
+                <path
+   fill="#EDEDED"
+   d="M160.546,13.341c0-2.335,1.896-4.228,4.229-4.228c0.99,0,1.896,0.357,2.613,0.931c-0.73-1.251-2.074-2.1-3.636-2.1c-2.336,0-4.229,1.893-4.229,4.228c0,1.341,0.637,2.522,1.604,3.297C160.771,14.841,160.546,14.12,160.546,13.341z"
+   id="path237" />
+            </g>
+        </g>
+    </g>
+    <rect
+   fill="#1D1D1B"
+   width="47.343"
+   x="47.849"
+   y="73.429"
+   height="31.351"
+   id="rect240" />
+    <g
+   id="g279">
+        <linearGradient
+   y2="-1289.772"
+   x2="50.6868"
+   id="SVGID_9_"
+   y1="-1289.772"
+   x1="49.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop240" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop241" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_9_)"
+   width="0.851"
+   x="49.73"
+   y="104.78"
+   height="5.381"
+   id="rect241" />
+        <linearGradient
+   y2="-1289.772"
+   x2="52.8655"
+   id="SVGID_10_"
+   y1="-1289.772"
+   x1="52.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop242" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop243" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_10_)"
+   width="0.851"
+   x="51.909"
+   y="104.78"
+   height="5.381"
+   id="rect243" />
+        <linearGradient
+   y2="-1289.772"
+   x2="55.0618"
+   id="SVGID_11_"
+   y1="-1289.772"
+   x1="54.2112"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop244" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop245" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_11_)"
+   width="0.851"
+   x="54.105"
+   y="104.78"
+   height="5.381"
+   id="rect245" />
+        <linearGradient
+   y2="-1289.772"
+   x2="57.2405"
+   id="SVGID_12_"
+   y1="-1289.772"
+   x1="56.3899"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop246" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop247" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_12_)"
+   width="0.851"
+   x="56.284"
+   y="104.78"
+   height="5.381"
+   id="rect247" />
+        <linearGradient
+   y2="-1289.772"
+   x2="59.3538"
+   id="SVGID_13_"
+   y1="-1289.772"
+   x1="58.5032"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop248" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop249" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_13_)"
+   width="0.851"
+   x="58.397"
+   y="104.78"
+   height="5.381"
+   id="rect249" />
+        <linearGradient
+   y2="-1289.772"
+   x2="61.5315"
+   id="SVGID_14_"
+   y1="-1289.772"
+   x1="60.6809"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop250" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop251" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_14_)"
+   width="0.851"
+   x="60.575"
+   y="104.78"
+   height="5.381"
+   id="rect251" />
+        <linearGradient
+   y2="-1289.772"
+   x2="63.8118"
+   id="SVGID_15_"
+   y1="-1289.772"
+   x1="62.9612"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop252" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop253" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_15_)"
+   width="0.851"
+   x="62.855"
+   y="104.78"
+   height="5.381"
+   id="rect253" />
+        <linearGradient
+   y2="-1289.772"
+   x2="65.9905"
+   id="SVGID_16_"
+   y1="-1289.772"
+   x1="65.1399"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop254" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop255" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_16_)"
+   width="0.851"
+   x="65.034"
+   y="104.78"
+   height="5.381"
+   id="rect255" />
+        <linearGradient
+   y2="-1289.772"
+   x2="68.2708"
+   id="SVGID_17_"
+   y1="-1289.772"
+   x1="67.4202"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop256" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop257" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_17_)"
+   width="0.851"
+   x="67.314"
+   y="104.78"
+   height="5.381"
+   id="rect257" />
+        <linearGradient
+   y2="-1289.772"
+   x2="70.4485"
+   id="SVGID_18_"
+   y1="-1289.772"
+   x1="69.5979"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop258" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop259" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_18_)"
+   width="0.851"
+   x="69.492"
+   y="104.78"
+   height="5.381"
+   id="rect259" />
+        <linearGradient
+   y2="-1289.772"
+   x2="72.6868"
+   id="SVGID_19_"
+   y1="-1289.772"
+   x1="71.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop260" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop261" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_19_)"
+   width="0.851"
+   x="71.73"
+   y="104.78"
+   height="5.381"
+   id="rect261" />
+        <linearGradient
+   y2="-1289.772"
+   x2="74.8655"
+   id="SVGID_20_"
+   y1="-1289.772"
+   x1="74.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop262" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop263" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_20_)"
+   width="0.851"
+   x="73.909"
+   y="104.78"
+   height="5.381"
+   id="rect263" />
+        <linearGradient
+   y2="-1289.772"
+   x2="77.1868"
+   id="SVGID_21_"
+   y1="-1289.772"
+   x1="76.3362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop264" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop265" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_21_)"
+   width="0.851"
+   x="76.23"
+   y="104.78"
+   height="5.381"
+   id="rect265" />
+        <linearGradient
+   y2="-1289.772"
+   x2="79.3655"
+   id="SVGID_22_"
+   y1="-1289.772"
+   x1="78.5149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop266" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop267" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_22_)"
+   width="0.851"
+   x="78.409"
+   y="104.78"
+   height="5.381"
+   id="rect267" />
+        <linearGradient
+   y2="-1289.772"
+   x2="81.6448"
+   id="SVGID_23_"
+   y1="-1289.772"
+   x1="80.7942"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop268" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop269" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_23_)"
+   width="0.851"
+   x="80.688"
+   y="104.78"
+   height="5.381"
+   id="rect269" />
+        <linearGradient
+   y2="-1289.772"
+   x2="83.8235"
+   id="SVGID_24_"
+   y1="-1289.772"
+   x1="82.9729"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop270" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop271" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_24_)"
+   width="0.851"
+   x="82.867"
+   y="104.78"
+   height="5.381"
+   id="rect271" />
+        <linearGradient
+   y2="-1289.772"
+   x2="86.2288"
+   id="SVGID_25_"
+   y1="-1289.772"
+   x1="85.3782"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop272" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop273" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_25_)"
+   width="0.851"
+   x="85.272"
+   y="104.78"
+   height="5.381"
+   id="rect273" />
+        <linearGradient
+   y2="-1289.772"
+   x2="88.4065"
+   id="SVGID_26_"
+   y1="-1289.772"
+   x1="87.5559"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop274" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop275" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_26_)"
+   width="0.851"
+   x="87.45"
+   y="104.78"
+   height="5.381"
+   id="rect275" />
+        <linearGradient
+   y2="-1289.772"
+   x2="90.6868"
+   id="SVGID_27_"
+   y1="-1289.772"
+   x1="89.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop276" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop277" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_27_)"
+   width="0.851"
+   x="89.73"
+   y="104.78"
+   height="5.381"
+   id="rect277" />
+        <linearGradient
+   y2="-1289.772"
+   x2="92.8655"
+   id="SVGID_28_"
+   y1="-1289.772"
+   x1="92.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop278" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop279" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_28_)"
+   width="0.851"
+   x="91.909"
+   y="104.78"
+   height="5.381"
+   id="rect279" />
+    </g>
+    <g
+   id="g319">
+        <linearGradient
+   y2="-1253.0405"
+   x2="50.6868"
+   id="SVGID_29_"
+   y1="-1253.0405"
+   x1="49.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop280" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop281" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_29_)"
+   width="0.851"
+   x="49.73"
+   y="68.048"
+   height="5.381"
+   id="rect281" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="52.8655"
+   id="SVGID_30_"
+   y1="-1253.0405"
+   x1="52.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop282" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop283" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_30_)"
+   width="0.851"
+   x="51.909"
+   y="68.048"
+   height="5.381"
+   id="rect283" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="55.0618"
+   id="SVGID_31_"
+   y1="-1253.0405"
+   x1="54.2112"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop284" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop285" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_31_)"
+   width="0.851"
+   x="54.105"
+   y="68.048"
+   height="5.381"
+   id="rect285" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="57.2405"
+   id="SVGID_32_"
+   y1="-1253.0405"
+   x1="56.3899"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop286" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop287" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_32_)"
+   width="0.851"
+   x="56.284"
+   y="68.048"
+   height="5.381"
+   id="rect287" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="59.3538"
+   id="SVGID_33_"
+   y1="-1253.0405"
+   x1="58.5032"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop288" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop289" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_33_)"
+   width="0.851"
+   x="58.397"
+   y="68.048"
+   height="5.381"
+   id="rect289" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="61.5315"
+   id="SVGID_34_"
+   y1="-1253.0405"
+   x1="60.6809"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop290" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop291" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_34_)"
+   width="0.851"
+   x="60.575"
+   y="68.048"
+   height="5.381"
+   id="rect291" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="63.8118"
+   id="SVGID_35_"
+   y1="-1253.0405"
+   x1="62.9612"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop292" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop293" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_35_)"
+   width="0.851"
+   x="62.855"
+   y="68.048"
+   height="5.381"
+   id="rect293" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="65.9905"
+   id="SVGID_36_"
+   y1="-1253.0405"
+   x1="65.1399"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop294" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop295" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_36_)"
+   width="0.851"
+   x="65.034"
+   y="68.048"
+   height="5.381"
+   id="rect295" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="68.2708"
+   id="SVGID_37_"
+   y1="-1253.0405"
+   x1="67.4202"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop296" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop297" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_37_)"
+   width="0.851"
+   x="67.314"
+   y="68.048"
+   height="5.381"
+   id="rect297" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="70.4485"
+   id="SVGID_38_"
+   y1="-1253.0405"
+   x1="69.5979"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop298" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop299" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_38_)"
+   width="0.851"
+   x="69.492"
+   y="68.048"
+   height="5.381"
+   id="rect299" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="72.6868"
+   id="SVGID_39_"
+   y1="-1253.0405"
+   x1="71.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop300" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop301" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_39_)"
+   width="0.851"
+   x="71.73"
+   y="68.048"
+   height="5.381"
+   id="rect301" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="74.8655"
+   id="SVGID_40_"
+   y1="-1253.0405"
+   x1="74.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop302" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop303" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_40_)"
+   width="0.851"
+   x="73.909"
+   y="68.048"
+   height="5.381"
+   id="rect303" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="77.1868"
+   id="SVGID_41_"
+   y1="-1253.0405"
+   x1="76.3362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop304" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop305" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_41_)"
+   width="0.851"
+   x="76.23"
+   y="68.048"
+   height="5.381"
+   id="rect305" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="79.3655"
+   id="SVGID_42_"
+   y1="-1253.0405"
+   x1="78.5149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop306" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop307" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_42_)"
+   width="0.851"
+   x="78.409"
+   y="68.048"
+   height="5.381"
+   id="rect307" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="81.6448"
+   id="SVGID_43_"
+   y1="-1253.0405"
+   x1="80.7942"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop308" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop309" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_43_)"
+   width="0.851"
+   x="80.688"
+   y="68.048"
+   height="5.381"
+   id="rect309" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="83.8235"
+   id="SVGID_44_"
+   y1="-1253.0405"
+   x1="82.9729"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop310" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop311" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_44_)"
+   width="0.851"
+   x="82.867"
+   y="68.048"
+   height="5.381"
+   id="rect311" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="86.2288"
+   id="SVGID_45_"
+   y1="-1253.0405"
+   x1="85.3782"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop312" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop313" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_45_)"
+   width="0.851"
+   x="85.272"
+   y="68.048"
+   height="5.381"
+   id="rect313" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="88.4065"
+   id="SVGID_46_"
+   y1="-1253.0405"
+   x1="87.5559"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop314" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop315" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_46_)"
+   width="0.851"
+   x="87.45"
+   y="68.048"
+   height="5.381"
+   id="rect315" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="90.6868"
+   id="SVGID_47_"
+   y1="-1253.0405"
+   x1="89.8362"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop316" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop317" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_47_)"
+   width="0.851"
+   x="89.73"
+   y="68.048"
+   height="5.381"
+   id="rect317" />
+        <linearGradient
+   y2="-1253.0405"
+   x2="92.8655"
+   id="SVGID_48_"
+   y1="-1253.0405"
+   x1="92.0149"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="0"
+   id="stop318" />
+            <stop
+   style="stop-color:#000000"
+   offset="1"
+   id="stop319" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_48_)"
+   width="0.851"
+   x="91.909"
+   y="68.048"
+   height="5.381"
+   id="rect319" />
+    </g>
+    <g
+   transform="matrix(1 0 0 1 49.7839 93.4751)"
+   id="g322">
+        <g
+   id="g321">
+            <g
+   id="g320">
+                <text
+   fill="#B2B2B2"
+   font-family="Droid Sans"
+   font-size="12"
+   id="text319">TM1638</text>
+            </g>
+        </g>
+    </g>
+    <g
+   id="g386">
+        <g
+   id="g329">
+            <linearGradient
+   y2="-1263.0532"
+   x2="106.6355"
+   id="SVGID_49_"
+   y1="-1263.0532"
+   x1="103.1433"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop322" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop323" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_49_)"
+   width="3.491"
+   x="103.038"
+   y="75.8"
+   height="9.904"
+   id="rect323" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="107.1296"
+   id="SVGID_50_"
+   y1="-1257.0679"
+   x1="102.655"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop324" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop325" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_50_)"
+   width="4.474"
+   x="102.55"
+   y="73.732"
+   height="2.068"
+   id="rect325" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="107.1296"
+   id="SVGID_51_"
+   y1="-1269.0747"
+   x1="102.655"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop326" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop327" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_51_)"
+   width="4.474"
+   x="102.55"
+   y="85.739"
+   height="2.068"
+   id="rect327" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="106.7136"
+   id="SVGID_52_"
+   y1="-1266.0508"
+   x1="103.0671"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop328" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop329" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_52_)"
+   width="3.646"
+   x="102.962"
+   y="83.347"
+   height="0.804"
+   id="rect329" />
+        </g>
+        <g
+   id="g337">
+            <linearGradient
+   y2="-1263.0532"
+   x2="117.8484"
+   id="SVGID_53_"
+   y1="-1263.0532"
+   x1="114.3582"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop330" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop331" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_53_)"
+   width="3.491"
+   x="114.252"
+   y="75.8"
+   height="9.904"
+   id="rect331" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="118.3367"
+   id="SVGID_54_"
+   y1="-1257.0679"
+   x1="113.8699"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop332" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop333" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_54_)"
+   width="4.467"
+   x="113.763"
+   y="73.732"
+   height="2.068"
+   id="rect333" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="118.3367"
+   id="SVGID_55_"
+   y1="-1269.0747"
+   x1="113.8699"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop334" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop335" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_55_)"
+   width="4.467"
+   x="113.763"
+   y="85.739"
+   height="2.068"
+   id="rect335" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="117.9285"
+   id="SVGID_56_"
+   y1="-1266.0508"
+   x1="114.282"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop336" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop337" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_56_)"
+   width="3.646"
+   x="114.176"
+   y="83.347"
+   height="0.804"
+   id="rect337" />
+        </g>
+        <g
+   id="g345">
+            <linearGradient
+   y2="-1263.0532"
+   x2="128.6863"
+   id="SVGID_57_"
+   y1="-1263.0532"
+   x1="125.2019"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop338" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop339" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_57_)"
+   width="3.484"
+   x="125.095"
+   y="75.8"
+   height="9.904"
+   id="rect339" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="129.1804"
+   id="SVGID_58_"
+   y1="-1257.0679"
+   x1="124.7136"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop340" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop341" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_58_)"
+   width="4.467"
+   x="124.607"
+   y="73.732"
+   height="2.068"
+   id="rect341" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="129.1804"
+   id="SVGID_59_"
+   y1="-1269.0747"
+   x1="124.7136"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop342" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop343" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_59_)"
+   width="4.467"
+   x="124.607"
+   y="85.739"
+   height="2.068"
+   id="rect343" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="128.7683"
+   id="SVGID_60_"
+   y1="-1266.0508"
+   x1="125.1257"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop344" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop345" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_60_)"
+   width="3.643"
+   x="125.019"
+   y="83.347"
+   height="0.804"
+   id="rect345" />
+        </g>
+        <g
+   id="g353">
+            <linearGradient
+   y2="-1263.0532"
+   x2="139.6062"
+   id="SVGID_61_"
+   y1="-1263.0532"
+   x1="136.114"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop346" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop347" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_61_)"
+   width="3.491"
+   x="136.009"
+   y="75.8"
+   height="9.904"
+   id="rect347" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="140.0925"
+   id="SVGID_62_"
+   y1="-1257.0679"
+   x1="135.6257"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop348" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop349" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_62_)"
+   width="4.467"
+   x="135.52"
+   y="73.732"
+   height="2.068"
+   id="rect349" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="140.0925"
+   id="SVGID_63_"
+   y1="-1269.0747"
+   x1="135.6257"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop350" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop351" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_63_)"
+   width="4.467"
+   x="135.52"
+   y="85.739"
+   height="2.068"
+   id="rect351" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="139.6804"
+   id="SVGID_64_"
+   y1="-1266.0508"
+   x1="136.0378"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop352" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop353" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_64_)"
+   width="3.643"
+   x="135.932"
+   y="83.347"
+   height="0.804"
+   id="rect353" />
+        </g>
+        <g
+   id="g361">
+            <linearGradient
+   y2="-1263.0532"
+   x2="150.4753"
+   id="SVGID_65_"
+   y1="-1263.0532"
+   x1="146.9851"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop354" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop355" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_65_)"
+   width="3.491"
+   x="146.879"
+   y="75.8"
+   height="9.904"
+   id="rect355" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="150.9636"
+   id="SVGID_66_"
+   y1="-1257.0679"
+   x1="146.4968"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop356" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop357" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_66_)"
+   width="4.467"
+   x="146.39"
+   y="73.732"
+   height="2.068"
+   id="rect357" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="150.9636"
+   id="SVGID_67_"
+   y1="-1269.0747"
+   x1="146.4968"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop358" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop359" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_67_)"
+   width="4.467"
+   x="146.39"
+   y="85.739"
+   height="2.068"
+   id="rect359" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="150.5515"
+   id="SVGID_68_"
+   y1="-1266.0508"
+   x1="146.9089"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop360" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop361" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_68_)"
+   width="3.643"
+   x="146.802"
+   y="83.347"
+   height="0.804"
+   id="rect361" />
+        </g>
+        <g
+   id="g369">
+            <linearGradient
+   y2="-1263.0532"
+   x2="161.7253"
+   id="SVGID_69_"
+   y1="-1263.0532"
+   x1="158.2351"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop362" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop363" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_69_)"
+   width="3.491"
+   x="158.129"
+   y="75.8"
+   height="9.904"
+   id="rect363" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="162.2136"
+   id="SVGID_70_"
+   y1="-1257.0679"
+   x1="157.7468"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop364" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop365" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_70_)"
+   width="4.467"
+   x="157.64"
+   y="73.732"
+   height="2.068"
+   id="rect365" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="162.2136"
+   id="SVGID_71_"
+   y1="-1269.0747"
+   x1="157.7468"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop366" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop367" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_71_)"
+   width="4.467"
+   x="157.64"
+   y="85.739"
+   height="2.068"
+   id="rect367" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="161.8015"
+   id="SVGID_72_"
+   y1="-1266.0508"
+   x1="158.1589"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop368" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop369" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_72_)"
+   width="3.643"
+   x="158.052"
+   y="83.347"
+   height="0.804"
+   id="rect369" />
+        </g>
+        <g
+   id="g377">
+            <linearGradient
+   y2="-1263.0532"
+   x2="172.5125"
+   id="SVGID_73_"
+   y1="-1263.0532"
+   x1="169.0203"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop370" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop371" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_73_)"
+   width="3.491"
+   x="168.915"
+   y="75.8"
+   height="9.904"
+   id="rect371" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="173.0007"
+   id="SVGID_74_"
+   y1="-1257.0679"
+   x1="168.5339"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop372" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop373" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_74_)"
+   width="4.467"
+   x="168.427"
+   y="73.732"
+   height="2.068"
+   id="rect373" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="173.0007"
+   id="SVGID_75_"
+   y1="-1269.0747"
+   x1="168.5339"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop374" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop375" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_75_)"
+   width="4.467"
+   x="168.427"
+   y="85.739"
+   height="2.068"
+   id="rect375" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="172.5906"
+   id="SVGID_76_"
+   y1="-1266.0508"
+   x1="168.9441"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop376" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop377" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_76_)"
+   width="3.646"
+   x="168.839"
+   y="83.347"
+   height="0.804"
+   id="rect377" />
+        </g>
+        <g
+   id="g385">
+            <linearGradient
+   y2="-1263.0532"
+   x2="183.4812"
+   id="SVGID_77_"
+   y1="-1263.0532"
+   x1="179.9968"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#D00C00"
+   offset="0"
+   id="stop378" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop379" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_77_)"
+   width="3.484"
+   x="179.891"
+   y="75.8"
+   height="9.904"
+   id="rect379" />
+            <linearGradient
+   y2="-1257.0679"
+   x2="183.9753"
+   id="SVGID_78_"
+   y1="-1257.0679"
+   x1="179.5085"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop380" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop381" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_78_)"
+   width="4.467"
+   x="179.403"
+   y="73.732"
+   height="2.068"
+   id="rect381" />
+            <linearGradient
+   y2="-1269.0747"
+   x2="183.9753"
+   id="SVGID_79_"
+   y1="-1269.0747"
+   x1="179.5085"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop382" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop383" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_79_)"
+   width="4.467"
+   x="179.403"
+   y="85.739"
+   height="2.068"
+   id="rect383" />
+            <linearGradient
+   y2="-1266.0508"
+   x2="183.5632"
+   id="SVGID_80_"
+   y1="-1266.0508"
+   x1="179.9207"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+                <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop384" />
+                <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop385" />
+            </linearGradient>
+            <rect
+   fill="url(#SVGID_80_)"
+   width="3.643"
+   x="179.815"
+   y="83.347"
+   height="0.804"
+   id="rect385" />
+        </g>
+    </g>
+    <g
+   id="g392">
+        <title
+   id="title386">element:TX</title>
+        <g
+   id="g390">
+            <title
+   id="title387">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 28.0681 124.7534)"
+   id="g389">
+                <g
+   id="g388">
+                    <g
+   id="g387">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text387">S1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g391">
+            <title
+   id="title390">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g398">
+        <title
+   id="title392">element:TX</title>
+        <g
+   id="g396">
+            <title
+   id="title393">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 101.2966 94.6616)"
+   id="g395">
+                <g
+   id="g394">
+                    <g
+   id="g393">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text393">D1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g397">
+            <title
+   id="title396">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g404">
+        <title
+   id="title398">element:TX</title>
+        <g
+   id="g402">
+            <title
+   id="title399">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 103.116 72.4663)"
+   id="g401">
+                <g
+   id="g400">
+                    <g
+   id="g399">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text399">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g403">
+            <title
+   id="title402">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g410">
+        <title
+   id="title404">element:TX</title>
+        <g
+   id="g408">
+            <title
+   id="title405">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 114.2527 72.4663)"
+   id="g407">
+                <g
+   id="g406">
+                    <g
+   id="g405">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text405">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g409">
+            <title
+   id="title408">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g416">
+        <title
+   id="title410">element:TX</title>
+        <g
+   id="g414">
+            <title
+   id="title411">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 125.0945 72.4663)"
+   id="g413">
+                <g
+   id="g412">
+                    <g
+   id="g411">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text411">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g415">
+            <title
+   id="title414">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g422">
+        <title
+   id="title416">element:TX</title>
+        <g
+   id="g420">
+            <title
+   id="title417">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 135.946 72.4663)"
+   id="g419">
+                <g
+   id="g418">
+                    <g
+   id="g417">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text417">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g421">
+            <title
+   id="title420">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g428">
+        <title
+   id="title422">element:TX</title>
+        <g
+   id="g426">
+            <title
+   id="title423">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 146.8015 72.4663)"
+   id="g425">
+                <g
+   id="g424">
+                    <g
+   id="g423">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text423">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g427">
+            <title
+   id="title426">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g434">
+        <title
+   id="title428">element:TX</title>
+        <g
+   id="g432">
+            <title
+   id="title429">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 158.1277 72.4663)"
+   id="g431">
+                <g
+   id="g430">
+                    <g
+   id="g429">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text429">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g433">
+            <title
+   id="title432">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g440">
+        <title
+   id="title434">element:TX</title>
+        <g
+   id="g438">
+            <title
+   id="title435">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 168.9929 72.4663)"
+   id="g437">
+                <g
+   id="g436">
+                    <g
+   id="g435">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text435">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g439">
+            <title
+   id="title438">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g446">
+        <title
+   id="title440">element:TX</title>
+        <g
+   id="g444">
+            <title
+   id="title441">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 179.8152 72.4663)"
+   id="g443">
+                <g
+   id="g442">
+                    <g
+   id="g441">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="6"
+   id="text441">+</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g445">
+            <title
+   id="title444">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g451">
+        <linearGradient
+   y2="-1253.1499"
+   x2="42.6262"
+   id="SVGID_81_"
+   y1="-1253.1499"
+   x1="39.135"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#CBBBA0"
+   offset="0"
+   id="stop446" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop447" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_81_)"
+   width="3.491"
+   x="39.029"
+   y="65.897"
+   height="9.903"
+   id="rect447" />
+        <linearGradient
+   y2="-1247.1646"
+   x2="43.1125"
+   id="SVGID_82_"
+   y1="-1247.1646"
+   x1="38.6458"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop448" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop449" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_82_)"
+   width="4.467"
+   x="38.54"
+   y="63.829"
+   height="2.068"
+   id="rect449" />
+        <linearGradient
+   y2="-1259.1704"
+   x2="43.1125"
+   id="SVGID_83_"
+   y1="-1259.1704"
+   x1="38.6458"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop450" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop451" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_83_)"
+   width="4.467"
+   x="38.54"
+   y="75.835"
+   height="2.067"
+   id="rect451" />
+    </g>
+    <g
+   id="g457">
+        <linearGradient
+   y2="-1253.1499"
+   x2="31.9231"
+   id="SVGID_84_"
+   y1="-1253.1499"
+   x1="28.4319"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#CBBBA0"
+   offset="0"
+   id="stop452" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop453" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_84_)"
+   width="3.491"
+   x="28.326"
+   y="65.897"
+   height="9.903"
+   id="rect453" />
+        <linearGradient
+   y2="-1247.1646"
+   x2="32.4172"
+   id="SVGID_85_"
+   y1="-1247.1646"
+   x1="27.9436"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop454" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop455" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_85_)"
+   width="4.474"
+   x="27.838"
+   y="63.829"
+   height="2.068"
+   id="rect455" />
+        <linearGradient
+   y2="-1259.1704"
+   x2="32.4172"
+   id="SVGID_86_"
+   y1="-1259.1704"
+   x1="27.9436"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop456" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop457" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_86_)"
+   width="4.474"
+   x="27.838"
+   y="75.835"
+   height="2.067"
+   id="rect457" />
+    </g>
+    <g
+   id="g463">
+        <linearGradient
+   y2="-1253.1499"
+   x2="20.928"
+   id="SVGID_87_"
+   y1="-1253.1499"
+   x1="17.4368"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#CBBBA0"
+   offset="0"
+   id="stop458" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop459" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_87_)"
+   width="3.491"
+   x="17.331"
+   y="65.897"
+   height="9.903"
+   id="rect459" />
+        <linearGradient
+   y2="-1247.1646"
+   x2="21.4221"
+   id="SVGID_88_"
+   y1="-1247.1646"
+   x1="16.9485"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop460" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop461" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_88_)"
+   width="4.474"
+   x="16.843"
+   y="63.829"
+   height="2.068"
+   id="rect461" />
+        <linearGradient
+   y2="-1259.1704"
+   x2="21.4221"
+   id="SVGID_89_"
+   y1="-1259.1704"
+   x1="16.9485"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(1 0 0 -1 -0.106 -1182.3018)">
+            <stop
+   style="stop-color:#000000;stop-opacity:0.89"
+   offset="0"
+   id="stop462" />
+            <stop
+   style="stop-color:#FFFFFF"
+   offset="1"
+   id="stop463" />
+        </linearGradient>
+        <rect
+   fill="url(#SVGID_89_)"
+   width="4.474"
+   x="16.843"
+   y="75.835"
+   height="2.067"
+   id="rect463" />
+    </g>
+    <g
+   id="g469">
+        <title
+   id="title463">element:TX</title>
+        <g
+   id="g467">
+            <title
+   id="title464">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 15.4626 84.5679)"
+   id="g466">
+                <g
+   id="g465">
+                    <g
+   id="g464">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text464">R3</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g468">
+            <title
+   id="title467">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g472">
+        <circle
+   cy="45.402"
+   fill="#EDEDED"
+   cx="9.897"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   r="6.646"
+   stroke-width="1"
+   id="circle469" />
+        <g
+   id="g471">
+            <g
+   id="g470">
+                <path
+   d="M8.261,38.944c-2.859,0.742-4.979,3.333-4.979,6.426c0,3.093,2.115,5.684,4.979,6.426V38.944z"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="1"
+   id="path469" />
+            </g>
+        </g>
+        <circle
+   cy="45.402"
+   fill="#878787"
+   cx="14.228"
+   stroke-miterlimit="10"
+   stroke="#000000"
+   stroke-width="0.5"
+   r="1.219"
+   id="circle471" />
+    </g>
+    <g
+   id="g478">
+        <title
+   id="title472">element:TX</title>
+        <g
+   id="g476">
+            <title
+   id="title473">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 5.8337 58.5679)"
+   id="g475">
+                <g
+   id="g474">
+                    <g
+   id="g473">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text473">C1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g477">
+            <title
+   id="title476">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g484">
+        <title
+   id="title478">element:TX</title>
+        <g
+   id="g482">
+            <title
+   id="title479">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 21.3123 24.438)"
+   id="g481">
+                <g
+   id="g480">
+                    <g
+   id="g479">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text479">LED1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g483">
+            <title
+   id="title482">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g490">
+        <title
+   id="title484">element:TX</title>
+        <g
+   id="g488">
+            <title
+   id="title485">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 40.8748 24.4126)"
+   id="g487">
+                <g
+   id="g486">
+                    <g
+   id="g485">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text485">LED2</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g489">
+            <title
+   id="title488">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g496">
+        <title
+   id="title490">element:TX</title>
+        <g
+   id="g494">
+            <title
+   id="title491">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 58.8123 24.438)"
+   id="g493">
+                <g
+   id="g492">
+                    <g
+   id="g491">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text491">LED3</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g495">
+            <title
+   id="title494">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g502">
+        <title
+   id="title496">element:TX</title>
+        <g
+   id="g500">
+            <title
+   id="title497">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 78.3748 24.4126)"
+   id="g499">
+                <g
+   id="g498">
+                    <g
+   id="g497">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text497">LED4</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g501">
+            <title
+   id="title500">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g508">
+        <title
+   id="title502">element:TX</title>
+        <g
+   id="g506">
+            <title
+   id="title503">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 100.4988 24.4126)"
+   id="g505">
+                <g
+   id="g504">
+                    <g
+   id="g503">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text503">LED5</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g507">
+            <title
+   id="title506">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g514">
+        <title
+   id="title508">element:TX</title>
+        <g
+   id="g512">
+            <title
+   id="title509">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 119.1863 24.4126)"
+   id="g511">
+                <g
+   id="g510">
+                    <g
+   id="g509">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text509">LED6</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g513">
+            <title
+   id="title512">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g520">
+        <title
+   id="title514">element:TX</title>
+        <g
+   id="g518">
+            <title
+   id="title515">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 138.6238 24.4126)"
+   id="g517">
+                <g
+   id="g516">
+                    <g
+   id="g515">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text515">LED7</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g519">
+            <title
+   id="title518">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g526">
+        <title
+   id="title520">element:TX</title>
+        <g
+   id="g524">
+            <title
+   id="title521">text:TX</title>
+            <g
+   transform="matrix(1.0291 0 0 1 157.4988 24.438)"
+   id="g523">
+                <g
+   id="g522">
+                    <g
+   id="g521">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text521">LED8</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g525">
+            <title
+   id="title524">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g532">
+        <title
+   id="title526">element:TX</title>
+        <g
+   id="g530">
+            <title
+   id="title527">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 112.4841 94.6616)"
+   id="g529">
+                <g
+   id="g528">
+                    <g
+   id="g527">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text527">D2</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g531">
+            <title
+   id="title530">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g538">
+        <title
+   id="title532">element:TX</title>
+        <g
+   id="g536">
+            <title
+   id="title533">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 123.4841 94.6616)"
+   id="g535">
+                <g
+   id="g534">
+                    <g
+   id="g533">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text533">D3</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g537">
+            <title
+   id="title536">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g544">
+        <title
+   id="title538">element:TX</title>
+        <g
+   id="g542">
+            <title
+   id="title539">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 134.4216 94.6616)"
+   id="g541">
+                <g
+   id="g540">
+                    <g
+   id="g539">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text539">D4</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g543">
+            <title
+   id="title542">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g550">
+        <title
+   id="title544">element:TX</title>
+        <g
+   id="g548">
+            <title
+   id="title545">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 145.3591 94.6616)"
+   id="g547">
+                <g
+   id="g546">
+                    <g
+   id="g545">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text545">D5</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g549">
+            <title
+   id="title548">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g556">
+        <title
+   id="title550">element:TX</title>
+        <g
+   id="g554">
+            <title
+   id="title551">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 156.1716 94.6616)"
+   id="g553">
+                <g
+   id="g552">
+                    <g
+   id="g551">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text551">D6</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g555">
+            <title
+   id="title554">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g562">
+        <title
+   id="title556">element:TX</title>
+        <g
+   id="g560">
+            <title
+   id="title557">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 167.2966 94.6616)"
+   id="g559">
+                <g
+   id="g558">
+                    <g
+   id="g557">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text557">D7</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g561">
+            <title
+   id="title560">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g568">
+        <title
+   id="title562">element:TX</title>
+        <g
+   id="g566">
+            <title
+   id="title563">text:TX</title>
+            <g
+   transform="matrix(1.0181 0 0 1 178.2341 94.6616)"
+   id="g565">
+                <g
+   id="g564">
+                    <g
+   id="g563">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text563">D8</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g567">
+            <title
+   id="title566">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g574">
+        <title
+   id="title568">element:TX</title>
+        <g
+   id="g572">
+            <title
+   id="title569">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 46.1394 124.7534)"
+   id="g571">
+                <g
+   id="g570">
+                    <g
+   id="g569">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text569">S2</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g573">
+            <title
+   id="title572">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g580">
+        <title
+   id="title574">element:TX</title>
+        <g
+   id="g578">
+            <title
+   id="title575">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 65.4592 124.8501)"
+   id="g577">
+                <g
+   id="g576">
+                    <g
+   id="g575">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text575">S3</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g579">
+            <title
+   id="title578">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g586">
+        <title
+   id="title580">element:TX</title>
+        <g
+   id="g584">
+            <title
+   id="title581">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 83.9431 124.8501)"
+   id="g583">
+                <g
+   id="g582">
+                    <g
+   id="g581">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text581">S4</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g585">
+            <title
+   id="title584">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g592">
+        <title
+   id="title586">element:TX</title>
+        <g
+   id="g590">
+            <title
+   id="title587">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 103.0378 124.7534)"
+   id="g589">
+                <g
+   id="g588">
+                    <g
+   id="g587">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text587">S5</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g591">
+            <title
+   id="title590">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g598">
+        <title
+   id="title592">element:TX</title>
+        <g
+   id="g596">
+            <title
+   id="title593">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 121.1277 124.8501)"
+   id="g595">
+                <g
+   id="g594">
+                    <g
+   id="g593">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text593">S6</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g597">
+            <title
+   id="title596">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g604">
+        <title
+   id="title598">element:TX</title>
+        <g
+   id="g602">
+            <title
+   id="title599">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 140.3806 124.8501)"
+   id="g601">
+                <g
+   id="g600">
+                    <g
+   id="g599">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text599">S7</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g603">
+            <title
+   id="title602">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g610">
+        <title
+   id="title604">element:TX</title>
+        <g
+   id="g608">
+            <title
+   id="title605">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 158.6208 124.7534)"
+   id="g607">
+                <g
+   id="g606">
+                    <g
+   id="g605">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5.2"
+   id="text605">S8</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g609">
+            <title
+   id="title608">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g616">
+        <title
+   id="title610">element:TX</title>
+        <g
+   id="g614">
+            <title
+   id="title611">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 26.0461 84.5679)"
+   id="g613">
+                <g
+   id="g612">
+                    <g
+   id="g611">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text611">R2</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g615">
+            <title
+   id="title614">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g622">
+        <title
+   id="title616">element:TX</title>
+        <g
+   id="g620">
+            <title
+   id="title617">text:TX</title>
+            <g
+   transform="matrix(1 0 0 1 37.1711 84.5679)"
+   id="g619">
+                <g
+   id="g618">
+                    <g
+   id="g617">
+                        <text
+   fill="#CBBBA0"
+   font-family="Droid Sans"
+   font-size="5"
+   id="text617">R1</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g
+   id="g621">
+            <title
+   id="title620">package:CHIP-LED0805</title>
+        </g>
+    </g>
+    <g
+   id="g627">
+        <rect
+   fill="#1D1D1B"
+   width="18.808"
+   x="18.665"
+   y="30.382"
+   height="27.602"
+   id="rect622" />
+        <path
+   fill="#C6C6C6"
+   d="M24.06,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L24.06,42.779z"
+   id="disp75"
+   inkscape:label="disp75" />
+        <path
+   fill="#C6C6C6"
+   d="M34.13,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.352-1.558-1.352-1.558L34.13,35.274z"
+   id="disp71"
+   inkscape:label="disp71" />
+        <path
+   fill="#C6C6C6"
+   d="M32.49,45.56l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.052,0.245-0.464,0.682-0.551,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L32.49,45.56z"
+   id="disp72"
+   inkscape:label="disp72" />
+        <path
+   fill="#C6C6C6"
+   d="M22.232,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.339,0.39,1.352,1.558,1.352,1.558L22.232,52.78z"
+   id="disp74"
+   inkscape:label="disp74" />
+        <path
+   fill="#C6C6C6"
+   d="M33.951,35.102l1.547-1.374c0,0-0.531-0.767-1.68-0.777c-1.18-0.011-4.717-0.144-4.717-0.144s-3.18,0.124-4.239,0.168c-0.251,0.01-0.76,0.37-0.678,0.479c0.318,0.429,1.273,1.712,1.273,1.712L33.951,35.102z"
+   id="disp70"
+   inkscape:label="disp70" />
+        <path
+   fill="#C6C6C6"
+   d="M22.433,53.102l-1.547,1.374c0,0,0.53,0.767,1.68,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.274-1.712-1.274-1.712L22.433,53.102z"
+   id="disp73"
+   inkscape:label="disp73" />
+        <polyline
+   fill="#C6C6C6"
+   points="24.353,42.946 23.122,44.156 24.075,45.137 32.481,45.104 33.669,44.029 32.606,43.01 "
+   id="disp76"
+   inkscape:label="disp76" />
+        <circle
+   cy="54.171"
+   fill="#C6C6C6"
+   cx="34.826"
+   r="1.156"
+   id="disp77"
+   inkscape:label="disp77" />
+    </g>
+    <g
+   id="g633">
+        <rect
+   fill="#1D1D1B"
+   width="18.807"
+   x="97.445"
+   y="30.383"
+   height="27.602"
+   id="rect627" />
+        <path
+   fill="#C6C6C6"
+   d="M102.841,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.638-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L102.841,42.779z"
+   id="disp35"
+   inkscape:label="disp35" />
+        <path
+   fill="#C6C6C6"
+   d="M112.91,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.052,0.245-0.463,0.682-0.551,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L112.91,35.274z"
+   id="disp31"
+   inkscape:label="disp31" />
+        <path
+   fill="#C6C6C6"
+   d="M111.27,45.561l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.638,3.106-0.852,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L111.27,45.561z"
+   id="disp32"
+   inkscape:label="disp32" />
+        <path
+   fill="#C6C6C6"
+   d="M101.012,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L101.012,52.78z"
+   id="disp34"
+   inkscape:label="disp34" />
+        <path
+   fill="#C6C6C6"
+   d="M112.731,35.103l1.547-1.374c0,0-0.531-0.767-1.68-0.777c-1.181-0.011-4.718-0.144-4.718-0.144s-3.179,0.124-4.238,0.168c-0.251,0.01-0.761,0.37-0.679,0.479c0.319,0.429,1.274,1.712,1.274,1.712L112.731,35.103z"
+   id="disp30"
+   inkscape:label="disp30" />
+        <path
+   fill="#C6C6C6"
+   d="M101.214,53.103l-1.547,1.374c0,0,0.531,0.767,1.681,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.274-1.712-1.274-1.712L101.214,53.103z"
+   id="disp33"
+   inkscape:label="disp33" />
+        <polyline
+   fill="#C6C6C6"
+   points="103.134,42.946 101.902,44.156 102.855,45.138 111.261,45.104 112.449,44.029 111.386,43.011 "
+   id="disp36"
+   inkscape:label="disp36" />
+        <circle
+   cy="54.172"
+   fill="#C6C6C6"
+   cx="113.606"
+   r="1.156"
+   id="disp37"
+   inkscape:label="disp37" />
+    </g>
+    <g
+   id="g639">
+        <rect
+   fill="#1D1D1B"
+   width="18.807"
+   x="37.471"
+   y="30.382"
+   height="27.602"
+   id="rect633" />
+        <path
+   fill="#C6C6C6"
+   d="M42.867,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.351,1.558,1.351,1.558L42.867,42.779z"
+   id="disp65"
+   inkscape:label="disp65" />
+        <path
+   fill="#C6C6C6"
+   d="M52.936,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.638,3.106-0.852,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L52.936,35.274z"
+   id="disp61"
+   inkscape:label="disp61" />
+        <path
+   fill="#C6C6C6"
+   d="M51.297,45.56l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.352-1.558-1.352-1.558L51.297,45.56z"
+   id="disp62"
+   inkscape:label="disp62" />
+        <path
+   fill="#C6C6C6"
+   d="M41.039,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.351,1.558,1.351,1.558L41.039,52.78z"
+   id="disp64"
+   inkscape:label="disp64" />
+        <path
+   fill="#C6C6C6"
+   d="M52.758,35.102l1.548-1.374c0,0-0.531-0.767-1.681-0.777c-1.18-0.011-4.717-0.144-4.717-0.144s-3.179,0.124-4.239,0.168c-0.251,0.01-0.76,0.37-0.678,0.479c0.319,0.429,1.274,1.712,1.274,1.712L52.758,35.102z"
+   id="disp60"
+   inkscape:label="disp60" />
+        <path
+   fill="#C6C6C6"
+   d="M41.24,53.102l-1.547,1.374c0,0,0.531,0.767,1.68,0.777c1.181,0.011,4.717,0.144,4.717,0.144s3.18-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.318-0.429-1.273-1.712-1.273-1.712L41.24,53.102z"
+   id="disp63"
+   inkscape:label="disp63" />
+        <polyline
+   fill="#C6C6C6"
+   points="43.16,42.946 41.928,44.156 42.882,45.137 51.288,45.104 52.475,44.029 51.413,43.01 "
+   id="disp66"
+   inkscape:label="disp66" />
+        <circle
+   cy="54.171"
+   fill="#C6C6C6"
+   cx="53.633"
+   r="1.156"
+   id="disp67"
+   inkscape:label="disp67" />
+    </g>
+    <g
+   id="g645">
+        <rect
+   fill="#1D1D1B"
+   width="18.807"
+   x="56.278"
+   y="30.382"
+   height="27.602"
+   id="rect639" />
+        <path
+   fill="#C6C6C6"
+   d="M61.674,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.638-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.351,1.558,1.351,1.558L61.674,42.779z"
+   id="disp55"
+   inkscape:label="disp55" />
+        <path
+   fill="#C6C6C6"
+   d="M71.743,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.052,0.245-0.463,0.682-0.551,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L71.743,35.274z"
+   id="disp51"
+   inkscape:label="disp51" />
+        <path
+   fill="#C6C6C6"
+   d="M70.103,45.56l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.638,3.106-0.852,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L70.103,45.56z"
+   id="disp52"
+   inkscape:label="disp52" />
+        <path
+   fill="#C6C6C6"
+   d="M59.845,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L59.845,52.78z"
+   id="disp54"
+   inkscape:label="disp54" />
+        <path
+   fill="#C6C6C6"
+   d="M71.564,35.102l1.547-1.374c0,0-0.531-0.767-1.68-0.777c-1.181-0.011-4.718-0.144-4.718-0.144s-3.179,0.124-4.238,0.168c-0.251,0.01-0.761,0.37-0.679,0.479c0.319,0.429,1.274,1.712,1.274,1.712L71.564,35.102z"
+   id="disp50"
+   inkscape:label="disp50" />
+        <path
+   fill="#C6C6C6"
+   d="M60.047,53.102L58.5,54.476c0,0,0.531,0.767,1.681,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.274-1.712-1.274-1.712L60.047,53.102z"
+   id="disp53"
+   inkscape:label="disp53" />
+        <polyline
+   fill="#C6C6C6"
+   points="61.967,42.946 60.735,44.156 61.688,45.137 70.094,45.104 71.282,44.029 70.219,43.01 "
+   id="disp56"
+   inkscape:label="disp56" />
+        <circle
+   cy="54.171"
+   fill="#C6C6C6"
+   cx="72.439"
+   r="1.156"
+   id="disp57"
+   inkscape:label="disp57" />
+    </g>
+    <g
+   id="g651">
+        <rect
+   fill="#1D1D1B"
+   width="18.808"
+   x="75.085"
+   y="30.382"
+   height="27.602"
+   id="rect645" />
+        <path
+   fill="#C6C6C6"
+   d="M80.48,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.339,0.39,1.352,1.558,1.352,1.558L80.48,42.779z"
+   id="disp45"
+   inkscape:label="disp45" />
+        <path
+   fill="#C6C6C6"
+   d="M90.55,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.352-1.558-1.352-1.558L90.55,35.274z"
+   id="disp41"
+   inkscape:label="disp41" />
+        <path
+   fill="#C6C6C6"
+   d="M88.91,45.56l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.052,0.245-0.463,0.682-0.551,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L88.91,45.56z"
+   id="disp42"
+   inkscape:label="disp42" />
+        <path
+   fill="#C6C6C6"
+   d="M78.652,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.052-0.245,0.463-0.682,0.551-0.581c0.338,0.39,1.351,1.558,1.351,1.558L78.652,52.78z"
+   id="disp44"
+   inkscape:label="disp44" />
+        <path
+   fill="#C6C6C6"
+   d="M90.371,35.102l1.547-1.374c0,0-0.53-0.767-1.68-0.777c-1.18-0.011-4.717-0.144-4.717-0.144s-3.18,0.124-4.239,0.168c-0.251,0.01-0.76,0.37-0.678,0.479c0.318,0.429,1.273,1.712,1.273,1.712L90.371,35.102z"
+   id="disp40"
+   inkscape:label="disp40" />
+        <path
+   fill="#C6C6C6"
+   d="M78.853,53.102l-1.547,1.374c0,0,0.53,0.767,1.68,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.273-1.712-1.273-1.712L78.853,53.102z"
+   id="disp43"
+   inkscape:label="disp43" />
+        <polyline
+   fill="#C6C6C6"
+   points="80.773,42.946 79.542,44.156 80.495,45.137 88.901,45.104 90.089,44.029 89.026,43.01 "
+   id="disp46"
+   inkscape:label="disp46" />
+        <circle
+   cy="54.171"
+   fill="#C6C6C6"
+   cx="91.246"
+   r="1.156"
+   id="disp47"
+   inkscape:label="disp47" />
+    </g>
+    <g
+   id="g657">
+        <rect
+   fill="#1D1D1B"
+   width="18.808"
+   x="116.252"
+   y="30.383"
+   height="27.602"
+   id="rect651" />
+        <path
+   fill="#C6C6C6"
+   d="M121.647,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.339,0.39,1.352,1.558,1.352,1.558L121.647,42.779z"
+   id="disp25"
+   inkscape:label="disp25" />
+        <path
+   fill="#C6C6C6"
+   d="M131.717,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.352-1.558-1.352-1.558L131.717,35.274z"
+   id="disp21"
+   inkscape:label="disp21" />
+        <path
+   fill="#C6C6C6"
+   d="M130.077,45.561l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.052,0.245-0.463,0.682-0.551,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L130.077,45.561z"
+   id="disp22"
+   inkscape:label="disp22" />
+        <path
+   fill="#C6C6C6"
+   d="M119.819,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.052-0.245,0.463-0.682,0.551-0.581c0.338,0.39,1.351,1.558,1.351,1.558L119.819,52.78z"
+   id="disp24"
+   inkscape:label="disp24" />
+        <path
+   fill="#C6C6C6"
+   d="M131.538,35.103l1.547-1.374c0,0-0.53-0.767-1.68-0.777c-1.18-0.011-4.717-0.144-4.717-0.144s-3.18,0.124-4.239,0.168c-0.251,0.01-0.76,0.37-0.678,0.479c0.318,0.429,1.273,1.712,1.273,1.712L131.538,35.103z"
+   id="disp20"
+   inkscape:label="disp20" />
+        <path
+   fill="#C6C6C6"
+   d="M120.02,53.103l-1.547,1.374c0,0,0.53,0.767,1.68,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.273-1.712-1.273-1.712L120.02,53.103z"
+   id="disp23"
+   inkscape:label="disp23" />
+        <polyline
+   fill="#C6C6C6"
+   points="121.94,42.946 120.709,44.156 121.662,45.138 130.068,45.104 131.256,44.029 130.193,43.011 "
+   id="disp26"
+   inkscape:label="disp26" />
+        <circle
+   cy="54.172"
+   fill="#C6C6C6"
+   cx="132.413"
+   r="1.156"
+   id="disp27"
+   inkscape:label="disp27" />
+    </g>
+    <g
+   id="g663">
+        <rect
+   fill="#1D1D1B"
+   width="18.807"
+   x="135.058"
+   y="30.383"
+   height="27.602"
+   id="rect657" />
+        <path
+   fill="#C6C6C6"
+   d="M140.454,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.351,1.558,1.351,1.558L140.454,42.779z"
+   id="disp15"
+   inkscape:label="disp15" />
+        <path
+   fill="#C6C6C6"
+   d="M150.523,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.852,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L150.523,35.274z"
+   id="disp11"
+   inkscape:label="disp11" />
+        <path
+   fill="#C6C6C6"
+   d="M148.884,45.561l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.352-1.558-1.352-1.558L148.884,45.561z"
+   id="disp12"
+   inkscape:label="disp12" />
+        <path
+   fill="#C6C6C6"
+   d="M138.626,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.638-3.106,0.852-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.351,1.558,1.351,1.558L138.626,52.78z"
+   id="disp14"
+   inkscape:label="disp14" />
+        <path
+   fill="#C6C6C6"
+   d="M150.344,35.103l1.547-1.374c0,0-0.531-0.767-1.681-0.777c-1.18-0.011-4.717-0.144-4.717-0.144s-3.179,0.124-4.239,0.168c-0.251,0.01-0.76,0.37-0.678,0.479c0.319,0.429,1.274,1.712,1.274,1.712L150.344,35.103z"
+   id="disp10"
+   inkscape:label="disp10" />
+        <path
+   fill="#C6C6C6"
+   d="M138.827,53.103l-1.547,1.374c0,0,0.531,0.767,1.68,0.777c1.181,0.011,4.717,0.144,4.717,0.144s3.18-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.318-0.429-1.273-1.712-1.273-1.712L138.827,53.103z"
+   id="disp13"
+   inkscape:label="disp13" />
+        <polyline
+   fill="#C6C6C6"
+   points="140.747,42.946 139.515,44.156 140.469,45.138 148.875,45.104 150.062,44.029 149,43.011 "
+   id="disp16"
+   inkscape:label="disp16" />
+        <circle
+   cy="54.172"
+   fill="#C6C6C6"
+   cx="151.219"
+   r="1.156"
+   id="disp17"
+   inkscape:label="disp17" />
+    </g><g
+   id="g669">
+        <rect
+   fill="#1D1D1B"
+   width="18.807"
+   x="153.865"
+   y="30.383"
+   height="27.602"
+   id="rect663" />
+        <path
+   fill="#C6C6C6"
+   d="M159.26,42.779l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L159.26,42.779z"
+   id="disp05"
+   inkscape:label="disp05" />
+        <path
+   fill="#C6C6C6"
+   d="M169.33,35.274l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.851,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.339-0.39-1.352-1.558-1.352-1.558L169.33,35.274z"
+   id="disp01"
+   inkscape:label="disp01" />
+        <path
+   fill="#C6C6C6"
+   d="M167.69,45.561l1.354-1.25l0.833,0.896l-0.646,4.667c0,0-0.637,3.106-0.852,4.143c-0.051,0.245-0.463,0.682-0.55,0.581c-0.338-0.39-1.351-1.558-1.351-1.558L167.69,45.561z"
+   id="disp02"
+   inkscape:label="disp02" />
+        <path
+   fill="#C6C6C6"
+   d="M157.432,52.78l-1.354,1.25l-0.833-0.896l0.646-4.667c0,0,0.637-3.106,0.851-4.143c0.051-0.245,0.463-0.682,0.55-0.581c0.338,0.39,1.352,1.558,1.352,1.558L157.432,52.78z"
+   id="disp04"
+   inkscape:label="disp04" />
+        <path
+   fill="#c6c6c6"
+   d="m 169.151,35.103 1.547,-1.374 c 0,0 -0.531,-0.767 -1.68,-0.777 -1.181,-0.011 -4.718,-0.144 -4.718,-0.144 0,0 -3.179,0.124 -4.238,0.168 -0.251,0.01 -0.76,0.37 -0.679,0.479 0.319,0.429 1.274,1.712 1.274,1.712 z"
+   id="disp00"
+   style="display:inline"
+   inkscape:label="disp00" />
+        <path
+   fill="#C6C6C6"
+   d="M157.634,53.103l-1.547,1.374c0,0,0.531,0.767,1.681,0.777c1.18,0.011,4.717,0.144,4.717,0.144s3.179-0.124,4.239-0.168c0.251-0.01,0.76-0.37,0.678-0.479c-0.319-0.429-1.274-1.712-1.274-1.712L157.634,53.103z"
+   id="disp03"
+   inkscape:label="disp03" />
+        <polyline
+   fill="#c6c6c6"
+   points="159.553,42.946 158.322,44.156 159.275,45.138 167.681,45.104 168.869,44.029 167.806,43.011 "
+   id="disp06"
+   inkscape:label="disp06"
+   style="display:inline" />
+        <circle
+   cy="54.172"
+   fill="#C6C6C6"
+   cx="170.026"
+   r="1.156"
+   id="disp07"
+   inkscape:label="disp07" />
+    </g>
+    
+</svg>
