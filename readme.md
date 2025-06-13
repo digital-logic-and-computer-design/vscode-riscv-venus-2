@@ -335,7 +335,7 @@ The LED & Key board is a common I/O module.  It includes 8 buttons, 8 LEDs, and 
 
 Ecalls use bits in argument values for each element of the board.  Bit positions, with 0 being the least significant bit (rightmost bit in place-value notation) are:
 
-![Led and Key Board Bits](docs/ledandkeyboard_bits.png "Led and Key Board Bit Positions")
+![Led and Key Board Bits](docs/ledandkeyboard_bits.svg "Led and Key Board Bit Positions")
 
 ### Ecall `0x150`: Set LEDs 
 
