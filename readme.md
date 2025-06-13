@@ -386,7 +386,7 @@ Alternatively, you can have it open automatically by adding
         ]
     }
 
-You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/main/examples/sevensegboard/sevensegboard.s).
+You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/feat-ext-led-and-key/examples/ledandkeyboard/ledandkeyboard.s).
 
 ### Credits
 
