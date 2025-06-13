@@ -5,14 +5,21 @@ class LedAndKeyBoard {
 	 * @param {element} svg The svg
 	 */
 	constructor() {
-	    this.LED_ON_COLOR = "#FF0000";
-	    this.LED_ON_OPACITY = "1";
-	    this.LED_OFF_COLOR = "#FF0000";
-	    this.LED_OFF_OPACITY = "0.35";
 	    this.BUTTON_ON_COLOR = "#DDDDDD";
 	    this.BUTTON_OFF_COLOR = "#735348";
 	    this.BUTTON_ON_OPACITY = "1";
 	    this.BUTTON_OFF_OPACITY = "1";
+
+
+		this.LED_ON_COLOR = "#FF0000";
+	    this.LED_ON_OPACITY = "1";
+	    this.LED_OFF_COLOR = "#800000";
+	    this.LED_OFF_OPACITY = "1";
+
+	    this.SEGMENT_ON_COLOR = "#FF0000";
+	    this.SEGMENT_ON_OPACITY = "1";
+	    this.SEGMENT_OFF_COLOR = "#400000";
+	    this.SEGMENT_OFF_OPACITY = "1";
 
 		// Get UI Elements 
 		this.leds = Array(8);
@@ -52,8 +59,8 @@ class LedAndKeyBoard {
 
 		for(let disp=0;disp < 8; disp++) {
 			for(let seg=0;seg < 8; seg++) {
-				let fill = this.LED_OFF_COLOR;
-				let opacity = this.LED_OFF_OPACITY;
+				let fill = this.SEGMENT_OFF_COLOR;
+				let opacity = this.SEGMENT_OFF_OPACITY;
 				let bit = 0;
 				if(disp<4) {
 					bit = uiState.disp03_value & (1 << (disp * 8 + seg));
@@ -61,8 +68,8 @@ class LedAndKeyBoard {
 					bit = uiState.disp47_value & (1 << ((disp - 4) * 8 + seg));
 				}
 				if(bit) {
-					fill = this.LED_ON_COLOR;
-					opacity = this.LED_ON_OPACITY;
+					fill = this.SEGMENT_ON_COLOR;
+					opacity = this.SEGMENT_ON_OPACITY;
 				}
 				this.segments[disp * 8 + seg].setAttribute("fill", fill);
 				this.segments[disp * 8 + seg].setAttribute("fill-opacity", opacity);

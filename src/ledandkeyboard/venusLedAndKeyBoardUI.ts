@@ -157,25 +157,24 @@ export class VenusLedAndKeyBoardUI {
 		// 150 = set LED, 151 = get LED, 152 = set disp03, 153 = get disp03, 154 = set disp47, 155 = get disp47, 156 = get keys/buttons
 		var result = {};
 		if (id == 0x150) {
-			VenusLedAndKeyBoardUI._uiState.led_value = params.a1;
+			VenusLedAndKeyBoardUI._uiState.led_value = params.a1 & 0xFF;
 		} else if (id == 0x151) {
-			result = { "a0": VenusLedAndKeyBoardUI._uiState.led_value };
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.led_value & 0xFF };
 		} else if (id == 0x152) {
-			VenusLedAndKeyBoardUI._uiState.disp03_value = params.a1;
+			VenusLedAndKeyBoardUI._uiState.disp03_value = params.a1 & 0xFFFFFFFF;
 		} else if (id == 0x153) {
-			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp03_value };
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp03_value & 0xFFFFFFFF};
 		} else if (id == 0x154) {
-			VenusLedAndKeyBoardUI._uiState.disp47_value = params.a1;
+			VenusLedAndKeyBoardUI._uiState.disp47_value = params.a1 & 0xFFFFFFFF;
 		} else if (id == 0x155) {
-			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp47_value };
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp47_value & 0xFFFFFFFF};
 		} else if (id == 0x156) {
-			result = { "a0": VenusLedAndKeyBoardUI._uiState.button_value };
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.button_value & 0xFF };
 		}
 		this._update();
 		return result;
 	}
 }
-
 export class UIState {
 	public led_value : number;
 	public button_value : number;

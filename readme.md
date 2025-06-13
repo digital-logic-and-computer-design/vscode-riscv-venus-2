@@ -71,7 +71,8 @@ There is also Support for the VSCode-Inherent [launch.json](https://go.microsoft
             "openViews": [
                 "Robot",
                 "LED Matrix",
-                "Seven Segment Board"
+                "Seven Segment Board", 
+                "Led and Key Board"
             ],
             "ledMatrixSize": {
                 "x": 10,
@@ -306,6 +307,7 @@ Alternatively, you can have it open automatically by adding
 
 You can find an example [here](https://github.com/hm-riscv/vscode-riscv-venus/blob/master/examples/sevensegboard/).
 
+
 ### Terminal: Ecall `0x130` and `0x131`
 There is a Terminal which supports the standard Venus Ecalls for printing integers and strings and error output. In addition also Input is supported (currently only via polling until Interrupts are supported).
 
@@ -324,3 +326,70 @@ Implement a counter with the seven segment board. Count up when button 1 is
 pressed and count down when button 0 is pressed. Display the current counter
 value in the seven segment display. Let the red LED blink when the counter
 overflows.
+
+## LED and Key Board
+
+The LED & Key board is a common I/O module.  It includes 8 buttons, 8 LEDs, and 8 7-segment displays.  
+
+![Led and Key Board](docs/ledandkeyboard.png "Led and Key Board")
+
+Ecalls use bits in argument values for each element of the board.  Bit positions, with 0 being the least significant bit (rightmost bit in place-value notation) are:
+
+![Led and Key Board Bits](docs/ledandkeyboard_bits.png "Led and Key Board Bit Positions")
+
+### Ecall `0x150`: Set LEDs 
+
+This ecall updates the LEDs on the top of the board. The least significant 8-bits of `a1` are used for the on/off values of LEDs.  Bit 0 represents the right-most LED, etc.  **Note that the bit order is both 0-based and right-to-left.  The LED names on the board are given in a 1-based, left-to-right order.**
+
+### Ecall `0x151`: Get LEDs 
+
+This ecall retrieves the current value of LED states in `a0`.
+
+### Ecall `0x152`: Set right four seven segment displays  
+
+This ecall updates the rightmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as previously shown.
+
+### Ecall `0x153`: Get right four seven segment displays  
+
+This ecall retrieves the current value of individual segments for the rightmost four displays in `a0`.
+
+### Ecall `0x154`: Set left four seven segment displays  
+
+This ecall updates the leftmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as previously shown.
+
+### Ecall `0x155`: Get right four seven segment displays
+
+This ecall retrieves the current value of individual segments for the leftmost four displays in `a0`.
+
+### Ecall `0x156`: Get Buttons
+
+This ecall retrieves the current value of buttons in `a0`. A `1` indicates the button is currently pressed.
+
+### Using the board view
+
+You can open the board view by pressing `Command+P` (macOS) or `CTRL+P` (Windows) and then select/enter "Venus: Open Led and Key Board UI".
+
+Alternatively, you can have it open automatically by adding
+[`.vscode/launch.json`](https://github.com/hm-riscv/vscode-riscv-venus/blob/master/examples/sevensegboard/.vscode/launch.json) in your project:
+
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "venus",
+                "request": "launch",
+                "name": "Debug current file",
+                "program": "${file}",
+                "stopOnEntry": true,
+                "openViews": [ "Led and Key Board" ]
+            }
+        ]
+    }
+
+You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/main/examples/sevensegboard/sevensegboard.s).
+
+### Credits
+
+The LED & Key artwork (.svg) was the work of [Thomas_W59](https://forum.fritzing.org/t/tm1638-led-and-key/1916) from Thomas' Fritzing package.
+
+The extension is an adaption of [prior work](https://github.com/hm-riscv/vscode-riscv-venus/commit/ed25b9f1a09f2c33770f9a0aa6eb6bc7949a616f) by [Stefan Wallentowitz](https://github.com/wallento).
