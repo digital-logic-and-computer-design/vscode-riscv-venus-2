@@ -10,7 +10,12 @@
             "name": "Debug current file",
             "program": "${file}",
             "stopOnEntry": true,
-            "openViews": [ "Led and Key Board" ]
+            "openViews": [ "Led and Key Board" ],
+            "ledAndKey" : {
+                "hideUART": false, 
+                "hideRGB": false,
+                "hideBoard": false
+            }
         }
     ]
 }

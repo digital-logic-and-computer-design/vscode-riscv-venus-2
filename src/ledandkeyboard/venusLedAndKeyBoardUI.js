@@ -48,6 +48,28 @@ class LedAndKeyBoard {
 	}
 
 	drawFromState(uiState) {
+		// if uiState contains settings 
+		// use the uiState.settings.hideUART to hide the uart-container div
+		let uartContainer = document.getElementById("uart-container");
+		if(uiState.settings && uiState.settings.hideUART) {
+			uartContainer.style.display = "none";
+		} else{
+			uartContainer.style.display = "block";
+		}
+		let boardContainer = document.getElementById("board-container");
+		if(uiState.settings && uiState.settings.hideBoard) {
+			boardContainer.style.display = "none";
+		} else {
+			boardContainer.style.display = "block";
+		}
+		let rgbContainer = document.getElementById("upduino-container");
+		if(uiState.settings && uiState.settings.hideRGB) {
+			rgbContainer.style.display = "none";
+		} else {
+			rgbContainer.style.display = "block";
+		}
+
+
 		// Convert UIState into object 
 		for(let i = 0; i < 8; i++) {
 			let fill = this.LED_OFF_COLOR;

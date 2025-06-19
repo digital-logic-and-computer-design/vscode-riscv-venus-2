@@ -16,6 +16,14 @@ export class VenusLedAndKeyBoardUI {
 	private _disposables: vscode.Disposable[] = [];
 	private static _uiState: UIState;
 
+	public static settings(settings: any) {
+		if( VenusLedAndKeyBoardUI) {
+			// Merge in any settings 
+			if (VenusLedAndKeyBoardUI._uiState) {
+				VenusLedAndKeyBoardUI._uiState.settings = Object.assign({}, VenusLedAndKeyBoardUI._uiState.settings, settings);
+			} 
+		}
+	}
 
 	public static getInstance(): VenusLedAndKeyBoardUI {
 		if (VenusLedAndKeyBoardUI.instance) {
@@ -188,9 +196,19 @@ export class UIState {
 	public disp03_value : number;
 	public disp47_value : number;
 	public rgbled_value : number;
+	public settings: any;
 
 	constructor(){
 		this.reset();
+		// Set default settings (CHECK: This should come from package.json, right?)
+		this.settings = {
+			"hideBoard": false,
+			"hideRGB": false,
+			"hideUART": false,
+			"baudRate": 9600,
+			"clocksPerInst": 4,
+			"clock": 6000000
+		};
 	}
 
 	setButtonReleased(value: number) {

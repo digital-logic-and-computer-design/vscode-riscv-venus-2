@@ -89,6 +89,8 @@ interface LaunchRequestArguments extends DebugProtocol.LaunchRequestArguments {
 	ledMatrixSize?;
 	/** Output code in hex format */
 	dumpHex?: boolean;
+	/** The ledAndKey is a JSON object */
+	ledAndKey?;
 }
 
 export class VenusDebugSession extends LoggingDebugSession {
@@ -253,6 +255,10 @@ export class VenusDebugSession extends LoggingDebugSession {
 
 		if (args.ledMatrixSize && args.ledMatrixSize.x && args.ledMatrixSize.y) {
 			VenusLedMatrixUI.createNewInstance(undefined, new UIState(new LedMatrix(args.ledMatrixSize.x, args.ledMatrixSize.y)));
+		}
+
+		if (args.ledAndKey) {
+			VenusLedAndKeyBoardUI.settings(args.ledAndKey);
 		}
 
 		VenusRuntime.registerECallReceiver(this.receiveEcall);
