@@ -150,6 +150,9 @@ export class VenusLedAndKeyBoardUI {
 		const svgPathOnDisk = vscode.Uri.joinPath(VenusLedAndKeyBoardUI._extensionUri, '/src/ledandkeyboard/board.svg');
 		html = html.replace('${svgSource}', fs.readFileSync(svgPathOnDisk.fsPath).toString());
 
+		const upduinoPathOnDisk = vscode.Uri.joinPath(VenusLedAndKeyBoardUI._extensionUri, '/src/ledandkeyboard/UPduino.svg');
+		html = html.replace('${upduinoSource}', fs.readFileSync(upduinoPathOnDisk.fsPath).toString());
+
 		return html;
 	}
 
@@ -170,6 +173,10 @@ export class VenusLedAndKeyBoardUI {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp47_value & 0xFFFFFFFF};
 		} else if (id == 0x156) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.button_value & 0xFF };
+		} else if (id == 0x160) {
+			VenusLedAndKeyBoardUI._uiState.rgbled_value = params.a1 & 0xFFFFFF;
+		}  else if (id == 0x161) {
+			result = { "a0": VenusLedAndKeyBoardUI._uiState.rgbled_value & 0xFFFFFF };
 		}
 		this._update();
 		return result;
@@ -180,6 +187,7 @@ export class UIState {
 	public button_value : number;
 	public disp03_value : number;
 	public disp47_value : number;
+	public rgbled_value : number;
 
 	constructor(){
 		this.reset();
@@ -198,5 +206,6 @@ export class UIState {
 		this.disp03_value = 0;
 		this.disp47_value = 0;
 		this.button_value = 0;
+		this.rgbled_value = 0;
 	}
 }

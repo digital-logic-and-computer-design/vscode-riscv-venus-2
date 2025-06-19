@@ -1,3 +1,19 @@
+
+# Set RGB LEDs
+li a0, 0x160
+li a1, 0xFF0000 
+ecall
+
+rgbLoop:
+    call delay
+    li a0, 0x161
+    ecall
+    mv a1, a0 
+    srli a1, a1, 2
+    li a0, 0x160
+    ecall
+    bnez a1, rgbLoop
+
 # Set LEDs at top
 
 li a0, 0x150
@@ -67,6 +83,11 @@ button_loop:
     li a0, 0x150
     ecall
     j button_loop
+
+# Set RGB LEDs
+li a0, 0x160
+li a1, 0x00FF00 
+ecall
 
 
 delay:

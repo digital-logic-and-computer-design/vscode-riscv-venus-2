@@ -256,6 +256,7 @@ export class VenusDebugSession extends LoggingDebugSession {
 		}
 
 		VenusRuntime.registerECallReceiver(this.receiveEcall);
+		this._runtime.registerStepCountReceiver(this.receiveStep);
 		this.resetViews();
 
 		// wait until configuration has finished (and configurationDoneRequest has been called)
@@ -827,6 +828,17 @@ export class VenusDebugSession extends LoggingDebugSession {
 		return floatFormatFunction;
 	}
 
+	/**
+	 * 
+	 * This function is called by the backend to handle each step of the simulator. registers a0 and a1.
+	 *
+	 */
+	private receiveStep(step: number) : void {
+		// TODO: Process step and update UART processing
+		console.log(`Step received: ${step}`);
+	}
+
+
 
 	/**
 	 * 
@@ -870,9 +882,14 @@ export class VenusDebugSession extends LoggingDebugSession {
 		} else if (jsonObj.id >= 0x150 && jsonObj.id <= 0x156) {
 			// 150 = set LED, 151 = get LED, 152 = set disp03, 153 = get disp03, 154 = set disp47, 155 = get disp47, 156 = get keys/buttons
 			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
-			result["handlerFound"] = true
+			result["handlerFound"] = true;
+		} 
+		else if (jsonObj.id >= 0x160 && jsonObj.id <= 0x161) {
+			// 160 = set LED, 161 = get LED
+			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
+			result["handlerFound"] = true;
 		} else {
-			result["handlerFound"] = false
+			result["handlerFound"] = false;
 		}
 
 		return JSON.stringify(result);

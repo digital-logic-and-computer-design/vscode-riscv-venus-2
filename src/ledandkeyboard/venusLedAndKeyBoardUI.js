@@ -42,6 +42,8 @@ class LedAndKeyBoard {
 			this.buttons[i].setAttribute("onmouseup", "vscode.postMessage({command: 'button_released', which: " + i + "})");
 			this.buttons[i].setAttribute("onmouseleave", "vscode.postMessage({command: 'button_released', which: " + i + "})");
 		}
+
+		this.rgbLED = document.getElementById("rgbLED");
 	}
 
 	drawFromState(uiState) {
@@ -86,6 +88,11 @@ class LedAndKeyBoard {
 			this.buttons[i].setAttribute("fill", fill);
 			this.buttons[i].setAttribute("fill-opacity", opacity);
 		}
+		
+		// Set this.rgbLED color from uistate.rgbled_value
+		this.rgbLED.setAttribute("fill", `rgb(${(uiState.rgbled_value >> 16) & 0xFF}, ${(uiState.rgbled_value >> 8) & 0xFF}, ${uiState.rgbled_value & 0xFF})`);
+		this.rgbLED.setAttribute("fill-opacity", "1");
+
 	}
 }
 

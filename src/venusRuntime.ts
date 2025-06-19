@@ -87,6 +87,9 @@ export class VenusRuntime extends EventEmitter {
 	private _usedRegisters = new SortedSet();
 
 	private _maximumLineNumber = new Map<string, number>();
+	// Make an array of step recievers (functions with no parameter and no return value)
+	private _step_receivers = new Array<(num: number) => void>();
+	private _steps = 0;
 
 	constructor() {
 		super();
@@ -102,6 +105,7 @@ export class VenusRuntime extends EventEmitter {
 	 * Start executing the given program.
 	 */
 	public start(stopOnEntry: boolean) {
+		this._steps = 0;
 		if (stopOnEntry) {
 			this.updateStack();
 			this.sendEvent('stopOnEntry');
@@ -395,9 +399,11 @@ export class VenusRuntime extends EventEmitter {
 	 */
 	public step(reverse = false) {
 		if (reverse) {
+			this._steps = Math.max(0, this._steps - 1);
 			simulator.driver.undo();
 			this.updateStack();
 		} else {
+			this._steps++;
 			simulator.driver.step();
 			this.updateStack();
 		}
@@ -557,11 +563,22 @@ export class VenusRuntime extends EventEmitter {
 	/** A wrapper for the simulator step function. Everything that should be updated when stepping is additionally called here. */
 	private runStep() {
 		simulator.driver.sim.step();
+
 		this.updateStack();
+		// Update any listeners 
+		this._steps++;
+		this._step_receivers.forEach(func => {
+			try {
+				func(this._steps);
+			} catch (e) {
+				simulator.driver.handleError("step receiver", e);
+			}
+		});
 	}
 
 	private runUndo() {
 		simulator.driver.undo();
+		this._steps = Math.max(0, this._steps - 1);
 		this.updateStack();
 	}
 
@@ -713,6 +730,10 @@ export class VenusRuntime extends EventEmitter {
 
 	public static registerECallReceiver(func: (json: string) => void) {
 		simulator.driver.registerECallReceiver(func);
+	}
+
+	public registerStepCountReceiver(func: (step: number) => void) {
+		this._step_receivers.push(func);
 	}
 
 	private updateMemory() {

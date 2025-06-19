@@ -12,3 +12,11 @@
         max-height: 3in;
         display: block;
       }
+
+ .upduino-container {
+        width: 100%;
+        max-height: 1.5in;
+        display: flex;
+        justify-content: center;
+        user-select: none;
+  }

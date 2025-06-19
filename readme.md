@@ -52,7 +52,7 @@ From, the Debugger you can open the "Venus Options". From there you can open set
 
 ![Venus Options](docs/VenusOptions.gif "Venus Options")
 
-There is also Support for the VSCode-Inherent [launch.json](https://go.microsoft.com/fwlink/?linkid=830387). There are pre-made configs availale which you can access by typing "Venus...". Alternitavely a full launch.json currently looks like this.
+There is also Support for the VSCode-Inherent [launch.json](https://go.microsoft.com/fwlink/?linkid=830387). There are pre-made configs available which you can access by typing "Venus...". Alternatively a full launch.json currently looks like this.
 ```
 {
     // Use IntelliSense to learn about possible attributes.
