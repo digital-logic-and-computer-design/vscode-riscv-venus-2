@@ -388,6 +388,21 @@ Alternatively, you can have it open automatically by adding
 
 You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/feat-ext-led-and-key/examples/ledandkeyboard/ledandkeyboard.s).
 
+### Configuration
+
+The default configuration shows all views and provides parameters for the timing behavior of the simulated UART.
+
+```
+    "ledAndKey" : {
+        "hideBoard": false,
+        "hideRGB": false,
+        "hideUART": false,
+        "baudRate": 9600,
+        "clocksPerInst": 1,
+        "clock": 6000000
+    }
+```
+
 ### Credits
 
 The LED & Key artwork (.svg) was the work of [Thomas_W59](https://forum.fritzing.org/t/tm1638-led-and-key/1916) from Thomas' Fritzing package.

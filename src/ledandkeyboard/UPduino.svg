@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4-beta (62f545ba, 2024-04-22)"
-   sodipodi:docname="UPduino_Breadboard.svg"
+   sodipodi:docname="UPduino.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,18 +24,22 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="12.166583"
-     inkscape:cx="53.342834"
-     inkscape:cy="38.548211"
-     inkscape:window-width="1504"
-     inkscape:window-height="915"
-     inkscape:window-x="710"
-     inkscape:window-y="263"
+     inkscape:zoom="7.2439545"
+     inkscape:cx="58.39352"
+     inkscape:cy="27.885322"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     inkscape:window-x="2560"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
-    <clipPath
+   
+  <filter id="blurFilter">
+    <feGaussianBlur stdDeviation="0.8" />
+  </filter>
+ <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3462">
       <path
@@ -7792,12 +7796,6 @@
        width="0.74481261"
        id="pref_12rect51130-6"
        style="opacity:0.96;fill:#d6dcdb;fill-opacity:1;fill-rule:nonzero;stroke:#99abb0;stroke-width:0.0534605;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       id="rgbLED"
-       width="1.2107645"
-       height="1.2107645"
-       x="9.6550846"
-       y="8.4516401" />
     <rect
        transform="rotate(-90)"
        y="9.4325361"
@@ -19084,5 +19082,21 @@
          transform="rotate(90)"
          inkscape:label="pin2" />
     </g>
+    <rect
+       id="rgbLEDOuter"
+       width="3.2549567"
+       height="3.2549567"
+       x="8.632988"
+       y="7.4295435"
+       style="display:inline"
+       inkscape:label="rgbLEDOuter" />
+    <rect
+       id="rgbLEDInner"
+       width="1.8304931"
+       height="1.8304931"
+       x="9.3452196"
+       y="8.1417751"
+       style="display:inline;stroke-width:1"
+       inkscape:label="rgbLEDInner" />
   </g>
 </svg>

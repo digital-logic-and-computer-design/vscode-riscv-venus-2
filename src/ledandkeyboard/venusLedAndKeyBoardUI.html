@@ -18,6 +18,31 @@
       ${upduinoSource}
     </div>
 
+    <br />
+  
+    <div class="uart-container">
+      
+      <div class="uart-header"><h1>UART</h1></div>
+      <br />
+      <div class="uart-content">
+        <div class="uart-row">
+          <textarea id="uartInput" class="uartTextarea" placeholder="Type here..."></textarea>
+          <button id="sendButton"  class="uartTextareaButton">Send</button>
+        </div>
+        <br />
+        Outgoing 
+        <br />
+        <div class="uart-row">
+          <textarea id="uartInProgress" class="uartTextarea" disabled></textarea>
+          <button id="flushButton" class="uartTextareaButton">Flush</button>
+        </div>
+        <br />
+        Console (Recieved)
+        <br />
+        <div id="uartOutput" class="uartConsole"></div>
+      </div>
+    </div>
+
     <script src="${scriptSrc}"></script>
   </body>
 </html>

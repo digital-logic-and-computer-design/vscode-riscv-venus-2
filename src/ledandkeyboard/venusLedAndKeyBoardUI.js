@@ -43,7 +43,8 @@ class LedAndKeyBoard {
 			this.buttons[i].setAttribute("onmouseleave", "vscode.postMessage({command: 'button_released', which: " + i + "})");
 		}
 
-		this.rgbLED = document.getElementById("rgbLED");
+		this.rgbLEDInner = document.getElementById("rgbLEDInner");
+		this.rgbLEDOuter = document.getElementById("rgbLEDOuter");
 	}
 
 	drawFromState(uiState) {
@@ -88,11 +89,22 @@ class LedAndKeyBoard {
 			this.buttons[i].setAttribute("fill", fill);
 			this.buttons[i].setAttribute("fill-opacity", opacity);
 		}
-		
-		// Set this.rgbLED color from uistate.rgbled_value
-		this.rgbLED.setAttribute("fill", `rgb(${(uiState.rgbled_value >> 16) & 0xFF}, ${(uiState.rgbled_value >> 8) & 0xFF}, ${uiState.rgbled_value & 0xFF})`);
-		this.rgbLED.setAttribute("fill-opacity", "1");
 
+		// Set this.rgbLED color from uistate.rgbled_value
+		this.rgbLEDInner.setAttribute("fill", `rgb(${(uiState.rgbled_value >> 16) & 0xFF}, ${(uiState.rgbled_value >> 8) & 0xFF}, ${uiState.rgbled_value & 0xFF})`);
+		// Make opacity relative to the brightness of RGB values
+		let r = (uiState.rgbled_value >> 16) & 0xFF;
+		let g = (uiState.rgbled_value >> 8) & 0xFF;
+		let b = uiState.rgbled_value & 0xFF;
+		let brightness = Math.max(r,g,b, Math.sqrt(r * r + g * g + b * b));
+		let opacity = Math.min(1.0, brightness / 200); // 256 is the maximum brightness (255 * 3)
+		this.rgbLEDInner.setAttribute("fill-opacity", opacity.toString());
+		// this.rgbLED.setAttribute("fill-opacity", "1");
+		// Set the rgbLEDOuter color to the same as the inner, but with a lower opacity
+		this.rgbLEDOuter.setAttribute("fill", `rgb(${(uiState.rgbled_value >> 16) & 0xFF}, ${(uiState.rgbled_value >> 8) & 0xFF}, ${uiState.rgbled_value & 0xFF})`);
+		this.rgbLEDOuter.setAttribute("fill-opacity", (opacity * 0.7).toString());
+		// Set a blur on the outer too
+		this.rgbLEDOuter.setAttribute("filter", "url(#blurFilter)"); 
 	}
 }
 
