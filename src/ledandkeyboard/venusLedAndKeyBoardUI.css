@@ -65,16 +65,19 @@
 
 .uartConsole {
   width: 100%;
-  min-height: 10em; /* Approx. 10 lines */
+  min-height: 10em;
   max-height: 20em;
+  overflow-x: auto;
   overflow-y: auto;
   border: 2px solid #888;
   border-radius: 4px;
   padding: 0.5em;
   box-sizing: border-box;
-  background: #fff;
+  background: var(--vscode-editor-background) !important;
+  color: var(--vscode-editor-foreground) !important;
   font-family: monospace;
   font-size: 1em;
+  white-space: pre; /* preserves spaces and line breaks */
 }
 
 .uartTextarea,

@@ -227,7 +227,7 @@ export class VenusLedAndKeyBoardUI {
 			// If the last line is full, append and "line wrap" character and a new line
 			let lastLine = VenusLedAndKeyBoardUI._uiState.consoleView.length - 1;
 			if (VenusLedAndKeyBoardUI._uiState.consoleView[lastLine].length >= UIState.COLUMNS) {
-				VenusLedAndKeyBoardUI._uiState.consoleView[lastLine] += "\u23CE";
+				VenusLedAndKeyBoardUI._uiState.consoleView[lastLine] += "\u21A9";
 				VenusLedAndKeyBoardUI._uiState.consoleView.push("");
 				lastLine++;
 			}
@@ -245,7 +245,12 @@ export class VenusLedAndKeyBoardUI {
 			dataLine++;
 		}
 		// Append to current line in format "XX char "
-		VenusLedAndKeyBoardUI._uiState.dataView[dataLine] += (byte.toString(16).toUpperCase().padStart(2, '0') + " " + String.fromCharCode(byte) + " ");
+		let char = String.fromCharCode(byte);
+		// If the character is outside the printable ASCII range, use a dot
+		if (char < ' ' || char > '~') {
+			char = '\u{02592}'; // Unicode bullet character
+		}
+		VenusLedAndKeyBoardUI._uiState.dataView[dataLine] += (byte.toString(16).toUpperCase().padStart(2, '0') + " " + char + " ");
 		// If the data view is too long, remove the first line
 		if (VenusLedAndKeyBoardUI._uiState.dataView.length > UIState.LINES) {
 			VenusLedAndKeyBoardUI._uiState.dataView.shift();
@@ -265,7 +270,7 @@ export class UIState {
 	public settings: any;
 
 	// Array of outgoing bytes (ascii)
-	public incoming: string;
+	public incoming: string = "";
 	public incomingProcessed: boolean = false;  // Indicates if the front byte has been processed already
 	// Array of incoming bytes (raw bytes)
 	public consoleView : string[];
