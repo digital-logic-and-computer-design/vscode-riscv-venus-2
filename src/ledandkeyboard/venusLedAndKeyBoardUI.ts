@@ -68,6 +68,11 @@ export class VenusLedAndKeyBoardUI {
 		}
 	}
 
+	public receiveStep(step: number) {
+		// TODO: Update UART
+		console.log("VenusLedAndKeyBoardUI: receiveStep: " + step);
+	}
+
 	public show(column? : vscode.ViewColumn) {
 		VenusLedAndKeyBoardUI._uiState.reset();
 		// If we already have a panel, show it.
@@ -130,6 +135,22 @@ export class VenusLedAndKeyBoardUI {
 						VenusLedAndKeyBoardUI._uiState.setButtonReleased(message.which);
 						this._update();
 						return;
+					case 'send_uart':
+						// Append bytes to the outgoing buffer
+						VenusLedAndKeyBoardUI._uiState.incoming += message.text;
+						// TODO: Update the transmit state
+						return;
+					case 'flush_uart':
+						// Flush the outgoing buffer
+						VenusLedAndKeyBoardUI._uiState.incoming = "";
+						// TODO: Update the transmit state
+						return;
+					case 'clear_console':
+						// One empty line
+						VenusLedAndKeyBoardUI._uiState.consoleView = new Array("");
+						VenusLedAndKeyBoardUI._uiState.dataView = new Array("");
+						this._update();
+						return;
 				}
 			},
 			null,
@@ -185,12 +206,57 @@ export class VenusLedAndKeyBoardUI {
 			VenusLedAndKeyBoardUI._uiState.rgbled_value = params.a1 & 0xFFFFFF;
 		}  else if (id == 0x161) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.rgbled_value & 0xFFFFFF };
+		} else if (id == 0x170) {
+			// Send a byte to console
+			this.processIncomingByte(params.a1 & 0xFF);
+		} else if (id == 0x171) {
+			// Try to retrive a byte 
+			// TODO:  If there's an incoming byte AND we're advanced to the right clock cycle for it, get it
+			// result = { "a0": VenusLedAndKeyBoardUI._uiState. };
 		}
 		this._update();
 		return result;
 	}
+	processIncomingByte(byte: number) {
+		// Process an incoming byte
+		// If it's a new line, add a new, initially blank line to the consoleView
+		if (byte == 0x0A) { // New line
+			// Push on a new line 
+			VenusLedAndKeyBoardUI._uiState.consoleView.push("");
+		} else {
+			// If the last line is full, append and "line wrap" character and a new line
+			let lastLine = VenusLedAndKeyBoardUI._uiState.consoleView.length - 1;
+			if (VenusLedAndKeyBoardUI._uiState.consoleView[lastLine].length >= UIState.COLUMNS) {
+				VenusLedAndKeyBoardUI._uiState.consoleView[lastLine] += "\u23CE";
+				VenusLedAndKeyBoardUI._uiState.consoleView.push("");
+				lastLine++;
+			}
+			// Append the byte to the last line
+			VenusLedAndKeyBoardUI._uiState.consoleView[lastLine] += String.fromCharCode(byte);
+		}
+		// If the console view is too long, remove the first line
+		if (VenusLedAndKeyBoardUI._uiState.consoleView.length > UIState.LINES) {
+			VenusLedAndKeyBoardUI._uiState.consoleView.shift();
+		}
+		// Add the byte to the data view
+		let dataLine = VenusLedAndKeyBoardUI._uiState.dataView.length - 1;
+		if (VenusLedAndKeyBoardUI._uiState.dataView[dataLine].length >= UIState.COLUMNS) {
+			VenusLedAndKeyBoardUI._uiState.dataView.push("");
+			dataLine++;
+		}
+		// Append to current line in format "XX char "
+		VenusLedAndKeyBoardUI._uiState.dataView[dataLine] += (byte.toString(16).toUpperCase().padStart(2, '0') + " " + String.fromCharCode(byte) + " ");
+		// If the data view is too long, remove the first line
+		if (VenusLedAndKeyBoardUI._uiState.dataView.length > UIState.LINES) {
+			VenusLedAndKeyBoardUI._uiState.dataView.shift();
+		}
+		// Update the webview with the new state		
+		this._update();
+	}
 }
 export class UIState {
+	static LINES = 40; // Number of lines in the console
+	static COLUMNS = 80; // Number of columns in the console
 	public led_value : number;
 	public button_value : number;
 	public disp03_value : number;
@@ -198,8 +264,18 @@ export class UIState {
 	public rgbled_value : number;
 	public settings: any;
 
-	constructor(){
+	// Array of outgoing bytes (ascii)
+	public incoming: string;
+	public incomingProcessed: boolean = false;  // Indicates if the front byte has been processed already
+	// Array of incoming bytes (raw bytes)
+	public consoleView : string[];
+	public dataView : string[];
+
+	constructor() {
 		this.reset();
+		// Initialize the console and data views with one, empty line
+		this.consoleView = new Array("");
+		this.dataView = new Array("");
 		// Set default settings (CHECK: This should come from package.json, right?)
 		this.settings = {
 			"hideBoard": false,

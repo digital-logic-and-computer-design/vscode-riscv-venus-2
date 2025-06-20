@@ -841,6 +841,8 @@ export class VenusDebugSession extends LoggingDebugSession {
 	 */
 	private receiveStep(step: number) : void {
 		// TODO: Process step and update UART processing
+		// Pass the steps to the instance of the LedAndKeyBoardUI
+		VenusLedAndKeyBoardUI.getInstance().receiveStep(step);
 		console.log(`Step received: ${step}`);
 	}
 
@@ -885,13 +887,15 @@ export class VenusDebugSession extends LoggingDebugSession {
 						"a1": charCode | 0x00000000,};
 			}
 			result["handlerFound"] = true
-		} else if (jsonObj.id >= 0x150 && jsonObj.id <= 0x156) {
+		} else if ( 
+			(jsonObj.id >= 0x150 && jsonObj.id <= 0x156) ||  
 			// 150 = set LED, 151 = get LED, 152 = set disp03, 153 = get disp03, 154 = set disp47, 155 = get disp47, 156 = get keys/buttons
-			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
-			result["handlerFound"] = true;
-		} 
-		else if (jsonObj.id >= 0x160 && jsonObj.id <= 0x161) {
-			// 160 = set LED, 161 = get LED
+			// TODO: Should these only be available if the options are enabled?
+			(jsonObj.id >= 0x160 && jsonObj.id <= 0x161) ||
+			// 160 = set LED, 161 = get LED		
+			(jsonObj.id >= 0x170 && jsonObj.id <= 0x171) 
+			// 170 = send byte, 171 = get byte
+		) {
 			result = VenusLedAndKeyBoardUI.getInstance().ecall(jsonObj.id, jsonObj.params);
 			result["handlerFound"] = true;
 		} else {

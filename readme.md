@@ -365,6 +365,24 @@ This ecall retrieves the current value of individual segments for the leftmost f
 
 This ecall retrieves the current value of buttons in `a0`. A `1` indicates the button is currently pressed.
 
+### Ecall `0x160`: Set RGB LED values
+
+This ecall sets the current value of Red, Blue, and Green components of the RGB LED.  The last three bytes in `a1` represent the RBG tuple (`0x00RRGGBB`).  
+
+### Ecall `0x161`: Get RGB LED values
+
+This ecall retrieves the current value of RGB LED's colors in `a0` (`0x00RRGGBB`).
+
+### Ecall `0x170`: Write to UART
+
+This ecall sets the outgoing UART byte to the low byte in `a1`.  Behavior is modelled after the PicoRV SimpleUART behavior and is assumed to be blocking. (I.e., no further instructions will be processed until the byte is completely tranmitted)
+
+### Ecall `0x171`: Read from UART
+
+This ecall gets the most recent byte from the UART in the low byte of `a0` (`0x000000XX`) or `a0`  will be `-1` (`0xFFFFFFFF`) if no byte is available.  It is non-blocking.  
+
+Timing of UART behavior is based on configuration parameters in the launch (`launch.json`).  By default, it approximates 9600bps on a CPU that operates at 6MHz and requires 4 cycles per instruction (on average).
+
 ### Using the board view
 
 You can open the board view by pressing `Command+P` (macOS) or `CTRL+P` (Windows) and then select/enter "Venus: Open Led and Key Board UI".
@@ -398,10 +416,12 @@ The default configuration shows all views and provides parameters for the timing
         "hideRGB": false,
         "hideUART": false,
         "baudRate": 9600,
-        "clocksPerInst": 1,
+        "clocksPerInst": 4,
         "clock": 6000000
     }
 ```
+
+The `clocksPerInst` represents the 
 
 ### Credits
 
