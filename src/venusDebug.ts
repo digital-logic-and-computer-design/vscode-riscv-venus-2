@@ -843,7 +843,6 @@ export class VenusDebugSession extends LoggingDebugSession {
 		// TODO: Process step and update UART processing
 		// Pass the steps to the instance of the LedAndKeyBoardUI
 		VenusLedAndKeyBoardUI.getInstance().receiveStep(step);
-		console.log(`Step received: ${step}`);
 	}
 
 

@@ -1,5 +1,31 @@
 
+#### Test reading in from the console
 
+  li t0, 0   # index to write to
+read_loop: 
+    li a0, 0x171 
+    ecall 
+    li t1, -1 
+    beq a0, t1, read_next # if -1, no input, go to next part
+    # Valid character : Store it and advance the index
+    la t2, read
+    add t2, t2, t0 # Get the address to write to
+    sb a0, 0(t2) # Store the character
+    addi t0, t0, 1 # Increment the index
+    # Print it too 
+    li a0, 0x170 # UART Console
+    lb a1, 0(t2) # Load the character to print
+#    ecall # Print the character
+
+read_next:
+    li t1, 20 # Max length of input
+    bge t0, t1, read_done # If we reached the max length, stop reading
+    j read_loop
+
+read_done:
+
+
+#### Test writing to UART Console
     li t4, 10
 
 repeat_loop:
@@ -21,6 +47,8 @@ repeat_loop:
     addi t4, t4, -1
     bnez t4, repeat_loop
 
+##### Test the RGB LED
+
 # Set RGB LEDs
 li a0, 0x160
 li a1, 0xFF0000 
@@ -35,6 +63,8 @@ rgbLoop:
     li a0, 0x160
     ecall
     bnez a1, rgbLoop
+
+#### Test the LED & Key Boar's features
 
 # Set LEDs at top
 
@@ -123,3 +153,4 @@ delay_loop:
 .data 
 message: .asciiz "`~<>?:{}_+|-=\[];',/.abcdefghijklmnopqrstuvwxyz1234567890()*&^%$#@!ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 new_line: .asciiz "\n"
+read: .space 20

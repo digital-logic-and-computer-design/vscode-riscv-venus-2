@@ -16,6 +16,7 @@ export class VenusLedAndKeyBoardUI {
 	private _disposables: vscode.Disposable[] = [];
 	private static _uiState: UIState;
 
+
 	public static settings(settings: any) {
 		if( VenusLedAndKeyBoardUI) {
 			// Merge in any settings 
@@ -69,8 +70,28 @@ export class VenusLedAndKeyBoardUI {
 	}
 
 	public receiveStep(step: number) {
-		// TODO: Update UART
 		console.log("VenusLedAndKeyBoardUI: receiveStep: " + step);
+		// Computer "steps per character" (min 1) from settings 
+		let stepsPerCharacter = Math.max(1, VenusLedAndKeyBoardUI._uiState.settings.clocksPerInst * VenusLedAndKeyBoardUI._uiState.settings.clock / VenusLedAndKeyBoardUI._uiState.settings.baudRate);
+		let stepsToAccountFor = step - VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock;
+		while(stepsToAccountFor >= stepsPerCharacter) {
+			// Slice off the first character from the incoming buffer
+			if (VenusLedAndKeyBoardUI._uiState.incoming.length > 0) {
+				VenusLedAndKeyBoardUI._uiState.incoming = VenusLedAndKeyBoardUI._uiState.incoming.slice(1);
+				// Mark the front byte as processed (processed by the code / simulator)
+				VenusLedAndKeyBoardUI._uiState.incomingProcessed = false;
+				VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock = step; // Reset the clock for incoming UART bytes
+				// Update UI 
+				this._update();
+			} else {
+				// No more characters to process
+				VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock = step;
+				break;
+			}
+			// Decrease the steps to account for
+			stepsToAccountFor -= stepsPerCharacter;
+		}
+		VenusLedAndKeyBoardUI._uiState.lastStep = step;
 	}
 
 	public show(column? : vscode.ViewColumn) {
@@ -136,14 +157,21 @@ export class VenusLedAndKeyBoardUI {
 						this._update();
 						return;
 					case 'send_uart':
-						// Append bytes to the outgoing buffer
+						// Append bytes to the incoming buffer
 						VenusLedAndKeyBoardUI._uiState.incoming += message.text;
-						// TODO: Update the transmit state
+						// If the length is now 1, set the processed state to false
+						if (VenusLedAndKeyBoardUI._uiState.incoming.length == 1) {
+							VenusLedAndKeyBoardUI._uiState.incomingProcessed = false;
+							// Set the current character start time 
+							VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock = VenusLedAndKeyBoardUI._uiState.lastStep;
+						}						
+						this._update();
 						return;
 					case 'flush_uart':
 						// Flush the outgoing buffer
 						VenusLedAndKeyBoardUI._uiState.incoming = "";
-						// TODO: Update the transmit state
+						VenusLedAndKeyBoardUI._uiState.incomingProcessed = false; // Reset the processed state
+						this._update();
 						return;
 					case 'clear_console':
 						// One empty line
@@ -211,8 +239,15 @@ export class VenusLedAndKeyBoardUI {
 			this.processIncomingByte(params.a1 & 0xFF);
 		} else if (id == 0x171) {
 			// Try to retrive a byte 
-			// TODO:  If there's an incoming byte AND we're advanced to the right clock cycle for it, get it
-			// result = { "a0": VenusLedAndKeyBoardUI._uiState. };
+			if( VenusLedAndKeyBoardUI._uiState.incomingProcessed || VenusLedAndKeyBoardUI._uiState.incoming.length == 0) {
+				// If the front byte has been processed, return 0
+				result = { "a0": -1 };
+			} else {
+				// If the front byte has not been processed, return it
+				result = { "a0": VenusLedAndKeyBoardUI._uiState.incoming.charCodeAt(0) };
+				// Mark the front byte as processed (processed by the code / simulator)
+				VenusLedAndKeyBoardUI._uiState.incomingProcessed = true;
+			}
 		}
 		this._update();
 		return result;
@@ -250,11 +285,23 @@ export class VenusLedAndKeyBoardUI {
 		if (char < ' ' || char > '~') {
 			char = '\u{02592}'; // Unicode bullet character
 		}
-		VenusLedAndKeyBoardUI._uiState.dataView[dataLine] += (byte.toString(16).toUpperCase().padStart(2, '0') + " " + char + " ");
+		VenusLedAndKeyBoardUI._uiState.dataView[dataLine] += (byte.toString(16).toUpperCase().padStart(2, '0') + "\u{21E2}" + char + " ");
 		// If the data view is too long, remove the first line
 		if (VenusLedAndKeyBoardUI._uiState.dataView.length > UIState.LINES) {
 			VenusLedAndKeyBoardUI._uiState.dataView.shift();
 		}
+
+
+		if( VenusLedAndKeyBoardUI._uiState.incoming.length > 0) {
+			// This will take the same time as an incoming byte.  If there's an incoming byte being processed, advance it
+			if( VenusLedAndKeyBoardUI._uiState.incomingProcessed ) {
+				// If the front byte has been processed, we can advance it
+				VenusLedAndKeyBoardUI._uiState.incomingProcessed = false; // Reset the processed state			
+				VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock = VenusLedAndKeyBoardUI._uiState.lastStep; // Reset the clock for incoming UART bytes
+			}
+			VenusLedAndKeyBoardUI._uiState.incoming = VenusLedAndKeyBoardUI._uiState.incoming.slice(1);
+		}
+
 		// Update the webview with the new state		
 		this._update();
 	}
@@ -275,6 +322,8 @@ export class UIState {
 	// Array of incoming bytes (raw bytes)
 	public consoleView : string[];
 	public dataView : string[];
+	public lastStep : number = 0; // Last step received from the simulator
+	public uartIncomingStartClock : number = 0; // The clock when the first byte was received
 
 	constructor() {
 		this.reset();
@@ -287,7 +336,7 @@ export class UIState {
 			"hideRGB": false,
 			"hideUART": false,
 			"baudRate": 9600,
-			"clocksPerInst": 4,
+			"clocksPerInst": 1,
 			"clock": 6000000
 		};
 	}
@@ -306,5 +355,11 @@ export class UIState {
 		this.disp47_value = 0;
 		this.button_value = 0;
 		this.rgbled_value = 0;
+		this.incoming = "";
+		this.incomingProcessed = false;
+		this.consoleView = new Array("");
+		this.dataView = new Array("");
+		this.lastStep = 0;
+		this.uartIncomingStartClock = 0; // Reset the clock for incoming UART bytes
 	}
 }

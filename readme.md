@@ -416,7 +416,7 @@ The default configuration shows all views and provides parameters for the timing
         "hideRGB": false,
         "hideUART": false,
         "baudRate": 9600,
-        "clocksPerInst": 4,
+        "clocksPerInst": 1,
         "clock": 6000000
     }
 ```
