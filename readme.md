@@ -329,25 +329,25 @@ overflows.
 
 ## LED and Key Board
 
-The LED & Key board is a common I/O module.  It includes 8 buttons, 8 LEDs, and 8 7-segment displays.  
+The LED & Key board is a common I/O module based.  It includes 8 buttons, 8 LEDs, and 8 7-segment displays.  
 
 ![Led and Key Board](docs/ledandkeyboard.svg "Led and Key Board")
 
-Ecalls use bits in argument values for each element of the board.  Bit positions, with 0 being the least significant bit (rightmost bit in place-value notation) are:
+Ecalls use bits in argument values for each element of the board.  Bit positions, with 0 being the least significant bit (rightmost bit in place-value notation), are:
 
 <img src="docs/ledandkeyboard_bits.svg" alt="Led and Key Board Bit Positions" style="width:85%; height:auto;">
 
-### Ecall `0x150`: Set LEDs 
+### Ecall `0x150`: Set LEDs
 
 This ecall updates the LEDs on the top of the board. The least significant 8-bits of `a1` are used for the on/off values of LEDs.  Bit 0 represents the right-most LED, etc.  **Note that the bit order is both 0-based and right-to-left.  The LED names on the board are given in a 1-based, left-to-right order.**
 
-### Ecall `0x151`: Get LEDs 
+### Ecall `0x151`: Get LEDs
 
 This ecall retrieves the current value of LED states in `a0`.
 
 ### Ecall `0x152`: Set right four seven segment displays  
 
-This ecall updates the rightmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as previously shown.
+This ecall updates the rightmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as shown above.
 
 ### Ecall `0x153`: Get right four seven segment displays  
 
@@ -355,19 +355,19 @@ This ecall retrieves the current value of individual segments for the rightmost 
 
 ### Ecall `0x154`: Set left four seven segment displays  
 
-This ecall updates the leftmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as previously shown.
+This ecall updates the leftmost four seven segment displays.  The values of `a1` are used to designate which of the 32 individual LEDs should be activated as shown above.
 
-### Ecall `0x155`: Get right four seven segment displays
+### Ecall `0x155`: Get left four seven segment displays
 
 This ecall retrieves the current value of individual segments for the leftmost four displays in `a0`.
 
-### Ecall `0x156`: Get Buttons
+### Ecall `0x156`: Get buttons
 
 This ecall retrieves the current value of buttons in `a0`. A `1` indicates the button is currently pressed.
 
 ### Ecall `0x160`: Set RGB LED values
 
-This ecall sets the current value of Red, Blue, and Green components of the RGB LED.  The last three bytes in `a1` represent the RBG tuple (`0x00RRGGBB`).  
+This ecall sets the current value of Red, Blue, and Green components of the RGB LED.  The last three bytes in `a1` represent the RGB tuple (`0x00RRGGBB`).  
 
 ### Ecall `0x161`: Get RGB LED values
 
@@ -375,13 +375,13 @@ This ecall retrieves the current value of RGB LED's colors in `a0` (`0x00RRGGBB`
 
 ### Ecall `0x170`: Write to UART
 
-This ecall sets the outgoing UART byte to the low byte in `a1`.  Behavior is modelled after the PicoRV SimpleUART behavior and is assumed to be blocking. (I.e., no further instructions will be processed until the byte is completely tranmitted)
+This ecall sets the outgoing UART byte to the low byte in `a1`.  Behavior is modelled after the PicoRV SimpleUART behavior and is assumed to be blocking. (I.e., no further instructions will be processed until the byte is completely transmitted)
 
 ### Ecall `0x171`: Read from UART
 
-This ecall gets the most recent byte from the UART in the low byte of `a0` (`0x000000XX`) or `a0`  will be `-1` (`0xFFFFFFFF`) if no byte is available.  It is non-blocking.  
+This ecall gets the most recent byte from the UART in the low byte of `a0` (`0x000000XX`) or `a0`  will be `-1` (`0xFFFFFFFF`) if no byte is available.  It is **non-blocking**.  
 
-Timing of UART behavior is based on configuration parameters in the launch (`launch.json`).  By default, it approximates 9600bps on a CPU that operates at 6MHz and requires 4 cycles per instruction (on average).
+Timing of UART behavior is based on configuration parameters in the launch (`launch.json`).  By default, it approximates 57600bps on a CPU that operates at 6MHz and requires 1 cycle per instruction (on average). The simulation runs much slower than real time.  These parameters were chosen based to be a reasonable representation of behavior while also being tolerable and observable in the simulation.
 
 ### Using the board view
 
@@ -404,7 +404,7 @@ Alternatively, you can have it open automatically by adding
         ]
     }
 
-You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/feat-ext-led-and-key/examples/ledandkeyboard/ledandkeyboard.s).
+You can find an example [here](https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/blob/feat-ext-led-and-key/examples/ledandkeyboard/).
 
 ### Configuration
 
@@ -415,13 +415,13 @@ The default configuration shows all views and provides parameters for the timing
         "hideBoard": false,
         "hideRGB": false,
         "hideUART": false,
-        "baudRate": 9600,
+        "baudRate": 57600,
         "clocksPerInst": 1,
         "clock": 6000000
     }
 ```
 
-The `clocksPerInst` represents the 
+The `clocksPerInst` represents the number of clocks required to perform an instruction (on average).  `baudRate` is the simulated baud rage.  The `clock` is the processor clock speed.  The simulator is based on individual instructions (steps) and these parameters are combined to approximate the number of instructions that can execute per byte transmitted.
 
 ### Credits
 

@@ -171,12 +171,15 @@ class LedAndKeyBoard {
 			// Copy from uiState.consoleView to console 
 			// Join lines of array using line breaks 
 			this.uartOutput.innerHTML = uiState.consoleView.join("<br />");
-			// Scroll to the bottom of the output
-			this.uartOutput.scrollTop = this.uartOutput.scrollHeight;
+			// Scroll to the bottom of the output now (but don't stay there)
+
+//			this.uartOutput.scrollTop = this.uartOutput.scrollHeight;
+			this.uartOutput.scrollTo(0, this.uartOutput.scrollHeight);	
 
 			// Copy the uiState.dataView to the uartBytes
 			this.uartBytes.innerHTML = uiState.dataView.join("<br />");
-			this.uartBytes.scrollTop = this.uartBytes.scrollHeight;
+//			this.uartBytes.scrollTop = this.uartBytes.scrollHeight;
+			this.uartBytes.scrollTo(0, this.uartBytes.scrollHeight);
 
 			// Copy the uiState.outgoing to the uartOutgoing
 			let outgoing = document.getElementById("uartInProgress");

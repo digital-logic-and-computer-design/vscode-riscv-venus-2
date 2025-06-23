@@ -15,7 +15,7 @@ export class VenusLedAndKeyBoardUI {
 	private static _extensionUri: vscode.Uri;
 	private _disposables: vscode.Disposable[] = [];
 	private static _uiState: UIState;
-
+	private static _stepsPerCharacter: number = 833; // Default steps per character, can be adjusted based on settings
 
 	public static settings(settings: any) {
 		if( VenusLedAndKeyBoardUI) {
@@ -23,6 +23,11 @@ export class VenusLedAndKeyBoardUI {
 			if (VenusLedAndKeyBoardUI._uiState) {
 				VenusLedAndKeyBoardUI._uiState.settings = Object.assign({}, VenusLedAndKeyBoardUI._uiState.settings, settings);
 			} 
+			// Compute "steps per character" (min 1) from settings (based on simulated I/O and use-cases, using concept of "character" rather than "byte")
+			// Step = inst count
+			let instsPerSecond = VenusLedAndKeyBoardUI._uiState.settings.clock / VenusLedAndKeyBoardUI._uiState.settings.clocksPerInst;
+			let secondsPerCharacter = 8 / VenusLedAndKeyBoardUI._uiState.settings.baudRate;		
+			VenusLedAndKeyBoardUI._stepsPerCharacter = Math.max(1, instsPerSecond * secondsPerCharacter);
 		}
 	}
 
@@ -71,10 +76,10 @@ export class VenusLedAndKeyBoardUI {
 
 	public receiveStep(step: number) {
 		console.log("VenusLedAndKeyBoardUI: receiveStep: " + step);
-		// Computer "steps per character" (min 1) from settings 
-		let stepsPerCharacter = Math.max(1, VenusLedAndKeyBoardUI._uiState.settings.clocksPerInst * VenusLedAndKeyBoardUI._uiState.settings.clock / VenusLedAndKeyBoardUI._uiState.settings.baudRate);
+
+		// let stepsPerCharacter = Math.max(1, VenusLedAndKeyBoardUI._uiState.settings.clocksPerInst * VenusLedAndKeyBoardUI._uiState.settings.clock / VenusLedAndKeyBoardUI._uiState.settings.baudRate);
 		let stepsToAccountFor = step - VenusLedAndKeyBoardUI._uiState.uartIncomingStartClock;
-		while(stepsToAccountFor >= stepsPerCharacter) {
+		while(stepsToAccountFor >= VenusLedAndKeyBoardUI._stepsPerCharacter) {
 			// Slice off the first character from the incoming buffer
 			if (VenusLedAndKeyBoardUI._uiState.incoming.length > 0) {
 				VenusLedAndKeyBoardUI._uiState.incoming = VenusLedAndKeyBoardUI._uiState.incoming.slice(1);
@@ -89,7 +94,7 @@ export class VenusLedAndKeyBoardUI {
 				break;
 			}
 			// Decrease the steps to account for
-			stepsToAccountFor -= stepsPerCharacter;
+			stepsToAccountFor -= VenusLedAndKeyBoardUI._stepsPerCharacter;
 		}
 		VenusLedAndKeyBoardUI._uiState.lastStep = step;
 	}
@@ -204,8 +209,8 @@ export class VenusLedAndKeyBoardUI {
 		const styleSrc = webview.asWebviewUri(stylePath);
 		html = html.replace('${styleSrc}', styleSrc.toString());
 
-		const svgPathOnDisk = vscode.Uri.joinPath(VenusLedAndKeyBoardUI._extensionUri, '/src/ledandkeyboard/board.svg');
-		html = html.replace('${svgSource}', fs.readFileSync(svgPathOnDisk.fsPath).toString());
+		const boardPathOnDisk = vscode.Uri.joinPath(VenusLedAndKeyBoardUI._extensionUri, '/src/ledandkeyboard/board.svg');
+		html = html.replace('${boardSource}', fs.readFileSync(boardPathOnDisk.fsPath).toString());
 
 		const upduinoPathOnDisk = vscode.Uri.joinPath(VenusLedAndKeyBoardUI._extensionUri, '/src/ledandkeyboard/UPduino.svg');
 		html = html.replace('${upduinoSource}', fs.readFileSync(upduinoPathOnDisk.fsPath).toString());
@@ -218,27 +223,37 @@ export class VenusLedAndKeyBoardUI {
 		var result = {};
 		if (id == 0x150) {
 			VenusLedAndKeyBoardUI._uiState.led_value = params.a1 & 0xFF;
+			this._update();
 		} else if (id == 0x151) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.led_value & 0xFF };
+			this._update();
 		} else if (id == 0x152) {
 			VenusLedAndKeyBoardUI._uiState.disp03_value = params.a1 & 0xFFFFFFFF;
+			this._update();
 		} else if (id == 0x153) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp03_value & 0xFFFFFFFF};
+			this._update();
 		} else if (id == 0x154) {
 			VenusLedAndKeyBoardUI._uiState.disp47_value = params.a1 & 0xFFFFFFFF;
+			this._update();
 		} else if (id == 0x155) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.disp47_value & 0xFFFFFFFF};
+			this._update();
 		} else if (id == 0x156) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.button_value & 0xFF };
+			this._update();
 		} else if (id == 0x160) {
 			VenusLedAndKeyBoardUI._uiState.rgbled_value = params.a1 & 0xFFFFFF;
+			this._update();
 		}  else if (id == 0x161) {
 			result = { "a0": VenusLedAndKeyBoardUI._uiState.rgbled_value & 0xFFFFFF };
+			this._update();
 		} else if (id == 0x170) {
 			// Send a byte to console
 			this.processIncomingByte(params.a1 & 0xFF);
+			this._update();
 		} else if (id == 0x171) {
-			// Try to retrive a byte 
+			// Try to retrieve a byte 
 			if( VenusLedAndKeyBoardUI._uiState.incomingProcessed || VenusLedAndKeyBoardUI._uiState.incoming.length == 0) {
 				// If the front byte has been processed, return 0
 				result = { "a0": -1 };
@@ -248,8 +263,8 @@ export class VenusLedAndKeyBoardUI {
 				// Mark the front byte as processed (processed by the code / simulator)
 				VenusLedAndKeyBoardUI._uiState.incomingProcessed = true;
 			}
+			this._update();
 		}
-		this._update();
 		return result;
 	}
 	processIncomingByte(byte: number) {
@@ -290,7 +305,6 @@ export class VenusLedAndKeyBoardUI {
 		if (VenusLedAndKeyBoardUI._uiState.dataView.length > UIState.LINES) {
 			VenusLedAndKeyBoardUI._uiState.dataView.shift();
 		}
-
 
 		if( VenusLedAndKeyBoardUI._uiState.incoming.length > 0) {
 			// This will take the same time as an incoming byte.  If there's an incoming byte being processed, advance it
@@ -335,7 +349,7 @@ export class UIState {
 			"hideBoard": false,
 			"hideRGB": false,
 			"hideUART": false,
-			"baudRate": 9600,
+			"baudRate": 57600,
 			"clocksPerInst": 1,
 			"clock": 6000000
 		};

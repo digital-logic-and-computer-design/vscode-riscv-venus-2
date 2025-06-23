@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "type": "venus",
             "request": "launch",
@@ -12,7 +13,7 @@
             "stopOnEntry": true,
             "openViews": [ "Led and Key Board" ],
             "ledAndKey" : {
-                "hideUART": false, 
+                "hideUART": false,  
                 "hideRGB": false,
                 "hideBoard": false
             }

@@ -342,11 +342,11 @@
 									"hideBoard": false,
 									"hideRGB": false,
 									"hideUART": false,
-									"baudRate": 9600,
+									"baudRate": 57600,
 									"clocksPerInst": 1,
 									"clock": 6000000
 								},
-								"description": "The desired settings for the LED & Key board view: which views are hidden (hideBoard, hideRGB, hideUART) and the parameters needed for UART (baudRate, clocksPerInst, clock). The parameter must be in the format: {\"hideBoard\": false, \"hideRGB\": false, \"hideUART\": false, \"baudRate\": 9600, \"clocksPerInst\": 4, \"clock\": 6000000}"
+								"description": "The desired settings for the LED & Key board view: which views are hidden (hideBoard, hideRGB, hideUART) and the parameters needed for UART (baudRate, clocksPerInst, clock). The parameter must be in the format: {\"hideBoard\": false, \"hideRGB\": false, \"hideUART\": false, \"baudRate\": 57600, \"clocksPerInst\": 4, \"clock\": 6000000}"
 							}
 						}
 					}
@@ -369,6 +369,14 @@
 						"ledMatrixSize": {
 							"x": 10,
 							"y": 10
+						}, 
+						"ledAndKey": {
+							"hideBoard": false,
+							"hideRGB": false,
+							"hideUART": false,
+							"baudRate": 57600,
+							"clocksPerInst": 1,
+							"clock": 6000000
 						}
 					}
 				],
@@ -430,6 +438,14 @@
 							"ledMatrixSize": {
 								"x": 10,
 								"y": 10
+							},
+							"ledAndKey": {
+								"hideBoard": false,
+								"hideRGB": false,
+								"hideUART": false,
+								"baudRate": 57600,
+								"clocksPerInst": 1,
+								"clock": 6000000
 							}
 						}
 					}
