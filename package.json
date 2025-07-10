@@ -1,12 +1,12 @@
 {
-	"name": "riscv-venus-cs110",
-	"displayName": "RISC-V Venus Simulator for CS110",
+	"name": "riscv-venus-cse2600",
+	"displayName": "RISC-V Venus Simulator for CSE2600",
 	"version": "1.9.6",
-	"publisher": "ZAMBAR",
-	"description": "RISC-V Venus Simulator embedded in VS Code, modified from https://github.com/hm-riscv/vscode-riscv-venus.",
+	"publisher": "Bill Siever",
+	"description": "RISC-V Venus Simulator embedded in VS Code, modified from https://github.com/HeZeBang/vscode-riscv-venus which was modified from https://github.com/hm-riscv/vscode-riscv-venus.",
 	"author": {
-		"name": "ZAMBAR",
-		"email": "zambar@shanghaitech.edu.cn"
+		"name": "Bill Siever",
+		"email": "bsiever@gmail.com"
 	},
 	"license": "MIT",
 	"keywords": [
@@ -22,10 +22,10 @@
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/HeZeBang/vscode-riscv-venus"
+		"url": "https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2"
 	},
 	"bugs": {
-		"url": "https://github.com/HeZeBang/vscode-riscv-venus/issues"
+		"url": "https://github.com/digital-logic-and-computer-design/vscode-riscv-venus-2/issues"
 	},
 	"preview": true,
 	"scripts": {
