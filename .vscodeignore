@@ -6,7 +6,7 @@
 
 !src/documentation
 !dist/*.js
-!src/{ledmatrix,memoryui,robot,sevensegboard}/*
+!src/{ledmatrix,memoryui,robot,sevensegboard,ledandkeyboard}/*
 !extension/images/**
 !images
 !readme.md
