@@ -2,7 +2,7 @@
 	"name": "riscv-venus-cse2600",
 	"displayName": "RISC-V Venus Simulator for CSE2600",
 	"version": "1.9.6",
-	"publisher": "Bill Siever",
+	"publisher": "bsiever",
 	"description": "RISC-V Venus Simulator embedded in VS Code, modified from https://github.com/HeZeBang/vscode-riscv-venus which was modified from https://github.com/hm-riscv/vscode-riscv-venus.",
 	"author": {
 		"name": "Bill Siever",
